@@ -1,0 +1,26 @@
+{
+  'PublicationDate': None,
+  'desription': None,
+  'documentation': None,
+  'homepage': 'www.hs-nordhausen.de',
+  'id': 'parameter_onshore_wind_power_plant_inret',
+  'keywords': None,
+  'language': None,
+  'name': None,
+  'resources': [
+    {'description': None, 'isAbout': None, 'name': 'id', 'primary_key': 'True', 'type': 'int', 'unit': None, 'valueReference': None},
+    {'description': None, 'isAbout': None, 'name': 'model_id', 'primary_key': None, 'type': 'varchar(100)', 'unit': None, 'valueReference': 'https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/'},
+    {'description': 'median investment costs for 2020', 'isAbout': None, 'name': 'investment_costs_2020', 'primary_key': None, 'type': 'float', 'unit': 'EUR/MW', 'valueReference': 'https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/'},
+    {'description': None, 'isAbout': None, 'name': 'investment_costs_2025', 'primary_key': None, 'type': 'float', 'unit': 'EUR/MW', 'valueReference': 'https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/'},
+    {'description': None, 'isAbout': None, 'name': 'investment_costs_2030', 'primary_key': None, 'type': 'float', 'unit': 'EUR/MW', 'valueReference': 'https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/'},
+    {'description': None, 'isAbout': None, 'name': 'investment_costs_2035', 'primary_key': None, 'type': 'float', 'unit': 'EUR/MW', 'valueReference': 'https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/'},
+    {'description': None, 'isAbout': None, 'name': 'investment_costs_2040', 'primary_key': None, 'type': 'float', 'unit': 'EUR/MW', 'valueReference': 'https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/'},
+    {'description': None, 'isAbout': None, 'name': 'investment_costs_2045', 'primary_key': None, 'type': 'float', 'unit': 'EUR/MW', 'valueReference': 'https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/'},
+    {'description': None, 'isAbout': None, 'name': 'investment_costs_2050', 'primary_key': None, 'type': 'float', 'unit': 'EUR/MW', 'valueReference': 'https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/'},
+    {'description': None, 'isAbout': None, 'name': 'operating_costs_2020', 'primary_key': None, 'type': 'float', 'unit': '% of investment_costs', 'valueReference': 'https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/'},
+    {'description': None, 'isAbout': None, 'name': 'operating_costs_2025', 'primary_key': None, 'type': 'float', 'unit': '% of investment_costs', 'valueReference': 'https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/'},
+    {'description': None, 'isAbout': None, 'name': 'operating_costs_2030', 'primary_key': None, 'type': 'float', 'unit': '% of investment_costs', 'valueReference': 'https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/'}
+  ],
+  'subject': None,
+  'title': None
+}

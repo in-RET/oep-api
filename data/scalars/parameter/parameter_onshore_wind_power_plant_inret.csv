@@ -3,7 +3,7 @@ type;int;varchar(100);float;float;float;float;float;float;float;float;float;floa
 unit;;;EUR/MW;EUR/MW;EUR/MW;EUR/MW;EUR/MW;EUR/MW;EUR/MW;% of investment_costs;% of investment_costs;% of investment_costs
 isAbout;;;;;;;;;;;;
 description;;;median investment costs for 2020;;;;;;;;;
-primary_key;true;;;;;;;;;;;
+primary_key;True;;;;;;;;;;;
 valueReference;;https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/;https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/;https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/;https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/;https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/;https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/;https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/;https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/;https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/;https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/;https://www.hs-nordhausen.de/forschung/in-ret-institut-fuer-regenerative-energietechnik/
 data;1;BS0002;1290000;1210000;1150000;1112500;1075000;1037500;1020840;2.415;2.425;2.475
 data;2;BS0003;1290000;1210000;1150000;1112500;1075000;1037500;1020840;2.415;2.425;2.475
