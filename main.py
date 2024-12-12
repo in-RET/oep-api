@@ -5,6 +5,8 @@ import pandas as pd
 from random import randint
 from src.oep_handler import OepHandler, create_tabledata, create_tableschema, create_metadata
 
+WITH_UPLOAD = False
+
 topic = "sandbox"
 token = os.environ.get("OEP_API_TOKEN") #% TODO: .env-File anlegen nicht vergessen!
 print("Gewählter Token:", token)
@@ -17,9 +19,7 @@ general_meta = pd.read_csv(
     index_col=0,
     sep=";",
     decimal=".",
-    encoding="unicode_escape"
 )
-
 
 for root, dirs, files in os.walk(data_path, topdown=True):
     pass # TODO for later
@@ -38,29 +38,67 @@ raw_csv = pd.read_csv(
 OepApi = OepHandler(f"https://openenergyplatform.org/api/v0/schema/{topic}/tables/{table}/", token)
 
 raw_data = raw_csv.loc["data", :] # Pandas ist geil
-raw_meta = raw_csv.loc[["type", "unit", "isAbout", "description", "primary_key", "valueReference"], :]
+raw_meta = raw_csv.loc[["data_type", "type", "unit", "description", "primary_key"], :]
 
+########################################################################################################################
+#   Create Table Schema
+########################################################################################################################
 table_schema = create_tableschema(raw_data, raw_meta)
-response = OepApi.create_table(table_schema)
-#print(response)
 
+########################################################################################################################
+#   Upload Table Schema
+########################################################################################################################
+if WITH_UPLOAD:
+    response = OepApi.create_table(table_schema)
+    print(response)
+
+########################################################################################################################
+#   Create Table Data
+########################################################################################################################
 table_data = create_tabledata(raw_data)
-#response = OepApi.upload_data(table_data)
-#print(response)
 
+########################################################################################################################
+#   Upload Table Data
+########################################################################################################################
+if WITH_UPLOAD:
+    response = OepApi.upload_data(table_data)
+    print(response)
 
-meta_data = json.loads(general_meta.to_json(orient="columns"))["Unnamed: 1"]
-meta_data["id"] = raw_file_name.replace(".csv", "")
-meta_data["resources"] = {
-    "name": raw_file_name.replace(".csv", ""),
-    "schema": {
-        "fields": create_metadata(raw_meta)
+########################################################################################################################
+#   Create Meta Data
+########################################################################################################################
+meta_fields = create_metadata(raw_meta)
+
+meta_data = general_meta.to_dict()["value"]
+meta_data["id"] = table
+meta_data["name"] = table.replace("_", " ")
+meta_data["keywords"] = []
+meta_data["subject"] = ["Debugging purposes"],
+meta_data["languages"] = ["EN", "DE"]
+meta_data["licenses"] = [
+    {
+        "name": "CC-BY-4.0",
+        "path": "https://spdx.github.io/license-list-data/CC-BY-4.0.html",
+        "title": "Creative Commons Attribution 4.0 International"
     }
-}
+]
+meta_data["context"] = OepApi.context
+meta_data["resources"] = [{
+    "name": table,
+    "schema": {
+        "fields": meta_fields
+    }
+}]
 
+with open('meta_debug.json', 'w', encoding='utf-8') as f:
+    json.dump(meta_data, f, ensure_ascii=False, indent=2)
 
-response = OepApi.upload_metadata(meta_data)
-print(response)
+########################################################################################################################
+#   Upload Meta Data
+########################################################################################################################
+if WITH_UPLOAD:
+    response = OepApi.upload_metadata(meta_data)
+    print(response)
 
 print(f"https://openenergyplatform.org/dataedit/view/{topic}/{table}")
 
