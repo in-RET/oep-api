@@ -5,20 +5,53 @@ import json
 from jsonlint import meta
 
 
-def create_tableschema(data, meta) -> dict[str, list[dict]]:
+def create_tableschema(meta) -> dict[str, list[dict]]:
     table_schema_data = []
 
-    for key in data.keys():
-        table_schema_data.append({
-            "name": key,
-            "data_type": meta.loc["data_type", key],
-            "primary_key": meta.loc["primary_key", key] if meta.loc["primary_key", key] is not np.nan else None
+    keys = meta.keys()
+
+    if "primary_key" in keys:
+        for key in meta.keys():
+            table_schema_data.append({
+                "name": key,
+                "data_type": meta.loc["data_type", key],
+                "primary_key": meta.loc["primary_key", key] if meta.loc["primary_key", key] is not np.nan else None
+            })
+    else:
+        table_schema_data = [{
+            "name": "id",
+            "data_type": "int",
+            "primary_key": True
+        }, {
+            "name": "name",
+            "data_type": "text"
+        }, {
+            "name": "description",
+            "data_type": "text"
+        }, {
+            "name": "data",
+            "data_type": "text"
+        }]
+
+    return_schema = {"columns": table_schema_data}
+    #print(return_schema)
+
+    return return_schema
+
+def create_tabledata_params(data) -> list[dict]:
+    return json.loads(data.to_json(orient="records"))
+
+def create_tabledata_sequences(data, meta) -> list[dict]:
+    #print(meta.loc["description"])
+    data_dict = []
+    for index in data.keys():
+        data_dict.append({
+            "name": index,
+            "description": meta.loc["description", index],
+            "data": list(data[index])
         })
 
-    return {"columns": table_schema_data}
-
-def create_tabledata(data) -> list[dict]:
-    return json.loads(data.to_json(orient="records"))
+    return data_dict
 
 def create_metadata(data) -> (list[dict], list, list):
     tmp_json = json.loads(data.to_json(orient="columns"))
@@ -35,10 +68,13 @@ def create_metadata(data) -> (list[dict], list, list):
         if not bool(data_dict["unit"]):
             data_dict["unit"] = ""
 
-        if bool(data_dict["primary_key"]):
-            data_dict["primary_key"] = bool(tmp_json[index]["primary_key"])
+        if "primary_key" in data_dict:
+            if bool(data_dict["primary_key"]):
+                data_dict["primary_key"] = bool(tmp_json[index]["primary_key"])
+            else:
+                del(data_dict["primary_key"])
         else:
-            del(data_dict["primary_key"])
+            data_dict["primary_key"] = "id"
 
         meta_data.append(data_dict)
 
@@ -65,8 +101,8 @@ class OepHandler:
         self.api_url = api_url
         self.auth_header = {"Authorization": "Token %s" % token}
 
-        print("AUTH_HEADER", self.auth_header)
-        print("API_URL:",  self.api_url)
+        #print("AUTH_HEADER", self.auth_header)
+        #print("API_URL:",  self.api_url)
 
 
     def create_table(self, table_schema: dict[str, list[dict]]) -> str:
