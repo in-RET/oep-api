@@ -1,18 +1,16 @@
-import os
 import json
+import os
+from random import randint
 
 import numpy as np
 import pandas as pd
 
-from random import randint
-
-from numpy.ma.core import transpose
-
-from src.oep_handler import OepHandler, create_tabledata_params, create_tabledata_sequences, create_tableschema, create_metadata
+from src.oep_handler import OepHandler, create_tabledata_params, create_tabledata_sequences, create_tableschema, \
+    create_metadata
 
 WITH_UPLOAD = True
 
-topic = "sandbox"
+topic = "model_draft" #"sandbox" #
 token = os.environ.get("OEP_API_TOKEN") #% TODO: .env-File anlegen nicht vergessen!
 print("Gewählter Token:", token)
 
@@ -28,7 +26,7 @@ general_meta = pd.read_csv(
 
 for root, dirs, files in os.walk(data_path, topdown=True):
     for file in files:
-        if False: #file.startswith("parameter_"):
+        if file.startswith("parameter_"):
             print(file)
             table = f"%s_{randint(0, 100000)}" % file.replace(".csv", "")
             raw_csv = pd.read_csv(
@@ -48,7 +46,7 @@ for root, dirs, files in os.walk(data_path, topdown=True):
             ########################################################################################################################
             #   Create Table Schema
             ########################################################################################################################
-            table_schema = create_tableschema(raw_data, raw_meta)
+            table_schema = create_tableschema(raw_meta, "scalars")
 
             ########################################################################################################################
             #   Upload Table Schema
@@ -74,29 +72,35 @@ for root, dirs, files in os.walk(data_path, topdown=True):
             ########################################################################################################################
             meta_fields = create_metadata(raw_meta)
 
-            meta_data = general_meta.to_dict()["value"]
-            meta_data["id"] = table
+            # meta_data = general_meta.to_dict()["value"]
+
+            with open(os.path.join(os.getcwd(), "data", "metadata.json")) as f:
+                meta_data = json.load(f)
+
+            #meta_data["@id"] = table
             meta_data["name"] = table.replace("_", " ")
-            meta_data["keywords"] = []
-            meta_data["subject"] = ["Debugging purposes"],
-            meta_data["languages"] = ["EN"]
-            meta_data["licenses"] = [
-                {
-                    "name": "CC-BY-4.0",
-                    "path": "https://spdx.github.io/license-list-data/CC-BY-4.0.html",
-                    "title": "Creative Commons Attribution 4.0 International"
-                }
-            ]
-            meta_data["context"] = OepApi.context
-            meta_data["resources"] = [{
+            meta_data["title"] = table.replace("_", " ")
+            # meta_data["keywords"] = []
+            # meta_data["subject"] = ["Debugging purposes"],
+            # meta_data["languages"] = ["EN"]
+            # meta_data["licenses"] = [
+            #     {
+            #         "name": "CC-BY-4.0",
+            #         "path": "https://spdx.github.io/license-list-data/CC-BY-4.0.html",
+            #         "title": "Creative Commons Attribution 4.0 International"
+            #     }
+            # ]
+            # meta_data["context"] = OepApi.context
+            meta_data["resources"][0].update({
                 "name": table,
                 "schema": {
-                    "fields": meta_fields
+                    "fields": meta_fields,
+                    "primaryKey": ["id"]
                 }
-            }]
+            })
 
             with open('meta_debug.json', 'w', encoding='utf-8') as f:
-                json.dump(meta_data, f, ensure_ascii=False, indent=2)
+                 json.dump(meta_data, f, ensure_ascii=False, indent=2)
 
             ########################################################################################################################
             #   Upload Meta Data
@@ -127,7 +131,7 @@ for root, dirs, files in os.walk(data_path, topdown=True):
             ########################################################################################################################
             #   Create Table Schema
             ########################################################################################################################
-            table_schema = create_tableschema(raw_meta)
+            table_schema = create_tableschema(raw_meta, "sequences")
 
             ########################################################################################################################
             #   Upload Table Schema
@@ -154,6 +158,7 @@ for root, dirs, files in os.walk(data_path, topdown=True):
             meta_fields = create_metadata(raw_meta)
 
             meta_data = general_meta.to_dict()["value"]
+
             meta_data["id"] = table
             meta_data["name"] = table.replace("_", " ")
             meta_data["keywords"] = []
@@ -170,7 +175,8 @@ for root, dirs, files in os.walk(data_path, topdown=True):
             meta_data["resources"] = [{
                 "name": table,
                 "schema": {
-                    "fields": meta_fields
+                    "fields": meta_fields,
+                    "primaryKey": ["id"],
                 }
             }]
 

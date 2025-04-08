@@ -1,16 +1,13 @@
-import requests as req
-import numpy as np
 import json
 
-from jsonlint import meta
+import numpy as np
+import requests as req
 
 
-def create_tableschema(meta) -> dict[str, list[dict]]:
+def create_tableschema(meta, type) -> dict[str, list[dict]]:
     table_schema_data = []
 
-    keys = meta.keys()
-
-    if "primary_key" in keys:
+    if type == "scalars":
         for key in meta.keys():
             table_schema_data.append({
                 "name": key,
@@ -34,7 +31,6 @@ def create_tableschema(meta) -> dict[str, list[dict]]:
         }]
 
     return_schema = {"columns": table_schema_data}
-    #print(return_schema)
 
     return return_schema
 
@@ -76,6 +72,7 @@ def create_metadata(data) -> (list[dict], list, list):
         else:
             data_dict["primary_key"] = "id"
 
+        data_dict["nullable"] = True
         meta_data.append(data_dict)
 
     return meta_data
