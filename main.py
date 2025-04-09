@@ -10,23 +10,16 @@ from src.oep_handler import OepHandler, create_tabledata_params, create_tabledat
 
 WITH_UPLOAD = True
 
-topic = "model_draft" #"sandbox" #
+topic = "sandbox" #"model_draft"
 token = os.environ.get("OEP_API_TOKEN") #% TODO: .env-File anlegen nicht vergessen!
 print("Gewählter Token:", token)
 
 data_path = os.path.abspath(os.path.join("data"))
 print("Datenpfad:", data_path)
 
-general_meta = pd.read_csv(
-    filepath_or_buffer=os.path.join(data_path, "meta_data_general.csv"),
-    index_col=0,
-    sep=";",
-    decimal=".",
-)
-
 for root, dirs, files in os.walk(data_path, topdown=True):
     for file in files:
-        if file.startswith("parameter_"):
+        if file.startswith("parameter_") and file.endswith(".csv"):
             print(file)
             table = f"%s_{randint(0, 100000)}" % file.replace(".csv", "")
             raw_csv = pd.read_csv(
@@ -72,25 +65,11 @@ for root, dirs, files in os.walk(data_path, topdown=True):
             ########################################################################################################################
             meta_fields = create_metadata(raw_meta)
 
-            # meta_data = general_meta.to_dict()["value"]
-
-            with open(os.path.join(os.getcwd(), "data", "metadata.json")) as f:
+            with open(os.path.join(data_path, "scalars", "parameter", file.replace(".csv", ".json"))) as f:
                 meta_data = json.load(f)
 
-            #meta_data["@id"] = table
             meta_data["name"] = table.replace("_", " ")
             meta_data["title"] = table.replace("_", " ")
-            # meta_data["keywords"] = []
-            # meta_data["subject"] = ["Debugging purposes"],
-            # meta_data["languages"] = ["EN"]
-            # meta_data["licenses"] = [
-            #     {
-            #         "name": "CC-BY-4.0",
-            #         "path": "https://spdx.github.io/license-list-data/CC-BY-4.0.html",
-            #         "title": "Creative Commons Attribution 4.0 International"
-            #     }
-            # ]
-            # meta_data["context"] = OepApi.context
             meta_data["resources"][0].update({
                 "name": table,
                 "schema": {
@@ -99,8 +78,8 @@ for root, dirs, files in os.walk(data_path, topdown=True):
                 }
             })
 
-            with open('meta_debug.json', 'w', encoding='utf-8') as f:
-                 json.dump(meta_data, f, ensure_ascii=False, indent=2)
+            # with open('meta_debug.json', 'w', encoding='utf-8') as f:
+            #      json.dump(meta_data, f, ensure_ascii=False, indent=2)
 
             ########################################################################################################################
             #   Upload Meta Data
@@ -110,7 +89,7 @@ for root, dirs, files in os.walk(data_path, topdown=True):
                 print(response)
 
             print(f"https://openenergyplatform.org/dataedit/view/{topic}/{table}")
-        elif file.startswith("sequences_"):
+        elif file.startswith("sequences_") and file.endswith(".csv"):
             print(file)
             table = f"%s_{randint(0, 100000)}" % file.replace(".csv", "")
             raw_csv = pd.read_csv(
@@ -157,28 +136,18 @@ for root, dirs, files in os.walk(data_path, topdown=True):
             ########################################################################################################################
             meta_fields = create_metadata(raw_meta)
 
-            meta_data = general_meta.to_dict()["value"]
+            with open(os.path.join(data_path, "sequences", file.replace(".csv", ".json"))) as f:
+                meta_data = json.load(f)
 
-            meta_data["id"] = table
             meta_data["name"] = table.replace("_", " ")
-            meta_data["keywords"] = []
-            meta_data["subject"] = ["Debugging purposes"],
-            meta_data["languages"] = ["EN"]
-            meta_data["licenses"] = [
-                {
-                    "name": "CC-BY-4.0",
-                    "path": "https://spdx.github.io/license-list-data/CC-BY-4.0.html",
-                    "title": "Creative Commons Attribution 4.0 International"
-                }
-            ]
-            meta_data["context"] = OepApi.context
-            meta_data["resources"] = [{
+            meta_data["title"] = table.replace("_", " ")
+            meta_data["resources"][0].update({
                 "name": table,
                 "schema": {
                     "fields": meta_fields,
-                    "primaryKey": ["id"],
+                    "primaryKey": ["id"]
                 }
-            }]
+            })
 
             # with open('meta_debug.json', 'w', encoding='utf-8') as f:
             #     json.dump(meta_data, f, ensure_ascii=False, indent=2)

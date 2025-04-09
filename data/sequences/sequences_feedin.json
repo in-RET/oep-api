@@ -1,0 +1,242 @@
+{
+  "description": "sequences for feed-in. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+  "resources": [
+    {
+      "languages": ["EN"],
+      "subject": [],
+      "keywords": ["Tags"],
+      "publicationDate": "2025-09-01",
+      "context": {
+        "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik",
+        "grantNo": "",
+        "homepage": "https://hs-nordhausen.de/",
+        "sourceCode": "https://github.com/in-RET",
+        "documentation": "https://hs-nordhausen.de"
+      },
+      "sources": [
+        {
+          "title": "Technology Data",
+          "authors": ["Danish Energy Agency"],
+          "description": "{1}",
+          "publicationYear": "Kopenhagen 2024",
+          "path": "https://ens.dk/",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Optimierungsmodell REMod-D. Materialien zur Analyse »Sektorkopplung« – Untersuchungen und Überlegungen zur Entwicklung eines integrierten Energiesystems. In: acatech – Deutsche Akademie der Technikwissenschaften e. V (Hrsg.): Schriftenreihe Energiesysteme der Zukunft",
+          "authors": ["Erlach, B.", "Henning, H.-M.", "Kost, C.", "Palzer, A.", "Stephanos, C."],
+          "description": "{2}",
+          "publicationYear": "München 2023",
+          "path": "https://ens.dk/",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Wege zu einem klimaneutralen Energiesystem. Die deutsche Energiewende im Kontext gesellschaftlicher Verhaltensweisen - Update Klimaneutralität 2045",
+          "authors": ["Julian Brandes", "Markus Haun", "Daniel Wrede", "Patrick Jürgens", "Christoph Kost", "Hans-Martin Henning"],
+          "description": "{3}",
+          "publicationYear": "Freiburg 2021",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Kosten und Transformationspfade für strombasierte Energieträger. Endbericht zum Projekt 'Transformationspfade und regulatorischer Rahmen für synthetische Brennstoffe'",
+          "authors": ["Kreidelmeyer, S.", "Dambeck, H.", "Kirchner, A.", "Wünsch, M."],
+          "description": "{4}",
+          "publicationYear": "Berlin 2020",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Model-based analysis of cost-efficient CO_{2} reduction strategies",
+          "authors": ["Lopion, P. M."],
+          "description": "{5}",
+          "publicationYear": "RWTH Aachen University 2020",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Die zukünftigen Kosten strombasierter synthetischer Brennstoffe",
+          "authors": ["Perner, J.", "Unteutsch, M.", "Lövenich, A."],
+          "description": "{6}",
+          "publicationYear": "2018",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Technikkatalog Kommunalen Wärmeplanung",
+          "authors": ["Peters, M.", "Bartenstein, B.", "Hebisch, H.", "Kaiser, C.", "Anders, F."],
+          "description": "{7}",
+          "publicationYear": "2024",
+          "path": "https://www.kea-bw.de/waermewende/wissensportal/technikkatalog",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Klimaneutrales Deutschland 2045. Wie Deutschland seine Klimaziele schon vor 2050 erreichen kann",
+          "authors": ["Prognos, Öko-Institut u. Wuppertal-Institut"],
+          "description": "Langfassung, {8}",
+          "publicationYear": "2021",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Szenarien für ein klimaneutrales Deutschland. Technologie-umbau, Verbrauchsreduktion und Kohlenstoffmanagement. In: acatech – Deutsche Akademie der Technikwissenschaften e. V (Hrsg.): Schriftenreihe Energiesysteme der Zukunft.",
+          "authors": ["Ragwitz, M.", "Weidlich, A.", "Biermann, D.", "Brandes, J.", "Brown, T.", "Burghardt, C.", "Dütschke, E.", "Erlach, B.", "Fischedick, M.", "Fuss, S.", "Geden, O.", "Gierds, J.", "Herrmann, U.", "Jochem, P.", "Kost, C.", "Luderer, G.", "Neuhoff, K.", "Schäfer, M.", "Wagemann, K.", "Wiese, F.", "Winkler, J.", "Zachmann, B.", "Zheng, L."],
+          "description": "{9}",
+          "publicationYear": "München 2023",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Wege für die Energiewende. Kosteneffiziente und klimagerechte Transformationsstrategien für das deutsche Energiesystem bis zum Jahr 2050. In: Forschungszentrum Jülich GmbH (Hrsg.): Schriften des Forschungszentrums Jülich. Reihe Energie & Umwelt /Energy & Environment, Bd. 577",
+          "authors": ["Robinius, M.", "Markewitz, P.", "Lopion, P.", "Kullmann, F.", "Heuser, P.-M.", "Syranidis, K.", "Cerniauskas, S.", "Schöb, T.", "Reuß, M.", "Ryberg, S.", "Kotzur, L.", "Caglayan, D.", "Welder, L.", "Linßen, J.", "Grube, T.", "Heinrichs, H.", "Stenzel, P.", "Stolten, D."],
+          "description": "{10}",
+          "publicationYear": "2022",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Wege zu einem klimaneutralen Energiesystem. Die deutsche Energiewende im Kontext gesellschaftlicher Verhaltensweisen, Anhang zur Studie",
+          "authors": ["Sterchele, P.", "Brandes, J.", "Heilig, J.", "Wrede, D."],
+          "description": "{11}",
+          "publicationYear": "Freiburg 2021",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Neue Ziele auf alten Wegen? Strategien für eine treibhausgasneutrale Energieversorgung bis zum Jahr 2045. In: Forschungszentrum Jülich GmbH (Hrsg.): Schriften des Forschungszentrums Jülich. Reihe Energie & Umwelt /Energy & Environment, Bd. 577",
+          "authors": ["Stolten, D.", "Markewitz, P.", "Schöb, T.", "Kullmann, F.", "Risch, S.", "Groß, T.", "Hoffmann, M.", "Franzmann, D.", "Triesch, T.", "Kraus, S.", "Maier, R.", "Gillessen, B.", "Heinrichs, H.", "Pfugradt, N.", "Grube, T.", "Linssen, J.", "Kotzur, L."],
+          "description": "{12}",
+          "publicationYear": "2022",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Sondierung des wesentlichen F&E-Bedarfs zur Optimierung von städtischen Energiespeichern in integrierten Energiesystemen",
+          "authors": ["CityStore", "Suna, D.", "García, N.", "Totschnig, G.", "Wimmeder, S.", "Meißner, E.", "Ungerböck, R.", "Graf, A.", "Dornhofer, A.", "Niederkofler, M."],
+          "description": "{13}",
+          "publicationYear": "Wien",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Erneuerbare Energiesysteme in Industrie- und Gewerbegebieten: Technologien und Modellierungsansatz. In: Hochschule Nordhausen (Hrsg.): Tagungsband zur 7. Regenerative Energietechnik Konferenz in Nordhausen",
+          "authors": ["Weidlich, A.-K.", "Schierenbeck, A."],
+          "description": "S. 31–39 {14}",
+          "publicationYear": "Nordhausen 2024",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "Technologien für die Energiewende. Politikbericht",
+          "authors": ["Wuppertal Institut für Klima, Umwelt, Energie gGmbH", "Fraunhofer-Institut für System- und Innovationsforschung", "Institut für ZukunftsEnergie- und Stoffstromsysteme gGmbH"],
+          "description": "{15}",
+          "publicationYear": "Wuppertal 2018",
+          "path": "",
+          "sourceLicenses": []
+        },
+        {
+          "title": "So geht’s: Wie Thüringen klimaneutral wird – die Ergebnisse der Energiesystemmodellierung, 1 ed. Hochschule Nordhausen",
+          "authors": ["Frenkel, C.", "Hofmann, L.", "Liebe, J.", "Oberdorfer, A.", "Reinhardt, T.", "Schmidt, C.", "Voswinckel, S.", "Wesselak, V."],
+          "description": "{16}",
+          "publicationYear": "Nordhausen 2021",
+          "path": "",
+          "sourceLicenses": []
+        }
+      ],
+      "licenses": [{
+        "name": "CC-BY-4.0",
+        "title": "Creative Commons Attribution 4.0 International"
+      }],
+      "contributors": [
+        {
+          "title": "Amèlie Oberdorfer",
+          "organization": "Hochschule Nordhausen - Institut für regenerative Energietechnik",
+          "roles": [],
+          "date": "2024-12-31",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Andreas Lubojanski",
+          "organization": "Hochschule Nordhausen - Institut für regenerative Energietechnik",
+          "roles": [],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Christoph Schmidt",
+          "organization": "Hochschule Nordhausen - Institut für regenerative Energietechnik",
+          "roles": [],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Rohith Krishnan Bala Krishnan",
+          "organization": "Hochschule Nordhausen - Institut für regenerative Energietechnik",
+          "roles": [],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Theresa Reinhardt",
+          "organization": "Hochschule Nordhausen - Institut für regenerative Energietechnik",
+          "roles": [],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Viktor Wesselak",
+          "organization": "Hochschule Nordhausen - Institut für regenerative Energietechnik",
+          "roles": [],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Stefan Kirsch",
+          "organization": "FDM Thüringen, Ernst-Abbe-Hochschule Jena",
+          "roles": [],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Kevin Lindt",
+          "organization": "FDM Thüringen, Technische Universität Ilmenau",
+          "roles": [],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Ann-Kathrin Weidlich",
+          "organization": "",
+          "roles": [],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Anne Schierenbeck",
+          "organization": "",
+          "roles": [],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        }
+      ]
+    }
+  ],
+  "metaMetadata": {
+    "metadataVersion": "OEMetadata-2.0.4",
+    "metadataLicense": {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  }
+}

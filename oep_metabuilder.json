@@ -1,0 +1,90 @@
+{
+  "@context": "",
+  "name": "",
+  "title": "",
+  "description": "",
+  "@id": "",
+  "resources": [
+    {
+      "@id": "",
+      "name": "",
+      "topics": [],
+      "title": "",
+      "path": "",
+      "description": "",
+      "languages": [],
+      "subject": [],
+      "keywords": [],
+      "publicationDate": "",
+      "embargoPeriod": {
+        "start": "",
+        "end": "",
+        "isActive": false
+      },
+      "context": {
+        "title": "",
+        "homepage": "",
+        "documentation": "",
+        "sourceCode": "",
+        "publisher": "",
+        "publisherLogo": "",
+        "contact": "",
+        "fundingAgency": "",
+        "fundingAgencyLogo": "",
+        "grantNo": ""
+      },
+      "spatial": {
+        "location": {
+          "address": "",
+          "@id": "",
+          "latitude": "",
+          "longitude": ""
+        },
+        "extent": {
+          "name": "",
+          "@id": "",
+          "resolutionValue": "",
+          "resolutionUnit": "",
+          "boundingBox": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "crs": ""
+        }
+      },
+      "temporal": {
+        "referenceDate": "",
+        "timeseries": []
+      },
+      "sources": [],
+      "licenses": [],
+      "contributors": [],
+      "type": "",
+      "format": "",
+      "encoding": "",
+      "schema": {
+        "fields": [],
+        "primaryKey": [],
+        "foreignKeys": []
+      },
+      "dialect": {
+        "delimiter": "",
+        "decimalSeparator": ""
+      },
+      "review": {
+        "path": "",
+        "badge": ""
+      }
+    }
+  ],
+  "metaMetadata": {
+    "metadataVersion": "",
+    "metadataLicense": {
+      "name": "",
+      "title": "",
+      "path": ""
+    }
+  }
+}
