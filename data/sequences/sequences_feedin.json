@@ -1,109 +1,141 @@
 {
-  "description": "feed-in-profile for onshore wind power plant nearly Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest); The feed-in profiles are based on weather data from Meteonorm version 7.3.4.21143. Wind speed at a heigh of 10 meters is obtianed from the weather data and then scaled to the turbine hub heigh using the Hellman's exponent equation, as described in {1}. The adjusted wind speed is then used to calculate the power output based onthe power curve of teh Enercon E101 wind turbine, enablin the generation of realistic wind energy feed-in profiles for the locations. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences",  
-  "resources": [  
-    {  
-      "languages": [  
-        "EN"  
-      ],  
-      "subject": [],  
-      "keywords": [  
-        "Electric power production"  
-      ],  
-      "publicationDate": "2025-09-01",  
-      "context": {  
-        "contact": "University of Applied Sciences; Institute for Renewable Energy Technology",  
-        "grantNo": "",  
-        "homepage": "https://hs-nordhausen.de/",  
-        "sourceCode": "https://github.com/in-RET",  
-        "documentation": "https://github.com/in-RET/ZO.RRO2"  
-      },  
-      "sources": [  
-        {  
-          "title": "Regenerative Energiequellen. in Handbuch Regenerative Energietechnik, p.176",  
-          "authors": [  
-            "Wesselak, V.",  
-            "Schabbach, T.",  
-            "Link, T.",  
-            "Fischer, J."   
-          ],  
-          "description": "{1}",  
-          "publicationYear": "2017",  
-          "path": "https://link.springer.com/chapter/10.1007/978-3-662-53073-3_3",  
-          "sourceLicenses": []  
-        }  
-      ],  
-      "licenses": [  
-        {  
-          "name": "CC-BY-4.0",  
-          "title": "Creative Commons Attribution 4.0 International"  
-        }  
-      ],  
-      "contributors": [   
-        {  
-          "title": "Andreas Lubojanski",  
-          "organization": "University of Applied Sciences; Institute for Renewable Energy Technology",  
-          "roles": [],  
-          "date": "2025-09-01",  
-          "object": "",  
-          "comment": ""  
-        },  
-        {  
-          "title": "Christoph Schmidt",  
-          "organization": "University of Applied Sciences; Institute for Renewable Energy Technology",  
-          "roles": [],  
-          "date": "2025-09-01",  
-          "object": "",  
-          "comment": ""  
-        },  
-        {  
-          "title": "Rohith Krishnan Bala Krishnan",  
-          "organization": "University of Applied Sciences; Institute for Renewable Energy Technology",  
-          "roles": [],  
-          "date": "2025-09-01",  
-          "object": "",  
-          "comment": ""  
-        },  
-        {  
-          "title": "Theresa Reinhardt",  
-          "organization": "University of Applied Sciences; Institute for Renewable Energy Technology",  
-          "roles": [],  
-          "date": "2025-09-01",  
-          "object": "",  
-          "comment": ""  
-        },  
-        {  
-          "title": "Viktor Wesselak",  
-          "organization": "University of Applied Sciences; Institute for Renewable Energy Technology",  
-          "roles": [],  
-          "date": "2025-09-01",  
-          "object": "",  
-          "comment": ""  
-        },  
-        {  
-          "title": "Stefan Kirsch",  
-          "organization": "FDM Thüringen, Ernst-Abbe-Hochschule Jena",  
-          "roles": [],  
-          "date": "2025-09-01",  
-          "object": "",  
-          "comment": ""  
-        },  
-        {  
-          "title": "Kevin Lindt",  
-          "organization": "FDM Thüringen, Technische Universität Ilmenau",  
-          "roles": [],  
-          "date": "2025-09-01",  
-          "object": "",  
-          "comment": ""  
+  "description": "feed-in-profile for onshore wind power plant nearly Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest); The feed-in profiles are based on weather data from Meteonorm version 7.3.4.21143. Wind speed at a heigh of 10 meters is obtianed from the weather data and then scaled to the turbine hub heigh using the Hellman's exponent equation, as described in {1}. The adjusted wind speed is then used to calculate the power output based onthe power curve of teh Enercon E101 wind turbine, enablin the generation of realistic wind energy feed-in profiles for the locations. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences",
+  "resources": [
+    {
+      "languages": [
+        "EN"
+      ],
+      "subject": [
+        {
+          "name": "generation time series",
+          "id": "OEO_00140138"
+        },
+        {
+          "name": "onshore wind power technology",
+          "id": "OEO_00010425"
+        }
+      ],
+      "keywords": [
+        "Electric power production",
+        "Thuringia",
+        "oemof",
+        "ZO.RRO II",
+        "climate neutrality",
+        "HSN in.RET"
+      ],
+      "publicationDate": "2025-09-01",
+      "context": {
+        "contact": "University of Applied Sciences; Institute for Renewable Energy Technology",
+        "grantNo": "",
+        "homepage": "https://hs-nordhausen.de/",
+        "sourceCode": "https://github.com/in-RET",
+        "documentation": "https://github.com/in-RET/ZO.RRO2"
+      },
+      "sources": [
+        {
+          "title": "Regenerative Energiequellen. in Handbuch Regenerative Energietechnik, p.176",
+          "authors": [
+            "Wesselak, V.",
+            "Schabbach, T.",
+            "Link, T.",
+            "Fischer, J."
+          ],
+          "description": "{1}",
+          "publicationYear": "2017",
+          "path": "https://link.springer.com/chapter/10.1007/978-3-662-53073-3_3",
+          "sourceLicenses": []
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "title": "Creative Commons Attribution 4.0 International"
+        }
+      ],
+      "contributors": [
+        {
+          "title": "Andreas Lubojanski",
+          "organization": "University of Applied Sciences; Institute for Renewable Energy Technology",
+          "roles": [
+            "Software"
+          ],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Christoph Schmidt",
+          "organization": "University of Applied Sciences; Institute for Renewable Energy Technology",
+          "roles": [
+            "Data curation"
+          ],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": "0000-0002-4269-3779"
+        },
+        {
+          "title": "Rohith Krishnan Bala Krishnan",
+          "organization": "University of Applied Sciences; Institute for Renewable Energy Technology",
+          "roles": [
+            "Methodology",
+            "Formal analysis",
+            "Software"
+          ],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Theresa Reinhardt",
+          "organization": "University of Applied Sciences; Institute for Renewable Energy Technology",
+          "roles": [
+            "Software"
+          ],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": "0009-0004-8449-3443"
+        },
+        {
+          "title": "Viktor Wesselak",
+          "organization": "University of Applied Sciences; Institute for Renewable Energy Technology",
+          "roles": [
+            "Funding acquisition",
+            "Project administration",
+            "Supervision"
+          ],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Stefan Kirsch",
+          "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
+          "roles": [
+            "Data curation"
+          ],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
+        },
+        {
+          "title": "Kevin Lindt",
+          "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
+          "roles": [
+            "Data curation"
+          ],
+          "date": "2025-09-01",
+          "object": "",
+          "comment": ""
         }
       ]
     }
   ],
-  "metaMetadata": {  
-    "metadataVersion": "OEMetadata-2.0.4",  
-    "metadataLicense": {  
-      "name": "CC-BY-4.0",  
-      "title": "Creative Commons Attribution 4.0 International",  
-      "path": "https://creativecommons.org/licenses/by/4.0/"  
-    }  
+  "metaMetadata": {
+    "metadataVersion": "OEMetadata-2.0.4",
+    "metadataLicense": {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
   }
- }
+}

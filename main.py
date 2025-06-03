@@ -10,7 +10,7 @@ from src.oep_handler import OepHandler, create_tabledata_params, create_tabledat
 
 WITH_UPLOAD = True
 
-topic = "sandbox" #"model_draft"
+topic = "sandbox" # "model_draft"
 token = os.environ.get("OEP_API_TOKEN") #% TODO: .env-File anlegen nicht vergessen!
 print("Gewählter Token:", token)
 
@@ -39,7 +39,7 @@ for root, dirs, files in os.walk(data_path, topdown=True):
             ########################################################################################################################
             #   Create Table Schema
             ########################################################################################################################
-            table_schema = create_tableschema(raw_meta, "scalars")
+            table_schema = create_tableschema(raw_meta)
 
             ########################################################################################################################
             #   Upload Table Schema
@@ -105,12 +105,17 @@ for root, dirs, files in os.walk(data_path, topdown=True):
 
             raw_data = raw_csv.loc["data", :] # Pandas ist geil
             raw_data.index = np.linspace(0,8759, 8760, dtype=int)
-            raw_meta = raw_csv.loc[["data_type", "type", "unit", "description"], :]
+            raw_meta = raw_csv.loc[["data_type", "type", "unit", "primary_key", "description"], :]
 
             ########################################################################################################################
             #   Create Table Schema
             ########################################################################################################################
-            table_schema = create_tableschema(raw_meta, "sequences")
+            table_schema = create_tableschema(raw_meta)
+            table_schema["columns"].append({
+                'name': 'id',
+                'data_type': 'int',
+                'primary_key': True
+            })
 
             ########################################################################################################################
             #   Upload Table Schema
@@ -118,11 +123,14 @@ for root, dirs, files in os.walk(data_path, topdown=True):
             if WITH_UPLOAD:
                 response = OepApi.create_table(table_schema)
                 print(response)
+            else:
+                with open("debug_schema.json", "wt") as f:
+                    json.dump(table_schema, f, ensure_ascii=False, indent=2)
 
             ########################################################################################################################
             #   Create Table Data
             ########################################################################################################################
-            table_data = create_tabledata_sequences(raw_data, raw_meta)
+            table_data = json.loads(raw_data.to_json(orient="records")) #create_tabledata_sequences(raw_data, raw_meta)
 
             ####################################################################r####################################################
             #   Upload Table Data
@@ -130,6 +138,9 @@ for root, dirs, files in os.walk(data_path, topdown=True):
             if WITH_UPLOAD:
                 response = OepApi.upload_data(table_data)
                 print(response)
+            else:
+                with open("debug_data.json", "wt") as f:
+                    json.dump(table_data, f, ensure_ascii=False, indent=2)
 
             ########################################################################################################################
             #   Create Meta Data
@@ -149,8 +160,6 @@ for root, dirs, files in os.walk(data_path, topdown=True):
                 }
             })
 
-            # with open('meta_debug.json', 'w', encoding='utf-8') as f:
-            #     json.dump(meta_data, f, ensure_ascii=False, indent=2)
 
             ########################################################################################################################
             #   Upload Meta Data
@@ -158,6 +167,9 @@ for root, dirs, files in os.walk(data_path, topdown=True):
             if WITH_UPLOAD:
                 response = OepApi.upload_metadata(meta_data)
                 print(response)
+            else:
+                with open('debug_meta.json', 'wt') as f:
+                    json.dump(meta_data, f, ensure_ascii=False, indent=2)
 
             print(f"https://openenergyplatform.org/dataedit/view/{topic}/{table}")
         else:

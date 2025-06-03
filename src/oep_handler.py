@@ -4,31 +4,15 @@ import numpy as np
 import requests as req
 
 
-def create_tableschema(meta, type) -> dict[str, list[dict]]:
+def create_tableschema(meta) -> dict[str, list[dict]]:
     table_schema_data = []
 
-    if type == "scalars":
-        for key in meta.keys():
-            table_schema_data.append({
-                "name": key,
-                "data_type": meta.loc["data_type", key],
-                "primary_key": meta.loc["primary_key", key] if meta.loc["primary_key", key] is not np.nan else None
-            })
-    else:
-        table_schema_data = [{
-            "name": "id",
-            "data_type": "int",
-            "primary_key": True
-        }, {
-            "name": "name",
-            "data_type": "text"
-        }, {
-            "name": "description",
-            "data_type": "text"
-        }, {
-            "name": "data",
-            "data_type": "text"
-        }]
+    for key in meta.keys():
+        table_schema_data.append({
+            "name": key,
+            "data_type": meta.loc["data_type", key],
+            "primary_key": meta.loc["primary_key", key] if meta.loc["primary_key", key] is not np.nan else None
+        })
 
     return_schema = {"columns": table_schema_data}
 
@@ -40,12 +24,14 @@ def create_tabledata_params(data) -> list[dict]:
 def create_tabledata_sequences(data, meta) -> list[dict]:
     #print(meta.loc["description"])
     data_dict = []
-    for index in data.keys():
-        data_dict.append({
-            "name": index,
-            "description": meta.loc["description", index],
-            "data": list(data[index])
-        })
+
+    for row in data.index:
+        data_row = []
+        for index in data.keys():
+            data_row.append(data.loc[row, index])
+            data_dict.append({
+                index: list(data[index])
+            })
 
     return data_dict
 
@@ -57,9 +43,6 @@ def create_metadata(data) -> (list[dict], list, list):
     for index in tmp_json:
         data_dict = tmp_json[index]
         data_dict["name"] = index
-
-        if not bool(data_dict["description"]):
-            data_dict["description"] = ""
 
         if not bool(data_dict["unit"]):
             data_dict["unit"] = ""
@@ -79,7 +62,7 @@ def create_metadata(data) -> (list[dict], list, list):
 
 def translate_response(func: str, response: req.Response):
     if not response.ok:
-        return f'%s: %s' % (func, response.text)
+        raise Exception(response.text)
     else:
         return f'%s: Request successful.' % func
 

@@ -161,3 +161,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 meta_debug.json
+/debug_data.json
+/debug_meta.json
+/debug_schema.json
