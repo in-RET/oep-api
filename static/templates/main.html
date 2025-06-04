@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Interface OEP</title>
+    <!-- Include Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', path='style.css') }}" rel="stylesheet">
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+<script>
+
+function buildrequest() {
+    const files = document.getElementById('files').files;
+    const list = document.getElementById('fileList');
+
+    var data = []
+
+    for (const file of files) {
+        if (file.name.endsWith('.csv') || file.name.endsWith('.json')) {
+            data.append(file)
+
+            const li = document.createElement('li');
+            li.textContent = file.webkitRelativePath;
+            list.appendChild(li);
+        }
+    }
+
+    console.log(data)
+}
+</script>
+<div class="card shadow p-4" style="width: 100%; max-width: 500px;">
+    <h1 class="card-title text-center mb-4">Willkommen!</h1>
+    <p>Bitte wähle den Pfad aus, welcher die Daten enthält.</p>
+    <p>Für Beispieldaten schaue dir den Ordner "examples" im Dateipfad an.</p>
+    <hr>
+    <form action="#" onsubmit="buildrequest(this)" method="post">
+        <div class="mb-3">
+            <p>Bitte wähle den Datenordner aus: </p>
+            <input type="file" id="files" name="files" accept=".json, .csv" multiple webkitdirectory mozdirectory msdirectory odirectory directory />
+        </div>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Absenden</button>
+        </div>
+    </form>
+    <hr>
+    <ul id="fileList"></ul>
+</div>
+
+<!-- Include Bootstrap 5 JS and its dependencies (Popper.js and JavaScript) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

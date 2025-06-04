@@ -1,184 +1,62 @@
-import json
 import os
-from random import randint
 
-import numpy as np
-import pandas as pd
+from fastapi import FastAPI, File, UploadFile, HTTPException
+from starlette.requests import Request
+from starlette.staticfiles import StaticFiles
+from starlette.templating import Jinja2Templates
 
-from src.oep_handler import OepHandler, create_tabledata_params, create_tabledata_sequences, create_tableschema, \
-    create_metadata
+from oep.main import upload_with_local_path
 
-WITH_UPLOAD = True
 
-topic = "sandbox" # "model_draft"
-token = os.environ.get("OEP_API_TOKEN") #% TODO: .env-File anlegen nicht vergessen!
-print("Gewählter Token:", token)
+app = FastAPI()
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
-data_path = os.path.abspath(os.path.join("data"))
-print("Datenpfad:", data_path)
+templates = Jinja2Templates(directory="static/templates")
 
-for root, dirs, files in os.walk(data_path, topdown=True):
+@app.get("/")
+def read_root(request: Request):
+    return templates.TemplateResponse(
+        request=request,
+        name="main.html",
+        status_code=200,
+    )
+
+@app.post("/upload/webform")
+def upload_webform(files: list[UploadFile] = File(...)):
     for file in files:
-        if file.startswith("parameter_") and file.endswith(".csv"):
-            print(file)
-            table = f"%s_{randint(0, 100000)}" % file.replace(".csv", "")
-            raw_csv = pd.read_csv(
-                filepath_or_buffer=os.path.join(data_path, "scalars", "parameter", file),
-                index_col=0,
-                sep=';',
-                decimal='.',
-                encoding = 'unicode_escape'
-            )
+        try:
+            contents = file.file.read()
+            with open(file.filename, 'wb') as f:
+                f.write(contents)
+        except Exception:
+            raise HTTPException(status_code=500, detail='Something went wrong')
+        finally:
+            file.file.close()
 
-            # Create API-Handler-Object
-            OepApi = OepHandler(f"https://openenergyplatform.org/api/v0/schema/{topic}/tables/{table}/", token)
+@app.get("/upload/localdata/data")
+def upload_localdata():
+    data = os.path.abspath(os.path.join(os.getcwd(), "data"))
+    print(data)
 
-            raw_data = raw_csv.loc["data", :] # Pandas ist geil
-            raw_meta = raw_csv.loc[["data_type", "type", "unit", "description", "primary_key"], :]
+    response = upload_with_local_path(
+        data_path=data,
+        with_upload=False,
+        topic="sandbox",
+        token=os.getenv("OEP_API_TOKEN")
+    )
 
-            ########################################################################################################################
-            #   Create Table Schema
-            ########################################################################################################################
-            table_schema = create_tableschema(raw_meta)
+    return response
 
-            ########################################################################################################################
-            #   Upload Table Schema
-            ########################################################################################################################
-            if WITH_UPLOAD:
-                response = OepApi.create_table(table_schema)
-                print(response)
+@app.get("/upload/localdata/examples")
+def upload_localdata_examples():
+    data = os.path.abspath(os.path.join(os.getcwd(), "examples"))
+    print(data)
 
-            ########################################################################################################################
-            #   Create Table Data
-            ########################################################################################################################
-            table_data = create_tabledata_params(raw_data)
+    response = upload_with_local_path(
+        data_path=data,
+        with_upload=False,
+        topic="sandbox",
+        token=os.getenv("OEP_API_TOKEN")
+    )
 
-            ########################################################################################################################
-            #   Upload Table Data
-            ########################################################################################################################
-            if WITH_UPLOAD:
-                response = OepApi.upload_data(table_data)
-                print(response)
-
-            ########################################################################################################################
-            #   Create Meta Data
-            ########################################################################################################################
-            meta_fields = create_metadata(raw_meta)
-
-            with open(os.path.join(data_path, "scalars", "parameter", file.replace(".csv", ".json"))) as f:
-                meta_data = json.load(f)
-
-            meta_data["name"] = table.replace("_", " ")
-            meta_data["title"] = table.replace("_", " ")
-            meta_data["resources"][0].update({
-                "name": table,
-                "schema": {
-                    "fields": meta_fields,
-                    "primaryKey": ["id"]
-                }
-            })
-
-            # with open('meta_debug.json', 'w', encoding='utf-8') as f:
-            #      json.dump(meta_data, f, ensure_ascii=False, indent=2)
-
-            ########################################################################################################################
-            #   Upload Meta Data
-            ########################################################################################################################
-            if WITH_UPLOAD:
-                response = OepApi.upload_metadata(meta_data)
-                print(response)
-
-            print(f"https://openenergyplatform.org/dataedit/view/{topic}/{table}")
-        elif file.startswith("sequences_") and file.endswith(".csv"):
-            print(file)
-            table = f"%s_{randint(0, 100000)}" % file.replace(".csv", "")
-            raw_csv = pd.read_csv(
-                filepath_or_buffer=os.path.join(data_path, "sequences", file),
-                index_col=0,
-                sep=';',
-                decimal='.',
-                encoding = 'unicode_escape'
-            )
-
-            # Create API-Handler-Object
-            OepApi = OepHandler(f"https://openenergyplatform.org/api/v0/schema/{topic}/tables/{table}/", token)
-
-            raw_data = raw_csv.loc["data", :] # Pandas ist geil
-            raw_data.index = np.linspace(0,8759, 8760, dtype=int)
-            raw_meta = raw_csv.loc[["data_type", "type", "unit", "primary_key", "description"], :]
-
-            ########################################################################################################################
-            #   Create Table Schema
-            ########################################################################################################################
-            table_schema = create_tableschema(raw_meta)
-            table_schema["columns"].append({
-                'name': 'id',
-                'data_type': 'int',
-                'primary_key': True
-            })
-
-            ########################################################################################################################
-            #   Upload Table Schema
-            ########################################################################################################################
-            if WITH_UPLOAD:
-                response = OepApi.create_table(table_schema)
-                print(response)
-            else:
-                with open("debug_schema.json", "wt") as f:
-                    json.dump(table_schema, f, ensure_ascii=False, indent=2)
-
-            ########################################################################################################################
-            #   Create Table Data
-            ########################################################################################################################
-            table_data = json.loads(raw_data.to_json(orient="records")) #create_tabledata_sequences(raw_data, raw_meta)
-
-            ####################################################################r####################################################
-            #   Upload Table Data
-            ########################################################################################################################
-            if WITH_UPLOAD:
-                response = OepApi.upload_data(table_data)
-                print(response)
-            else:
-                with open("debug_data.json", "wt") as f:
-                    json.dump(table_data, f, ensure_ascii=False, indent=2)
-
-            ########################################################################################################################
-            #   Create Meta Data
-            ########################################################################################################################
-            meta_fields = create_metadata(raw_meta)
-
-            with open(os.path.join(data_path, "sequences", file.replace(".csv", ".json"))) as f:
-                meta_data = json.load(f)
-
-            meta_data["name"] = table.replace("_", " ")
-            meta_data["title"] = table.replace("_", " ")
-            meta_data["resources"][0].update({
-                "name": table,
-                "schema": {
-                    "fields": meta_fields,
-                    "primaryKey": ["id"]
-                }
-            })
-
-
-            ########################################################################################################################
-            #   Upload Meta Data
-            ########################################################################################################################
-            if WITH_UPLOAD:
-                response = OepApi.upload_metadata(meta_data)
-                print(response)
-            else:
-                with open('debug_meta.json', 'wt') as f:
-                    json.dump(meta_data, f, ensure_ascii=False, indent=2)
-
-            print(f"https://openenergyplatform.org/dataedit/view/{topic}/{table}")
-        else:
-            print("Nicht bearbeitete Datei:", file)
-
-
-
-
-
-
-
-
+    return response
