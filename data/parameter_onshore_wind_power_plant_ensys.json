@@ -8,23 +8,23 @@
       "subject": [
         {
           "name": "investment cost",
-          "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020167/"
+          "id": "OEO_00020167"
         },
         {
           "name": "fixed cost",
-          "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+          "id": "OEO_00020168"
         },
         {
           "name": "onshore wind power technology",
-          "id": "http://openenergyplatform.org/ontology/oeo/OEO_00010425/"
+          "id": "OEO_00010425"
         },
         {
           "name": "life time",
-          "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+          "id": "OEO_00020175"
         },
         {
           "name": "technological stock potential",
-          "id": "http://openenergyplatform.org/ontology/oeo/OEO_00140064/"
+          "id": "OEO_00140064"
         }
       ],
       "keywords": [
@@ -41,25 +41,6 @@
         "homepage": "https://hs-nordhausen.de/",
         "sourceCode": "https://github.com/in-RET",
         "documentation": "https://hs-nordhausen.de"
-      },
-      "spatial": {
-        "location": {
-          "address": "",
-          "latitude": "",
-          "longitude": ""
-        },
-        "extent": {
-          "name": "",
-          "resolutionValue": "",
-          "resolutionUnit": "",
-          "boundingBox": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "crs": ""
-        }
       },
       "sources": [
         {
@@ -419,15 +400,15 @@
           "object": "",
           "comment": ""
         }
-      ],
-      "metaMetadata": {
-        "metadataVersion": "OEMetadata-2.0.4",
-        "metadataLicense": {
-          "name": "CC-BY-4.0",
-          "title": "Creative Commons Attribution 4.0 International",
-          "path": "https://creativecommons.org/licenses/by/4.0/"
-        }
-      }
+      ]
     }
-  ]
+  ],
+  "metaMetadata": {
+    "metadataVersion": "OEMetadata-2.0.4",
+    "metadataLicense": {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  }
 }

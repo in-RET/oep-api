@@ -1,46 +1,50 @@
-import requests as req
+import os
 
-from .auxillary import translate_response
+from oep_client.oep_client import OepClient
 
-class OepHandler:
-    auth_header = None
-    api_url = None
-    context = {
+
+class OepHandler():
+    client: OepClient
+    table_name: str
+    token: str = os.getenv("OEP_API_TOKEN")
+    topic: str = "sandbox"
+    context: dict = {
         "contact": "Hochschule Nordhausen - Institut für regenerative Energietechnik",
         "homepage": "https://hs-nordhausen.de",
         "documentation": "https://hs-nordhausen.de",
         "sourceCode": "https://github.com/in-RET"
     }
 
-    def __init__(self, api_url, token):
-        self.api_url = api_url
-        self.auth_header = {"Authorization": "Token %s" % token}
+    class Config:
+        arbitrary_types_allowed = True
 
-        #print("AUTH_HEADER", self.auth_header)
-        #print("API_URL:",  self.api_url)
-
+    def __init__(self, table_name: str, topic: str = "sandbox"):
+        self.table_name = table_name
+        self.topic = topic
+        self.client = OepClient(
+            token=self.token,
+            default_schema=self.topic
+        )
 
     def create_table(self, table_schema: dict[str, list[dict]]) -> str:
-        return translate_response(
-            func="create_table",
-            response=req.put(self.api_url, json={"query": table_schema}, headers=self.auth_header)
+        return self.client.create_table(
+            table=self.table_name,
+            definition=table_schema
         )
 
     def delete_table(self) -> str:
-        return translate_response(
-            func="delete_table",
-            response=req.delete(self.api_url, headers=self.auth_header)
+        return self.client.drop_table(
+            table=self.table_name
         )
 
     def upload_data(self, data: list[dict[str, str]]) -> str:
-        return translate_response(
-            func="upload_data",
-            response=req.post(self.api_url + "rows/new", json={"query": data}, headers=self.auth_header)
+        return self.client.insert_into_table(
+            table=self.table_name,
+            data=data
         )
 
     def upload_metadata(self, data) -> str:
-        return translate_response(
-            func="upload_metadata",
-            response=req.post(self.api_url + "meta/", json=data, headers=self.auth_header)
+        return self.client.set_metadata(
+            table=self.table_name,
+            metadata=data
         )
-

@@ -2,24 +2,21 @@ import os
 from random import randint
 
 import pandas as pd
-from starlette.responses import JSONResponse
 
 from .auxillary import *
 from .handler import OepHandler
 
 
-def upload_with_local_path(data_path: str, with_upload: bool = False, topic: str = "sandbox", token: str = os.getenv("OEP_API_token")):
-    messages = []
-    messages.append(f"Gewählter token: {token}")
-    messages.append(f"Datenpfad: {data_path}")
+def upload_with_local_path(data_path: str, with_upload: bool = False, topic: str = "sandbox"):
+    messages = [f"Datenpfad: {data_path}"]
 
     for root, dirs, files in os.walk(data_path, topdown=True):
         for file in files:
             if file.startswith("parameter_") and file.endswith(".csv"):
                 messages.append(f"{file}")
-                table = f"%s_{randint(0, 100000)}" % file.replace(".csv", "")
+                table = f"%s_{randint(0, 100)}" % file.replace(".csv", "")
                 raw_csv = pd.read_csv(
-                    filepath_or_buffer=os.path.join(data_path, "scalars", "parameter", file),
+                    filepath_or_buffer=os.path.join(data_path, "parameter", file),
                     index_col=0,
                     sep=';',
                     decimal='.',
@@ -27,7 +24,10 @@ def upload_with_local_path(data_path: str, with_upload: bool = False, topic: str
                 )
 
                 # Create API-Handler-Object
-                OepApi = OepHandler(f"https://openenergyplatform.org/api/v0/schema/{topic}/tables/{table}/", token)
+                OepApi = OepHandler(
+                    table_name=table,
+                    topic=topic,
+                )
 
                 raw_data = raw_csv.loc["data", :] # Pandas ist geil
                 raw_meta = raw_csv.loc[["data_type", "type", "unit", "description", "primary_key"], :]
@@ -61,7 +61,7 @@ def upload_with_local_path(data_path: str, with_upload: bool = False, topic: str
                 ########################################################################################################################
                 meta_fields = create_metadata(raw_meta)
 
-                with open(os.path.join(data_path, "scalars", "parameter", file.replace(".csv", ".json"))) as f:
+                with open(os.path.join(data_path, "parameter", file.replace(".csv", ".json"))) as f:
                     meta_data = json.load(f)
 
                 meta_data["name"] = table.replace("_", " ")
@@ -87,9 +87,9 @@ def upload_with_local_path(data_path: str, with_upload: bool = False, topic: str
                 messages.append(f"https://openenergyplatform.org/dataedit/view/{topic}/{table}")
             elif file.startswith("sequences_") and file.endswith(".csv"):
                 messages.append(file)
-                table = f"%s_{randint(0, 100000)}" % file.replace(".csv", "")
+                table = f"%s_{randint(0, 100)}" % file.replace(".csv", "").replace("_for", "").replace("_selected","").replace("_in", "").replace("_thuringia", "_th").replace("sequences", "seq")
                 raw_csv = pd.read_csv(
-                    filepath_or_buffer=os.path.join(data_path, "sequences", file),
+                    filepath_or_buffer=os.path.join(data_path, file),
                     index_col=0,
                     sep=';',
                     decimal='.',
@@ -97,7 +97,10 @@ def upload_with_local_path(data_path: str, with_upload: bool = False, topic: str
                 )
 
                 # Create API-Handler-Object
-                OepApi = OepHandler(f"https://openenergyplatform.org/api/v0/schema/{topic}/tables/{table}/", token)
+                OepApi = OepHandler(
+                    table_name=table,
+                    topic=topic,
+                )
 
                 raw_data = raw_csv.loc["data", :] # Pandas ist geil
                 raw_data.index = np.linspace(0,8759, 8760, dtype=int)
@@ -143,7 +146,7 @@ def upload_with_local_path(data_path: str, with_upload: bool = False, topic: str
                 ########################################################################################################################
                 meta_fields = create_metadata(raw_meta)
 
-                with open(os.path.join(data_path, "sequences", file.replace(".csv", ".json"))) as f:
+                with open(os.path.join(data_path, file.replace(".csv", ".json"))) as f:
                     meta_data = json.load(f)
 
                 meta_data["name"] = table.replace("_", " ")
@@ -171,10 +174,7 @@ def upload_with_local_path(data_path: str, with_upload: bool = False, topic: str
             else:
                 messages.append(f"Nicht bearbeitete Datei: {file}")
 
-    return JSONResponse(
-        content=messages,
-        status_code=200,
-    )
+    return messages
 
 
 

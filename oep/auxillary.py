@@ -1,7 +1,6 @@
 import json
 
 import numpy as np
-import requests as req
 
 
 def create_tableschema(meta) -> dict[str, list[dict]]:
@@ -59,9 +58,3 @@ def create_metadata(data) -> (list[dict], list, list):
         meta_data.append(data_dict)
 
     return meta_data
-
-def translate_response(func: str, response: req.Response):
-    if not response.ok:
-        raise Exception(response.text)
-    else:
-        return f'%s: Request successful.' % func
