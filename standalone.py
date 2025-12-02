@@ -1,7 +1,6 @@
+import json
 import os
 import sys
-
-import numpy as np
 
 from oep.main import OepUploader
 
@@ -16,8 +15,15 @@ data = [
 ]
 
 for meta_file, data_file in data:
-    table_name = meta_file.replace('.json', '').replace('data/', '') + "_" + str(np.random.randint(1000))
-    primary_key = None
+    with open(meta_file, "r") as f:
+        json_data = json.loads(f.read())
+
+    table_name = json_data['name']
+    print(f"Table: {table_name}")
+
+    primary_key = json_data['resources'][0]['schema']['primaryKey'][0]
+    print(f"Primary Key: {primary_key}")
+
     delete_existing = True
 
     print("============================================================")
