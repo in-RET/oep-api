@@ -1,0 +1,396 @@
+{
+  "@context": "ToDo",
+  "name": "standard_load_profiles_HSN_inRET",
+  "title": "standard load profiles",
+  "description": "Standard load profiles for describing load curves for various sectors. The data was taken from the following sources: {1-3}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+  "@id": "ToDo",
+  "resources": [
+    {
+      "@id": "",
+      "name": "standard_load_profiles_HSN_inRET",
+      "topics": [
+        ""
+      ],
+      "title": "standard_load_profiles_HSN_inRET",
+      "path": "",
+      "description": "Standard load profiles for describing load curves for various sectors. The data was taken from the following sources: {1-3}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+      "languages": [
+        "en-GB"
+      ],
+      "subject": [
+        {
+          "name": "time series",
+          "id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+        }
+      ],
+      "keywords": [
+        "Thuringia",
+        "oemof",
+        "ZO.RRO II",
+        "climate neutrality",
+        "HSN in.RET"
+      ],
+      "publicationDate": "2025-12-02",
+      "embargoPeriod": {
+        "start": "null",
+        "end": "null",
+        "isActive": false
+      },
+      "context": {
+        "title": "ToDo",
+        "homepage": "https://hs-nordhausen.de/",
+        "documentation": "https://hs-nordhausen.de",
+        "sourceCode": "https://github.com/in-RET",
+        "publisher": "ToDo",
+        "publisherLogo": "ToDo",
+        "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik",
+        "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
+        "fundingAgencyLogo": "null",
+        "grantNo": ""
+      },
+      "spatial": [
+        {
+          "location": {
+            "address": "null",
+            "@id": "null",
+            "latitude": "null",
+            "longitude": "null"
+          },
+          "extent": {
+            "name": "null",
+            "@id": "null",
+            "resolutionValue": "null",
+            "resolutionUnit": "null",
+            "boundingBox": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "crs": "null"
+          }
+        }
+      ],
+      "temporal": {
+        "referenceDate": "null",
+        "timeseries": [
+          {
+            "start": "2025-01-01T00:00:00+00:00",
+            "end": "2025-01-01T00:00:00+00:00",
+            "resolutionValue": "1",
+            "resolutionUnit": "h",
+            "alignment": "left",
+            "aggregationType": "current"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Standardlastprofilverfahren Erdgas",
+          "authors": [
+            "Thüringer Energienetze"
+          ],
+          "description": "{1}",
+          "publicationYear": "null",
+          "path": "null",
+          "sourceLicenses": [
+            {
+              "name": "null",
+              "title": "null",
+              "path": "null",
+              "instruction": "null",
+              "attribution": "null",
+              "copyrightStatement": "null"
+            }
+          ]
+        },
+        {
+          "title": "Basisdaten der neuen Gaslastprofile",
+          "authors": [
+            "Gas Clearing and Settlement AG"
+          ],
+          "description": "{2}",
+          "publicationYear": "null",
+          "path": "null",
+          "sourceLicenses": [
+            {
+              "name": "null",
+              "title": "null",
+              "path": "null",
+              "instruction": "null",
+              "attribution": "null",
+              "copyrightStatement": "null"
+            }
+          ]
+        },
+        {
+          "title": "Standardlastprofile“ 2018.",
+          "authors": [
+            "BDEW"
+          ],
+          "description": "{3}",
+          "publicationYear": "null",
+          "path": "null",
+          "sourceLicenses": [
+            {
+              "name": "null",
+              "title": "null",
+              "path": "null",
+              "instruction": "null",
+              "attribution": "null",
+              "copyrightStatement": "null"
+            }
+          ]
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "title": "Creative Common Attribution 4.0 International",
+          "path": "https://creativecommons.org/licenses/by/4.0/",
+          "instruction": "null",
+          "attribution": "null",
+          "copyrightStatement": "null"
+        }
+      ],
+      "contributors": [
+        {
+          "title": "Amèlie Oberdorfer",
+          "path": "null",
+          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+          "roles": [
+            "DataCollector",
+            "ProjectMember"
+          ],
+          "date": "2024-12-31",
+          "object": "null",
+          "comment": "null"
+        },
+        {
+          "title": "Andreas Lubojanski",
+          "path": "null",
+          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+          "roles": [
+            "DataManager",
+            "ProjectMember"
+          ],
+          "date": "2026-06-30",
+          "object": "null",
+          "comment": "null"
+        },
+        {
+          "title": "Christoph Schmidt",
+          "path": "https://orcid.org/0000-0002-4269-3779",
+          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+          "roles": [
+            "ContactPerson",
+            "DataCurator",
+            "Distributor",
+            "ProjectManager",
+            "ProjectMember"
+          ],
+          "date": "2026-06-30",
+          "object": "null",
+          "comment": "null"
+        },
+        {
+          "title": "Rohith Krishnan Bala Krishnan",
+          "path": "null",
+          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+          "roles": [
+            "DataCollector",
+            "ProjectMember"
+          ],
+          "date": "2026-06-30",
+          "object": "null",
+          "comment": "null"
+        },
+        {
+          "title": "Theresa Reinhardt",
+          "path": "null",
+          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+          "roles": [
+            "ProjectMember"
+          ],
+          "date": "2026-06-30",
+          "object": "null",
+          "comment": "null"
+        },
+        {
+          "title": "Viktor Wesselak",
+          "path": "null",
+          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+          "roles": [
+            "Distributor",
+            "ProjectLeader",
+            "ProjectMember"
+          ],
+          "date": "2026-06-30",
+          "object": "null",
+          "comment": "null"
+        },
+        {
+          "title": "Stefan Kirsch",
+          "path": "null",
+          "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
+          "roles": [
+            "DataManager"
+          ],
+          "date": "2025-09-01",
+          "object": "null",
+          "comment": "null"
+        },
+        {
+          "title": "Kevin Lindt",
+          "path": "null",
+          "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
+          "roles": [
+            "DataManager"
+          ],
+          "date": "2025-09-01",
+          "object": "null",
+          "comment": "null"
+        }
+      ],
+      "type": "table",
+      "format": "csv",
+      "encoding": "utf8",
+      "schema": {
+        "fields": [
+          {
+            "name": "G0",
+            "description": "Standard load profile G0 ‘General commercial’of the BDEW {3}",
+            "type": "float",
+            "nullable": true,
+            "unit": "MWh/MW",
+            "isAbout": [
+              {
+                "name": "time series",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "G3",
+            "description": "The BDEW's {3} standard load profile G3 reflects the electricity consumption of continuous commercial operations.",
+            "type": "float",
+            "nullable": true,
+            "unit": "MWh/MW",
+            "isAbout": [
+              {
+                "name": "time series",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "HA4",
+            "description": "The standard load profile HA4 ‘Commercial, retail, wholesale’ from Thüringer Energienetze GmbH {1} is used for space heating and domestic hot water heating requirements.",
+            "type": "float",
+            "nullable": true,
+            "unit": "MWh/MW",
+            "isAbout": [
+              {
+                "name": "time series",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "Prozessgas",
+            "description": "The standard load profile ‘Process Gas’ from AGCS Gas Clearing and Settlement AG {2} is used for the load profile of process heat consumption.",
+            "type": "float",
+            "nullable": true,
+            "unit": "MWh/MW",
+            "isAbout": [
+              {
+                "name": "time series",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "T24",
+            "description": "The standard load profile T24 ‘Multi-family houses’ from Thüringer Energienetze GmbH {1} is used for the demand for space heating and domestic hot water.",
+            "type": "float",
+            "nullable": true,
+            "unit": "MWh/MW",
+            "isAbout": [
+              {
+                "name": "time series",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          }
+        ],
+        "primaryKey": [
+          "null"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "null"
+            ],
+            "reference": {
+              "resource": "null",
+              "fields": [
+                "null"
+              ]
+            }
+          }
+        ]
+      },
+      "dialect": {
+        "delimiter": ";",
+        "decimalSeparator": ","
+      },
+      "review": {
+        "path": "",
+        "badge": ""
+      }
+    }
+  ],
+  "metaMetadata": {
+    "metadataVersion": "OEMetadata-2.0.4",
+    "metadataLicense": {
+      "name": "CC0-1.0",
+      "title": "Creative Commons Zero v1.0 Universal",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0"
+    }
+  }
+}

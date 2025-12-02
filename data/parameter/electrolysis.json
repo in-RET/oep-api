@@ -1,0 +1,533 @@
+{
+    "@context": "ToDo",
+    "name": "techno_economic_parameters_for_water_electrolyser_HSN_inRET",
+    "title": "techno-economic parameters for water electrolyser",
+    "description": "techno-economic parameters for water electrolyser; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+    "@id": "ToDo",
+    "resources": [
+        {
+            "@id": "",
+            "name": "techno_economic_parameters_for_water_electrolyser_HSN_inRET",
+            "topics": [
+                ""
+            ],
+            "title": "techno_economic_parameters_for_water_electrolyser_HSN_inRET",
+            "path": "",
+            "description": "techno-economic parameters for water electrolyser; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+            "languages": [
+                "en-GB"
+            ],
+            "subject": [
+                {
+                    "name": "investment cost",
+                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020167/"
+                },
+                {
+                    "name": "fixed cost",
+                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                },
+                {
+                    "name": "water electrolyser",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010021"
+                },
+                {
+                    "name": "life time",
+                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                },
+                {
+                    "name": "interest rate",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00390052"
+                },
+                {
+                    "name": "efficiency value",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                }
+            ],
+            "keywords": [
+                "Thuringia",
+                "oemof",
+                "ZO.RRO II",
+                "climate neutrality",
+                "HSN in.RET"
+            ],
+            "publicationDate": "2025-11-19",
+            "embargoPeriod": {
+                "start": "null",
+                "end": "null",
+                "isActive": false
+            },
+            "context": {
+                "title": "ToDo",
+                "homepage": "https://hs-nordhausen.de/",
+                "documentation": "https://hs-nordhausen.de",
+                "sourceCode": "https://github.com/in-RET",
+                "publisher": "ToDo",
+                "publisherLogo": "ToDo",
+                "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik",
+                "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
+                "fundingAgencyLogo": "null",
+                "grantNo": ""
+            },
+            "spatial": {
+                "location": {
+                    "address": "null",
+                    "@id": "null",
+                    "latitude": "null",
+                    "longitude": "null"
+                },
+                "extent": {
+                    "name": "null",
+                    "@id": "null",
+                    "resolutionValue": "null",
+                    "resolutionUnit": "null",
+                    "boundingBox": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "crs": "null"
+                }
+            },
+            "temporal": {
+                "referenceDate": "2025-01-01",
+                "timeseries": [
+                    {
+                        "start": "2025-01-01T00:00:00+00:00",
+                        "end": "2025-01-01T00:00:00+00:00",
+                        "resolutionValue": "5a",
+                        "resolutionUnit": "a",
+                        "alignment": "null",
+                        "aggregationType": "average"
+                    }
+                ]
+            },
+            "sources": [
+                {
+                    "title": "So geht’s: Wie Thüringen klimaneutral wird - die Ergebnisse der Energiesystemmodellierung.",
+                    "authors": [
+                        "Frenkel, C.",
+                        "Hofmann, L.",
+                        "Liebe, J.",
+                        "Oberdorfer, A.",
+                        "Reinhardt, T.",
+                        "Schmidt, C.",
+                        "Voswinckel, S.",
+                        "Wesselak, V."
+                    ],
+                    "description": "{1}",
+                    "publicationYear": "2021",
+                    "path": "https://www.db-thueringen.de/receive/dbt_mods_00050973",
+                    "sourceLicenses": [
+                        {
+                            "name": "CC-BY-4.0",
+                            "title": "Creative Common Attribution 4.0 International",
+                            "path": "https://creativecommons.org/licenses/by/4.0/",
+                            "instruction": "null",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                },
+                {
+                    "title": "Klimaneutrales Deutschland 2045. Wie Deutschland seine Klimaziele schon vor 2050 erreichen kann: Langfassung",
+                    "authors": [
+                        "Prognos",
+                        "Öko-Institut",
+                        "Wuppertal-Institut",
+                        "Stiftung Klimaneutralität",
+                        "Agora Energiewende",
+                        "Agora Verkehrswende"
+                    ],
+                    "description": "{2}",
+                    "publicationYear": "2021",
+                    "path": "https://www.agora-verkehrswende.de/veroeffentlichungen/klimaneutrales-deutschland-2045-langfassung",
+                    "sourceLicenses": [
+                        {
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
+                            "instruction": "null",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                },
+                {
+                    "title": "Model-based analysis of cost-efficient CO_2 reduction strategies",
+                    "authors": [
+                        "Lopion, P. M."
+                    ],
+                    "description": "{3}",
+                    "publicationYear": "2020",
+                    "path": "null",
+                    "sourceLicenses": [
+                        {
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
+                            "instruction": "null",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                },
+                {
+                    "title": "Wege zu einem klimaneutralen Energiesystem: Die deutsche Energiewende im Kontext gesellschaftlicher Verhaltensweisen: Anhang zur Studie",
+                    "authors": [
+                        "Sterchele, P.",
+                        "Brandes, J.",
+                        "Heilig, J.",
+                        "Wrede, D."
+                    ],
+                    "description": "{4}",
+                    "publicationYear": "2020",
+                    "path": "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/wege-zu-einem-klimaneutralen-energiesystem-version-2020-21.html",
+                    "sourceLicenses": [
+                        {
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
+                            "instruction": "null",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                },
+                {
+                    "title": "Technikkatalog Kommunalen Wärmeplanung",
+                    "authors": [
+                        "Peters, M.",
+                        "Bartenstein, B.",
+                        "Hebisch, H.",
+                        "Kaiser, C.",
+                        "Anders, F."
+                    ],
+                    "description": "{5}",
+                    "publicationYear": "2024",
+                    "path": "null",
+                    "sourceLicenses": [
+                        {
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
+                            "instruction": "null",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                },
+                {
+                    "title": "Technology Data",
+                    "authors": [
+                        "Danish Energy Agency"
+                    ],
+                    "description": "{6}",
+                    "publicationYear": "2024",
+                    "path": "https://ens.dk/",
+                    "sourceLicenses": [
+                        {
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
+                            "instruction": "null",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                },
+                {
+                    "title": "Optimierungsmodell REMod-D: Materialien zur Analyse »Sektorkopplung« – Untersuchungen und Überlegungen zur Entwicklung eines integrierten Energiesystems.",
+                    "authors": [
+                        "Erlach, B.",
+                        "Henning, H.-M.",
+                        "Kost, C.",
+                        "Palzer, A.",
+                        "Stephanos, C."
+                    ],
+                    "description": "{7}",
+                    "publicationYear": "2023",
+                    "path": "https://energiesysteme-zukunft.de/fileadmin/user_upload/Publikationen/PDFs/ESYS_Materialien_Optimierungsmodell_REMod-D.pdf",
+                    "sourceLicenses": [
+                        {
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
+                            "instruction": "null",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                }
+            ],
+            "licenses": [
+                {
+                    "name": "CC-BY-4.0",
+                    "title": "Creative Common Attribution 4.0 International",
+                    "path": "https://creativecommons.org/licenses/by/4.0/",
+                    "instruction": "null",
+                    "attribution": "null",
+                    "copyrightStatement": "null"
+                }
+            ],
+            "contributors": [
+                {
+                    "title": "Amèlie Oberdorfer",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataCollector",
+                        "ProjectMember"
+                    ],
+                    "date": "2024-12-31",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Andreas Lubojanski",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataManager",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Christoph Schmidt",
+                    "path": "https://orcid.org/0000-0002-4269-3779",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "ContactPerson",
+                        "DataCurator",
+                        "Distributor",
+                        "ProjectManager",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Rohith Krishnan Bala Krishnan",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataCollector",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Theresa Reinhardt",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Viktor Wesselak",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "Distributor",
+                        "ProjectLeader",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Stefan Kirsch",
+                    "path": "null",
+                    "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
+                    "roles": [
+                        "DataManager"
+                    ],
+                    "date": "2025-09-01",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Kevin Lindt",
+                    "path": "null",
+                    "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
+                    "roles": [
+                        "DataManager"
+                    ],
+                    "date": "2025-09-01",
+                    "object": "null",
+                    "comment": "null"
+                }
+            ],
+            "type": "table",
+            "format": "csv",
+            "encoding": "utf8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "year",
+                        "description": "simulation-year",
+                        "type": "integer",
+                        "nullable": false,
+                        "unit": "a",
+                        "isAbout": [
+                            {
+                                "name": "scenario year",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020097"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "investment_costs",
+                        "description": "investment costs",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MW",
+                        "isAbout": [
+                            {
+                                "name": "investment cost",
+                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "operating_costs",
+                        "description": "operating costs",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "% of Invest",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lifetime",
+                        "description": "life time",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "a",
+                        "isAbout": [
+                            {
+                                "name": "life time",
+                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "interest rate",
+                        "description": "interest rate",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "%",
+                        "isAbout": [
+                            {
+                                "name": "interest rate",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00390052"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency",
+                        "description": "efficiency",
+                        "type": "float",
+                        "nullable": false,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    }
+                ],
+                "primaryKey": [
+                    "year"
+                ],
+                "foreignKeys": [
+                    {
+                        "fields": [
+                            "null"
+                        ],
+                        "reference": {
+                            "resource": "null",
+                            "fields": [
+                                "null"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "decimalSeparator": ","
+            },
+            "review": {
+                "path": "",
+                "badge": ""
+            }
+        }
+    ],
+    "metaMetadata": {
+        "metadataVersion": "OEMetadata-2.0.4",
+        "metadataLicense": {
+            "name": "CC0-1.0",
+            "title": "Creative Commons Zero v1.0 Universal",
+            "path": "https://creativecommons.org/publicdomain/zero/1.0"
+        }
+    }
+}
