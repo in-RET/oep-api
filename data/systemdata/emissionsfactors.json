@@ -1,0 +1,549 @@
+{
+    "@context": "ToDo",
+    "name": "emission_factors_HSN_inRET",
+    "title": "emission factor",
+    "description": "emission factor; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+    "@id": "ToDo",
+    "resources": [
+        {
+            "@id": "",
+            "name": "emission_factors_HSN_inRET",
+            "topics": [
+                ""
+            ],
+            "title": "emission_factors_HSN_inRET_HSN_inRET",
+            "path": "",
+            "description": "emission factor; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+            "languages": [
+                "en-GB"
+            ],
+            "subject": [
+                {
+                    "name": "emission factor",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                },
+                {
+                    "name": "electricity import",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020207"
+                },
+                {
+                    "name": "hard coal",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000204"
+                },
+                {
+                    "name": "lignite",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000251"
+                },
+                {
+                    "name": "natural gas",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000292"
+                },
+                {
+                    "name": "mineral oil",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010317"
+                }
+            ],
+            "keywords": [
+                "Thuringia",
+                "oemof",
+                "ZO.RRO II",
+                "climate neutrality",
+                "HSN in.RET"
+            ],
+            "publicationDate": "2025-11-19",
+            "embargoPeriod": {
+                "start": "null",
+                "end": "null",
+                "isActive": false
+            },
+            "context": {
+                "title": "ToDo",
+                "homepage": "https://hs-nordhausen.de/",
+                "documentation": "https://hs-nordhausen.de",
+                "sourceCode": "https://github.com/in-RET",
+                "publisher": "ToDo",
+                "publisherLogo": "ToDo",
+                "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik",
+                "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
+                "fundingAgencyLogo": "null",
+                "grantNo": ""
+            },
+            "spatial": {
+                "location": {
+                    "address": "null",
+                    "@id": "null",
+                    "latitude": "null",
+                    "longitude": "null"
+                },
+                "extent": {
+                    "name": "null",
+                    "@id": "null",
+                    "resolutionValue": "null",
+                    "resolutionUnit": "null",
+                    "boundingBox": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "crs": "null"
+                }
+            },
+            "temporal": {
+                "referenceDate": "2025-01-01",
+                "timeseries": [
+                    {
+                        "start": "2025-01-01T00:00:00+00:00",
+                        "end": "2025-01-01T00:00:00+00:00",
+                        "resolutionValue": "5a",
+                        "resolutionUnit": "a",
+                        "alignment": "null",
+                        "aggregationType": "average"
+                    }
+                ]
+            },
+            "sources": [
+                {
+                    "title": "Bot-tom-Up Studie zu Pfadoptionen einer effizienten und sozialverträglichen Dekarbonisierung des Wärmesektors.",
+                    "authors": [
+                        "Thomsen, J.",
+                        "Fuchs, N.",
+                        "Meyer R.",
+                        "Wanapinit, N.",
+                        "Ulffers, J.",
+                        "Bavia Bampi, B.",
+                        "Lohmeier, D.",
+                        "Prade, E.",
+                        "Gorbach, G.",
+                        "Sanina, N.",
+                        "Engelmann, P.",
+                        "Herkel, S.",
+                        "Kost, C.",
+                        "Braun, M.",
+                        "Lenz, M."
+                    ],
+                    "description": "{1}",
+                    "publicationYear": "2022",
+                    "path": "https://www.wasserstoffrat.de/fileadmin/wasserstoffrat/media/Dokumente/2022/2022-12-22_Bottom-up-Studie_final-1.pdf",
+                    "sourceLicenses": [
+                        {
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
+                            "instruction": "null",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                },
+                {
+                    "title": "Emissionsfaktoren Strom 2023",
+                    "authors": [
+                        "Umweltbundesamt"
+                    ],
+                    "description": "{2}",
+                    "publicationYear": "2024",
+                    "path": "null",
+                    "sourceLicenses": [
+                        {
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
+                            "instruction": "null",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                }
+            ],
+            "licenses": [
+                {
+                    "name": "CC-BY-4.0",
+                    "title": "Creative Common Attribution 4.0 International",
+                    "path": "https://creativecommons.org/licenses/by/4.0/",
+                    "instruction": "null",
+                    "attribution": "null",
+                    "copyrightStatement": "null"
+                }
+            ],
+            "contributors": [
+                {
+                    "title": "Amèlie Oberdorfer",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataCollector",
+                        "ProjectMember"
+                    ],
+                    "date": "2024-12-31",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Andreas Lubojanski",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataManager",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Christoph Schmidt",
+                    "path": "https://orcid.org/0000-0002-4269-3779",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "ContactPerson",
+                        "DataCurator",
+                        "Distributor",
+                        "ProjectManager",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Rohith Krishnan Bala Krishnan",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataCollector",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Theresa Reinhardt",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Viktor Wesselak",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "Distributor",
+                        "ProjectLeader",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Stefan Kirsch",
+                    "path": "null",
+                    "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
+                    "roles": [
+                        "DataManager"
+                    ],
+                    "date": "2025-09-01",
+                    "object": "null",
+                    "comment": "null"
+                },
+                {
+                    "title": "Kevin Lindt",
+                    "path": "null",
+                    "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
+                    "roles": [
+                        "DataManager"
+                    ],
+                    "date": "2025-09-01",
+                    "object": "null",
+                    "comment": "null"
+                }
+            ],
+            "type": "table",
+            "format": "csv",
+            "encoding": "utf8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "model_id",
+                        "description": "model identification number",
+                        "type": "string",
+                        "nullable": True,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Erdgas",
+                        "description": "Emission factor for fossil natural gas",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Oel",
+                        "description": "Emission factor for fossil oil",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Steinkohle",
+                        "description": "Emission factor for fossil hard coal",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Braunkohle",
+                        "description": "Emission factor for lignite",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2020",
+                        "description": "Emission factor for electricity import in 2020",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2025",
+                        "description": "Emission factor for electricity import in 2025",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2030",
+                        "description": "Emission factor for electricity import in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2035",
+                        "description": "Emission factor for electricity import in 2035",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2040",
+                        "description": "Emission factor for electricity import in 2040",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2045",
+                        "description": "Emission factor for electricity import in 2045",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2050",
+                        "description": "Emission factor for electricity import in 2050",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    }
+                ],
+                "primaryKey": [
+                    "model_id"
+                ],
+                "foreignKeys": [
+                    {
+                        "fields": [
+                            "null"
+                        ],
+                        "reference": {
+                            "resource": "null",
+                            "fields": [
+                                "null"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "decimalSeparator": ","
+            },
+            "review": {
+                "path": "",
+                "badge": ""
+            }
+        }
+    ],
+    "metaMetadata": {
+        "metadataVersion": "OEMetadata-2.0.4",
+        "metadataLicense": {
+            "name": "CC0-1.0",
+            "title": "Creative Commons Zero v1.0 Universal",
+            "path": "https://creativecommons.org/publicdomain/zero/1.0"
+        }
+    }
+}
