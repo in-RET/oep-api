@@ -25,7 +25,7 @@
                 {
                     "name": "solid biofuel",
                     "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000332"
-                }
+                },
                 {
                     "name": "liquid biofuel",
                     "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000258"
@@ -59,7 +59,7 @@
             "spatial": [
                 {
                     "location": {
-                        "address": "Binderslebener Landstraße 100, 99092 Erfurt,
+                        "address": "Binderslebener Landstraße 100, 99092 Erfurt",
                         "@id": "null",
                         "latitude": "50.98",
                         "longitude": "10.97"
@@ -294,7 +294,7 @@
                         "name": "model_id",
                         "description": "model identification number",
                         "type": "string",
-                        "nullable": True,
+                        "nullable": true,
                         "unit": "-",
                         "isAbout": [
                             {

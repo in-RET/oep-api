@@ -229,7 +229,7 @@
                         "name": "model_id",
                         "description": "model identification number",
                         "type": "string",
-                        "nullable": True,
+                        "nullable": true,
                         "unit": "-",
                         "isAbout": [
                             {

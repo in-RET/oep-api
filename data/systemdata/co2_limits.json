@@ -1,42 +1,26 @@
 {
     "@context": "ToDo",
-    "name": "techno_economic_parameters_for_geothermal_heat_plant_HSN_inRET",
-    "title": "techno-economic parameters for geothermal heat plant",
-    "description": "techno-economic parameters for geothermal heat plant; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+    "name": "CO2_Limit_HSN_inRET",
+    "title": "CO2-Limit",
+    "description": "CO2-Limit; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "@id": "ToDo",
     "resources": [
         {
             "@id": "",
-            "name": "techno_economic_parameters_for_geothermal_heat_plant_HSN_inRET",
+            "name": "CO2_Limit_HSN_inRET",
             "topics": [
                 ""
             ],
-            "title": "techno_economic_parameters_for_geothermal_heat_plant_HSN_inRET",
+            "title": "CO2_Limit_HSN_inRET",
             "path": "",
-            "description": "techno-economic parameters for geothermal heat plant; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+            "description": "CO2-Limit; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [
                 "en-GB"
             ],
             "subject": [
                 {
-                    "name": "investment cost",
-                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020167/"
-                },
-                {
-                    "name": "fixed cost",
-                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-                },
-                {
-                    "name": "geothermal heat plant",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00310018"
-                },
-                {
-                    "name": "life time",
-                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-                },
-                {
-                    "name": "interest rate",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00390052"
+                    "name": "cutoff",
+                    "id": "http://purl.obolibrary.org/obo/STATO_0000633"
                 }
             ],
             "keywords": [
@@ -89,8 +73,8 @@
                 "referenceDate": "2025-01-01",
                 "timeseries": [
                     {
-                        "start": "2025-01-01T00:00:00+00:00",
-                        "end": "2025-01-01T00:00:00+00:00",
+                        "start": "2025-01-01T00:00:00+01:00",
+                        "end": "2045-12-31T23:59:59+01:00",
                         "resolutionValue": "5a",
                         "resolutionUnit": "a",
                         "alignment": "null",
@@ -100,16 +84,13 @@
             },
             "sources": [
                 {
-                    "title": "Wege zu einem klimaneutralen Energiesystem: Die deutsche Energiewende im Kontext gesellschaftlicher Verhaltensweisen: Anhang zur Studie",
+                    "title": "null",
                     "authors": [
-                        "Sterchele, P.",
-                        "Brandes, J.",
-                        "Heilig, J.",
-                        "Wrede, D."
+                        "null"
                     ],
-                    "description": "{4}",
-                    "publicationYear": "2020",
-                    "path": "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/wege-zu-einem-klimaneutralen-energiesystem-version-2020-21.html",
+                    "description": "null",
+                    "publicationYear": "null",
+                    "path": "null",
                     "sourceLicenses": [
                         {
                             "name": "null",
@@ -237,51 +218,11 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "year",
-                        "description": "simulation-year",
-                        "type": "integer",
-                        "nullable": false,
-                        "unit": "a",
-                        "isAbout": [
-                            {
-                                "name": "scenario year",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020097"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "investment_costs",
-                        "description": "investment costs",
-                        "type": "float",
+                        "name": "model_id",
+                        "description": "model identification number",
+                        "type": "string",
                         "nullable": true,
-                        "unit": "€/MW",
-                        "isAbout": [
-                            {
-                                "name": "investment cost",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "operating_costs",
-                        "description": "operating costs",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "% of Invest",
+                        "unit": "-",
                         "isAbout": [
                             {
                                 "name": "null",
@@ -297,15 +238,15 @@
                         ]
                     },
                     {
-                        "name": "lifetime",
-                        "description": "life time",
+                        "name": "CO2_Grenze_2025",
+                        "description": "CO2-Limit in 2025",
                         "type": "float",
                         "nullable": true,
-                        "unit": "a",
+                        "unit": "kg_CO2",
                         "isAbout": [
                             {
-                                "name": "life time",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                                "name": "cutoff",
+                                "@id": "http://purl.obolibrary.org/obo/STATO_0000633"
                             }
                         ],
                         "valueReference": [
@@ -317,15 +258,95 @@
                         ]
                     },
                     {
-                        "name": "interest rate",
-                        "description": "interest rate",
+                        "name": "CO2_Grenze_2030",
+                        "description": "CO2-Limit in 2030",
                         "type": "float",
                         "nullable": true,
-                        "unit": "%",
+                        "unit": "kg_CO2",
                         "isAbout": [
                             {
-                                "name": "interest rate",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00390052"
+                                "name": "cutoff",
+                                "@id": "http://purl.obolibrary.org/obo/STATO_0000633"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CO2_Grenze_2035",
+                        "description": "CO2-Limit in 2035",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2",
+                        "isAbout": [
+                            {
+                                "name": "cutoff",
+                                "@id": "http://purl.obolibrary.org/obo/STATO_0000633"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CO2_Grenze_2040",
+                        "description": "CO2-Limit in 2040",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2",
+                        "isAbout": [
+                            {
+                                "name": "cutoff",
+                                "@id": "http://purl.obolibrary.org/obo/STATO_0000633"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CO2_Grenze_2045",
+                        "description": "CO2-Limit in 2045",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2",
+                        "isAbout": [
+                            {
+                                "name": "cutoff",
+                                "@id": "http://purl.obolibrary.org/obo/STATO_0000633"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CO2_Grenze_2050",
+                        "description": "CO2-Limit in 2050",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2",
+                        "isAbout": [
+                            {
+                                "name": "cutoff",
+                                "@id": "http://purl.obolibrary.org/obo/STATO_0000633"
                             }
                         ],
                         "valueReference": [
@@ -338,7 +359,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "year"
+                    "model_id"
                 ],
                 "foreignKeys": [
                     {

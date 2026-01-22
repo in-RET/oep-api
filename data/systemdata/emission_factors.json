@@ -1,42 +1,46 @@
 {
     "@context": "ToDo",
-    "name": "techno_economic_parameters_for_onshore_wind_power_plant_HSN_inRET",
-    "title": "techno-economic parameters for onshore wind power plant",
-    "description": "techno-economic parameters for onshore wind power plant; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+    "name": "emission_factors_HSN_inRET",
+    "title": "emission factor",
+    "description": "emission factor; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "@id": "ToDo",
     "resources": [
         {
             "@id": "",
-            "name": "techno_economic_parameters_for_onshore_wind_power_plant_HSN_inRET",
+            "name": "emission_factors_HSN_inRET",
             "topics": [
                 ""
             ],
-            "title": "techno_economic_parameters_for_onshore_wind_power_plant_HSN_inRET",
+            "title": "emission_factors_HSN_inRET_HSN_inRET",
             "path": "",
-            "description": "techno-economic parameters for onshore wind power plant; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+            "description": "emission factor; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [
                 "en-GB"
             ],
             "subject": [
                 {
-                    "name": "investment cost",
-                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020167/"
+                    "name": "emission factor",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
                 },
                 {
-                    "name": "fixed cost",
-                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                    "name": "electricity import",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020207"
                 },
                 {
-                    "name": "onshore wind power technology",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010425"
+                    "name": "hard coal",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000204"
                 },
                 {
-                    "name": "life time",
-                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                    "name": "lignite",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000251"
                 },
                 {
-                    "name": "interest rate",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00390052"
+                    "name": "natural gas",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000292"
+                },
+                {
+                    "name": "mineral oil",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010317"
                 }
             ],
             "keywords": [
@@ -100,25 +104,32 @@
             },
             "sources": [
                 {
-                    "title": "So geht’s: Wie Thüringen klimaneutral wird - die Ergebnisse der Energiesystemmodellierung.",
+                    "title": "Bot-tom-Up Studie zu Pfadoptionen einer effizienten und sozialverträglichen Dekarbonisierung des Wärmesektors.",
                     "authors": [
-                        "Frenkel, C.",
-                        "Hofmann, L.",
-                        "Liebe, J.",
-                        "Oberdorfer, A.",
-                        "Reinhardt, T.",
-                        "Schmidt, C.",
-                        "Voswinckel, S.",
-                        "Wesselak, V."
+                        "Thomsen, J.",
+                        "Fuchs, N.",
+                        "Meyer R.",
+                        "Wanapinit, N.",
+                        "Ulffers, J.",
+                        "Bavia Bampi, B.",
+                        "Lohmeier, D.",
+                        "Prade, E.",
+                        "Gorbach, G.",
+                        "Sanina, N.",
+                        "Engelmann, P.",
+                        "Herkel, S.",
+                        "Kost, C.",
+                        "Braun, M.",
+                        "Lenz, M."
                     ],
                     "description": "{1}",
-                    "publicationYear": "2021",
-                    "path": "https://www.db-thueringen.de/receive/dbt_mods_00050973",
+                    "publicationYear": "2022",
+                    "path": "https://www.wasserstoffrat.de/fileadmin/wasserstoffrat/media/Dokumente/2022/2022-12-22_Bottom-up-Studie_final-1.pdf",
                     "sourceLicenses": [
                         {
-                            "name": "CC-BY-4.0",
-                            "title": "Creative Common Attribution 4.0 International",
-                            "path": "https://creativecommons.org/licenses/by/4.0/",
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
                             "instruction": "null",
                             "attribution": "null",
                             "copyrightStatement": "null"
@@ -126,151 +137,13 @@
                     ]
                 },
                 {
-                    "title": "Klimaneutrales Deutschland 2045. Wie Deutschland seine Klimaziele schon vor 2050 erreichen kann: Langfassung",
+                    "title": "Emissionsfaktoren Strom 2023",
                     "authors": [
-                        "Prognos",
-                        "Öko-Institut",
-                        "Wuppertal-Institut",
-                        "Stiftung Klimaneutralität",
-                        "Agora Energiewende",
-                        "Agora Verkehrswende"
+                        "Umweltbundesamt"
                     ],
                     "description": "{2}",
-                    "publicationYear": "2021",
-                    "path": "https://www.agora-verkehrswende.de/veroeffentlichungen/klimaneutrales-deutschland-2045-langfassung",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Model-based analysis of cost-efficient CO_2 reduction strategies",
-                    "authors": [
-                        "Lopion, P. M."
-                    ],
-                    "description": "{3}",
-                    "publicationYear": "2020",
-                    "path": "null",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Wege zu einem klimaneutralen Energiesystem: Die deutsche Energiewende im Kontext gesellschaftlicher Verhaltensweisen: Anhang zur Studie",
-                    "authors": [
-                        "Sterchele, P.",
-                        "Brandes, J.",
-                        "Heilig, J.",
-                        "Wrede, D."
-                    ],
-                    "description": "{4}",
-                    "publicationYear": "2020",
-                    "path": "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/wege-zu-einem-klimaneutralen-energiesystem-version-2020-21.html",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Technikkatalog Kommunalen Wärmeplanung",
-                    "authors": [
-                        "Peters, M.",
-                        "Bartenstein, B.",
-                        "Hebisch, H.",
-                        "Kaiser, C.",
-                        "Anders, F."
-                    ],
-                    "description": "{5}",
                     "publicationYear": "2024",
                     "path": "null",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Technology Data",
-                    "authors": [
-                        "Danish Energy Agency"
-                    ],
-                    "description": "{6}",
-                    "publicationYear": "2024",
-                    "path": "https://ens.dk/",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Optimierungsmodell REMod-D: Materialien zur Analyse »Sektorkopplung« – Untersuchungen und Überlegungen zur Entwicklung eines integrierten Energiesystems.",
-                    "authors": [
-                        "Erlach, B.",
-                        "Henning, H.-M.",
-                        "Kost, C.",
-                        "Palzer, A.",
-                        "Stephanos, C."
-                    ],
-                    "description": "{7}",
-                    "publicationYear": "2023",
-                    "path": "https://energiesysteme-zukunft.de/fileadmin/user_upload/Publikationen/PDFs/ESYS_Materialien_Optimierungsmodell_REMod-D.pdf",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Technologien für die Energiewende - Politikbericht an das Bundesministerium für Wirtschaft und Energie (BMWi)",
-                    "authors": [
-                        "Viebahn, P.",
-                        "Zelt, O.",
-                        "Fischedick, M.",
-                        "Hildebrand, J.",
-                        "Heib, S.",
-                        "Becker, D.",
-                        "Horst, J.",
-                        "Wietschel, M.",
-                        "Hirzel, S."
-                    ],
-                    "description": "{8}",
-                    "publicationYear": "2018",
-                    "path": "https://d-nb.info/1164076981/34",
                     "sourceLicenses": [
                         {
                             "name": "null",
@@ -398,51 +271,11 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "year",
-                        "description": "simulation-year",
-                        "type": "integer",
-                        "nullable": false,
-                        "unit": "a",
-                        "isAbout": [
-                            {
-                                "name": "scenario year",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020097"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "investment_costs",
-                        "description": "investment costs",
-                        "type": "float",
+                        "name": "model_id",
+                        "description": "model identification number",
+                        "type": "string",
                         "nullable": true,
-                        "unit": "€/MW",
-                        "isAbout": [
-                            {
-                                "name": "investment cost",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "operating_costs",
-                        "description": "operating costs",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "% of Invest",
+                        "unit": "-",
                         "isAbout": [
                             {
                                 "name": "null",
@@ -458,15 +291,15 @@
                         ]
                     },
                     {
-                        "name": "lifetime",
-                        "description": "life time",
+                        "name": "Emission_Erdgas",
+                        "description": "Emission factor for fossil natural gas",
                         "type": "float",
                         "nullable": true,
-                        "unit": "a",
+                        "unit": "kg_CO2/MWh",
                         "isAbout": [
                             {
-                                "name": "life time",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
                             }
                         ],
                         "valueReference": [
@@ -478,15 +311,195 @@
                         ]
                     },
                     {
-                        "name": "interest rate",
-                        "description": "interest rate",
+                        "name": "Emission_Oel",
+                        "description": "Emission factor for fossil oil",
                         "type": "float",
                         "nullable": true,
-                        "unit": "%",
+                        "unit": "kg_CO2/MWh",
                         "isAbout": [
                             {
-                                "name": "interest rate",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00390052"
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Steinkohle",
+                        "description": "Emission factor for fossil hard coal",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Braunkohle",
+                        "description": "Emission factor for lignite",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2020",
+                        "description": "Emission factor for electricity import in 2020",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2025",
+                        "description": "Emission factor for electricity import in 2025",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2030",
+                        "description": "Emission factor for electricity import in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2035",
+                        "description": "Emission factor for electricity import in 2035",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2040",
+                        "description": "Emission factor for electricity import in 2040",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2045",
+                        "description": "Emission factor for electricity import in 2045",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emission_Strom_2050",
+                        "description": "Emission factor for electricity import in 2050",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "kg_CO2/MWh",
+                        "isAbout": [
+                            {
+                                "name": "emission factor",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
                             }
                         ],
                         "valueReference": [
@@ -499,7 +512,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "year"
+                    "model_id"
                 ],
                 "foreignKeys": [
                     {

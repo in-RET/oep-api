@@ -1,46 +1,34 @@
 {
     "@context": "ToDo",
-    "name": "emission_factors_HSN_inRET",
-    "title": "emission factor",
-    "description": "emission factor; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+    "name": "energy_demand_transport_sector_HSN_inRET",
+    "title": "Energy demand in the transport sector",
+    "description": "Energy demand in the transport sector. The sector is divided into passenger transport and freight transport. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "@id": "ToDo",
     "resources": [
         {
             "@id": "",
-            "name": "emission_factors_HSN_inRET",
+            "name": "energy_demand_transport_sector_HSN_inRET",
             "topics": [
                 ""
             ],
-            "title": "emission_factors_HSN_inRET_HSN_inRET",
+            "title": "energy_demand_transport_sector_HSN_inRET",
             "path": "",
-            "description": "emission factor; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+            "description": "Energy demand in the transport sector. The sector is divided into passenger transport and freight transport. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
             "languages": [
                 "en-GB"
             ],
             "subject": [
                 {
-                    "name": "emission factor",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                    "name": "freight transport",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00140005"
                 },
                 {
-                    "name": "electricity import",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020207"
+                    "name": "passenger transport",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010263"
                 },
                 {
-                    "name": "hard coal",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000204"
-                },
-                {
-                    "name": "lignite",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000251"
-                },
-                {
-                    "name": "natural gas",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000292"
-                },
-                {
-                    "name": "mineral oil",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010317"
+                    "name": "energy demand",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                 }
             ],
             "keywords": [
@@ -50,7 +38,7 @@
                 "climate neutrality",
                 "HSN in.RET"
             ],
-            "publicationDate": "2025-11-19",
+            "publicationDate": "2025-12-02",
             "embargoPeriod": {
                 "start": "null",
                 "end": "null",
@@ -68,81 +56,50 @@
                 "fundingAgencyLogo": "null",
                 "grantNo": ""
             },
-            "spatial": {
-                "location": {
-                    "address": "null",
-                    "@id": "null",
-                    "latitude": "null",
-                    "longitude": "null"
-                },
-                "extent": {
-                    "name": "null",
-                    "@id": "null",
-                    "resolutionValue": "null",
-                    "resolutionUnit": "null",
-                    "boundingBox": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "crs": "null"
+            "spatial": [
+                {
+                    "location": {
+                        "address": "null",
+                        "@id": "null",
+                        "latitude": "null",
+                        "longitude": "null"
+                    },
+                    "extent": {
+                        "name": "null",
+                        "@id": "null",
+                        "resolutionValue": "null",
+                        "resolutionUnit": "null",
+                        "boundingBox": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "crs": "null"
+                    }
                 }
-            },
+            ],
             "temporal": {
-                "referenceDate": "2025-01-01",
+                "referenceDate": "null",
                 "timeseries": [
                     {
-                        "start": "2025-01-01T00:00:00+00:00",
-                        "end": "2025-01-01T00:00:00+00:00",
-                        "resolutionValue": "5a",
+                        "start": "2025-01-01T00:00:00+01:00",
+                        "end": "2045-12-31T00:23:59+01:00",
+                        "resolutionValue": "5",
                         "resolutionUnit": "a",
-                        "alignment": "null",
+                        "alignment": "center",
                         "aggregationType": "average"
                     }
                 ]
             },
             "sources": [
                 {
-                    "title": "Bot-tom-Up Studie zu Pfadoptionen einer effizienten und sozialverträglichen Dekarbonisierung des Wärmesektors.",
+                    "title": "null",
                     "authors": [
-                        "Thomsen, J.",
-                        "Fuchs, N.",
-                        "Meyer R.",
-                        "Wanapinit, N.",
-                        "Ulffers, J.",
-                        "Bavia Bampi, B.",
-                        "Lohmeier, D.",
-                        "Prade, E.",
-                        "Gorbach, G.",
-                        "Sanina, N.",
-                        "Engelmann, P.",
-                        "Herkel, S.",
-                        "Kost, C.",
-                        "Braun, M.",
-                        "Lenz, M."
+                        "null"
                     ],
-                    "description": "{1}",
-                    "publicationYear": "2022",
-                    "path": "https://www.wasserstoffrat.de/fileadmin/wasserstoffrat/media/Dokumente/2022/2022-12-22_Bottom-up-Studie_final-1.pdf",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Emissionsfaktoren Strom 2023",
-                    "authors": [
-                        "Umweltbundesamt"
-                    ],
-                    "description": "{2}",
-                    "publicationYear": "2024",
+                    "description": "null",
+                    "publicationYear": "null",
                     "path": "null",
                     "sourceLicenses": [
                         {
@@ -271,15 +228,15 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "model_id",
-                        "description": "model identification number",
-                        "type": "string",
-                        "nullable": True,
-                        "unit": "-",
+                        "name": "Personenverkehr_2020_abs",
+                        "description": "passenger transport in 2020",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "null",
-                                "@id": "null"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -291,15 +248,15 @@
                         ]
                     },
                     {
-                        "name": "Emission_Erdgas",
-                        "description": "Emission factor for fossil natural gas",
+                        "name": "Personenverkehr_2025_abs",
+                        "description": "passenger transport in 2025",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2/MWh",
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "emission factor",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -311,15 +268,15 @@
                         ]
                     },
                     {
-                        "name": "Emission_Oel",
-                        "description": "Emission factor for fossil oil",
+                        "name": "Personenverkehr_2030_abs",
+                        "description": "passenger transport in 2030",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2/MWh",
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "emission factor",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -331,15 +288,15 @@
                         ]
                     },
                     {
-                        "name": "Emission_Steinkohle",
-                        "description": "Emission factor for fossil hard coal",
+                        "name": "Personenverkehr_2035_abs",
+                        "description": "passenger transport in 2035",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2/MWh",
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "emission factor",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -351,15 +308,15 @@
                         ]
                     },
                     {
-                        "name": "Emission_Braunkohle",
-                        "description": "Emission factor for lignite",
+                        "name": "Personenverkehr_2040_abs",
+                        "description": "passenger transport in 2040",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2/MWh",
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "emission factor",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -371,15 +328,15 @@
                         ]
                     },
                     {
-                        "name": "Emission_Strom_2020",
-                        "description": "Emission factor for electricity import in 2020",
+                        "name": "Personenverkehr_2045_abs",
+                        "description": "passenger transport in 2045",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2/MWh",
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "emission factor",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -391,15 +348,15 @@
                         ]
                     },
                     {
-                        "name": "Emission_Strom_2025",
-                        "description": "Emission factor for electricity import in 2025",
+                        "name": "Gueterverkehr_2020_abs",
+                        "description": "freight transport in 2020",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2/MWh",
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "emission factor",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -411,15 +368,15 @@
                         ]
                     },
                     {
-                        "name": "Emission_Strom_2030",
-                        "description": "Emission factor for electricity import in 2030",
+                        "name": "Gueterverkehr_2025_abs",
+                        "description": "freight transport in 2025",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2/MWh",
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "emission factor",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -431,15 +388,15 @@
                         ]
                     },
                     {
-                        "name": "Emission_Strom_2035",
-                        "description": "Emission factor for electricity import in 2035",
+                        "name": "Gueterverkehr_2030_abs",
+                        "description": "freight transport in 2030",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2/MWh",
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "emission factor",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -451,15 +408,15 @@
                         ]
                     },
                     {
-                        "name": "Emission_Strom_2040",
-                        "description": "Emission factor for electricity import in 2040",
+                        "name": "Gueterverkehr_2035_abs",
+                        "description": "freight transport in 2035",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2/MWh",
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "emission factor",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -471,15 +428,15 @@
                         ]
                     },
                     {
-                        "name": "Emission_Strom_2045",
-                        "description": "Emission factor for electricity import in 2045",
+                        "name": "Gueterverkehr_2040_abs",
+                        "description": "freight transport in 2040",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2/MWh",
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "emission factor",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -491,15 +448,15 @@
                         ]
                     },
                     {
-                        "name": "Emission_Strom_2050",
-                        "description": "Emission factor for electricity import in 2050",
+                        "name": "Gueterverkehr_2045_abs",
+                        "description": "freight transport in 2045",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2/MWh",
+                        "unit": "MWh",
                         "isAbout": [
                             {
-                                "name": "emission factor",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
+                                "name": "energy demand",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
                         "valueReference": [
@@ -512,7 +469,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "model_id"
+                    "null"
                 ],
                 "foreignKeys": [
                     {
