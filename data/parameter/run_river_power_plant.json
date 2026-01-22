@@ -35,8 +35,8 @@
           "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
         },
         {
-          "name": "interest rate",
-          "id": "https://openenergyplatform.org/ontology/oeo/OEO_00390052"
+          "name": "potential",
+          "id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
         }
       ],
       "keywords": [
@@ -64,27 +64,92 @@
         "fundingAgencyLogo": "null",
         "grantNo": ""
       },
-      "spatial": {
-        "location": {
-          "address": "null",
-          "@id": "null",
-          "latitude": "null",
-          "longitude": "null"
+      "spatial": [
+        {
+          "location": {
+            "address": "Binderslebener Landstraße 100, 99092 Erfurt",
+            "@id": "null",
+            "latitude": "50.98",
+            "longitude": "10.97"
+          },
+          "extent": {
+            "name": "Erfurt",
+            "@id": "null",
+            "resolutionValue": "1",
+            "resolutionUnit": "m",
+            "boundingBox": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "crs": "EPSG:4326"
+          }
         },
-        "extent": {
-          "name": "null",
-          "@id": "null",
-          "resolutionValue": "null",
-          "resolutionUnit": "null",
-          "boundingBox": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "crs": "null"
+        {
+          "location": {
+            "address": "Kranichstraße 12, 99734 Nordhausen",
+            "@id": "null",
+            "latitude": "51.5036",
+            "longitude": "10.7913"
+          },
+          "extent": {
+            "name": "Nordhausen",
+            "@id": "null",
+            "resolutionValue": "1",
+            "resolutionUnit": "m",
+            "boundingBox": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "crs": "EPSG:4326"
+          }
+        },
+        {
+          "location": {
+            "address": "Ronneburger Str. 74, 07546 Gera",
+            "@id": "null",
+            "latitude": "50.8821",
+            "longitude": "12.13"
+          },
+          "extent": {
+            "name": "Gera",
+            "@id": "null",
+            "resolutionValue": "1",
+            "resolutionUnit": "m",
+            "boundingBox": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "crs": "EPSG:4326"
+          }
+        },
+        {
+          "location": {
+            "address": "Untere Braugasse 16, 98646 Hildburghausen",
+            "@id": "null",
+            "latitude": "50.4265",
+            "longitude": "10.7316"
+          },
+          "extent": {
+            "name": "Hildburghausen",
+            "@id": "null",
+            "resolutionValue": "1",
+            "resolutionUnit": "m",
+            "boundingBox": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "crs": "EPSG:4326"
+          }
         }
-      },
+      ],
       "temporal": {
         "referenceDate": "2025-01-01",
         "timeseries": [
@@ -189,7 +254,7 @@
               "copyrightStatement": "null"
             }
           ]
-        },
+        }
       ],
       "licenses": [
         {
@@ -298,7 +363,7 @@
           "date": "2025-09-01",
           "object": "null",
           "comment": "null"
-        },
+        }
       ],
       "type": "table",
       "format": "csv",
@@ -306,15 +371,15 @@
       "schema": {
         "fields": [
           {
-            "name": "year",
-            "description": "simulation-year",
-            "type": "integer",
-            "nullable": false,
-            "unit": "a",
+            "name": "model_id",
+            "description": "model identification number",
+            "type": "string",
+            "nullable": true,
+            "unit": "-",
             "isAbout": [
               {
-                "name": "scenario year",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020097"
+                "name": "null",
+                "@id": "null"
               }
             ],
             "valueReference": [
@@ -326,8 +391,8 @@
             ]
           },
           {
-            "name": "investment_costs",
-            "description": "investment costs",
+            "name": "investment_costs_2020",
+            "description": "investment costs in 2020",
             "type": "float",
             "nullable": true,
             "unit": "€/MW",
@@ -346,8 +411,128 @@
             ]
           },
           {
-            "name": "operating_costs",
-            "description": "operating costs",
+            "name": "investment_costs_2025",
+            "description": "investment costs in 2025",
+            "type": "float",
+            "nullable": true,
+            "unit": "€/MW",
+            "isAbout": [
+              {
+                "name": "investment cost",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "investment_costs_2030",
+            "description": "investment costs in 2030",
+            "type": "float",
+            "nullable": true,
+            "unit": "€/MW",
+            "isAbout": [
+              {
+                "name": "investment cost",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "investment_costs_2035",
+            "description": "investment costs in 2035",
+            "type": "float",
+            "nullable": true,
+            "unit": "€/MW",
+            "isAbout": [
+              {
+                "name": "investment cost",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "investment_costs_2040",
+            "description": "investment costs in 2040",
+            "type": "float",
+            "nullable": true,
+            "unit": "€/MW",
+            "isAbout": [
+              {
+                "name": "investment cost",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "investment_costs_2045",
+            "description": "investment costs in 2045",
+            "type": "float",
+            "nullable": true,
+            "unit": "€/MW",
+            "isAbout": [
+              {
+                "name": "investment cost",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "investment_costs_2050",
+            "description": "investment costs in 2050",
+            "type": "float",
+            "nullable": true,
+            "unit": "€/MW",
+            "isAbout": [
+              {
+                "name": "investment cost",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "operating_costs_2020",
+            "description": "operating costs in 2020",
             "type": "float",
             "nullable": true,
             "unit": "% of Invest",
@@ -366,8 +551,128 @@
             ]
           },
           {
-            "name": "lifetime",
-            "description": "life time",
+            "name": "operating_costs_2025",
+            "description": "operating costs in 2025",
+            "type": "float",
+            "nullable": true,
+            "unit": "% of Invest",
+            "isAbout": [
+              {
+                "name": "null",
+                "@id": "null"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "operating_costs_2030",
+            "description": "operating costs in 2030",
+            "type": "float",
+            "nullable": true,
+            "unit": "% of Invest",
+            "isAbout": [
+              {
+                "name": "null",
+                "@id": "null"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "operating_costs_2035",
+            "description": "operating costs in 2035",
+            "type": "float",
+            "nullable": true,
+            "unit": "% of Invest",
+            "isAbout": [
+              {
+                "name": "null",
+                "@id": "null"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "operating_costs_2040",
+            "description": "operating costs in 2040",
+            "type": "float",
+            "nullable": true,
+            "unit": "% of Invest",
+            "isAbout": [
+              {
+                "name": "null",
+                "@id": "null"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "operating_costs_2045",
+            "description": "operating costs in 2045",
+            "type": "float",
+            "nullable": true,
+            "unit": "% of Invest",
+            "isAbout": [
+              {
+                "name": "null",
+                "@id": "null"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "operating_costs_2050",
+            "description": "operating costs in 2050",
+            "type": "float",
+            "nullable": true,
+            "unit": "% of Invest",
+            "isAbout": [
+              {
+                "name": "null",
+                "@id": "null"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "lifetime_2020",
+            "description": "life time in 2020",
             "type": "float",
             "nullable": true,
             "unit": "a",
@@ -386,15 +691,215 @@
             ]
           },
           {
-            "name": "interest rate",
-            "description": "interest rate",
+            "name": "lifetime_2025",
+            "description": "life time in 2025",
             "type": "float",
             "nullable": true,
-            "unit": "%",
+            "unit": "a",
             "isAbout": [
               {
-                "name": "interest rate",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00390052"
+                "name": "life time",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "lifetime_2030",
+            "description": "life time in 2030",
+            "type": "float",
+            "nullable": true,
+            "unit": "a",
+            "isAbout": [
+              {
+                "name": "life time",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "lifetime_2035",
+            "description": "life time in 2035",
+            "type": "float",
+            "nullable": true,
+            "unit": "a",
+            "isAbout": [
+              {
+                "name": "life time",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "lifetime_2040",
+            "description": "life time in 2040",
+            "type": "float",
+            "nullable": true,
+            "unit": "a",
+            "isAbout": [
+              {
+                "name": "life time",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "lifetime_2045",
+            "description": "life time in 2045",
+            "type": "float",
+            "nullable": true,
+            "unit": "a",
+            "isAbout": [
+              {
+                "name": "life time",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "lifetime_2050",
+            "description": "life time in 2050",
+            "type": "float",
+            "nullable": true,
+            "unit": "a",
+            "isAbout": [
+              {
+                "name": "life time",
+                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "potential_north_min",
+            "description": "Manimum potential in the north region",
+            "type": "float",
+            "nullable": true,
+            "unit": "MW",
+            "isAbout": [
+              {
+                "name": "potential",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "potential_middle_min",
+            "description": "Manimum potential in the middle region",
+            "type": "float",
+            "nullable": true,
+            "unit": "MW",
+            "isAbout": [
+              {
+                "name": "potential",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "potential_east_min",
+            "description": "Manimum potential in the east region",
+            "type": "float",
+            "nullable": true,
+            "unit": "MW",
+            "isAbout": [
+              {
+                "name": "potential",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "potential_swest_min",
+            "description": "Manimum potential in the swest region",
+            "type": "float",
+            "nullable": true,
+            "unit": "MW",
+            "isAbout": [
+              {
+                "name": "potential",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
+              }
+            ],
+            "valueReference": [
+              {
+                "value": "null",
+                "name": "null",
+                "@id": "null"
+              }
+            ]
+          },
+          {
+            "name": "potential_total",
+            "description": "Total potantial in Thuringia",
+            "type": "float",
+            "nullable": true,
+            "unit": "MW",
+            "isAbout": [
+              {
+                "name": "potential",
+                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
               }
             ],
             "valueReference": [
@@ -407,7 +912,7 @@
           }
         ],
         "primaryKey": [
-          "year"
+          "model_id"
         ],
         "foreignKeys": [
           {

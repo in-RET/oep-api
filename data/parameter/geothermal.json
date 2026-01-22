@@ -1,19 +1,19 @@
 {
     "@context": "ToDo",
-    "name": "techno_economic_parameters_for_water_electrolyser_HSN_inRET",
-    "title": "techno-economic parameters for water electrolyser",
-    "description": "techno-economic parameters for water electrolyser; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+    "name": "techno_economic_parameters_for_geothermal_heat_plant_HSN_inRET",
+    "title": "techno-economic parameters for geothermal heat plant",
+    "description": "techno-economic parameters for geothermal heat plant; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "@id": "ToDo",
     "resources": [
         {
             "@id": "",
-            "name": "techno_economic_parameters_for_water_electrolyser_HSN_inRET",
+            "name": "techno_economic_parameters_for_geothermal_heat_plant_HSN_inRET",
             "topics": [
                 ""
             ],
-            "title": "techno_economic_parameters_for_water_electrolyser_HSN_inRET",
+            "title": "techno_economic_parameters_for_geothermal_heat_plant_HSN_inRET",
             "path": "",
-            "description": "techno-economic parameters for water electrolyser; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+            "description": "techno-economic parameters for geothermal heat plant; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [
                 "en-GB"
             ],
@@ -27,16 +27,12 @@
                     "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                 },
                 {
-                    "name": "water electrolyser",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010021"
+                    "name": "geothermal heat plant",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00310018"
                 },
                 {
                     "name": "life time",
                     "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-                },
-                {
-                    "name": "efficiency value",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
                 }
             ],
             "keywords": [
@@ -100,75 +96,6 @@
             },
             "sources": [
                 {
-                    "title": "So geht’s: Wie Thüringen klimaneutral wird - die Ergebnisse der Energiesystemmodellierung.",
-                    "authors": [
-                        "Frenkel, C.",
-                        "Hofmann, L.",
-                        "Liebe, J.",
-                        "Oberdorfer, A.",
-                        "Reinhardt, T.",
-                        "Schmidt, C.",
-                        "Voswinckel, S.",
-                        "Wesselak, V."
-                    ],
-                    "description": "{1}",
-                    "publicationYear": "2021",
-                    "path": "https://www.db-thueringen.de/receive/dbt_mods_00050973",
-                    "sourceLicenses": [
-                        {
-                            "name": "CC-BY-4.0",
-                            "title": "Creative Common Attribution 4.0 International",
-                            "path": "https://creativecommons.org/licenses/by/4.0/",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Klimaneutrales Deutschland 2045. Wie Deutschland seine Klimaziele schon vor 2050 erreichen kann: Langfassung",
-                    "authors": [
-                        "Prognos",
-                        "Öko-Institut",
-                        "Wuppertal-Institut",
-                        "Stiftung Klimaneutralität",
-                        "Agora Energiewende",
-                        "Agora Verkehrswende"
-                    ],
-                    "description": "{2}",
-                    "publicationYear": "2021",
-                    "path": "https://www.agora-verkehrswende.de/veroeffentlichungen/klimaneutrales-deutschland-2045-langfassung",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Model-based analysis of cost-efficient CO_2 reduction strategies",
-                    "authors": [
-                        "Lopion, P. M."
-                    ],
-                    "description": "{3}",
-                    "publicationYear": "2020",
-                    "path": "null",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
                     "title": "Wege zu einem klimaneutralen Energiesystem: Die deutsche Energiewende im Kontext gesellschaftlicher Verhaltensweisen: Anhang zur Studie",
                     "authors": [
                         "Sterchele, P.",
@@ -179,71 +106,6 @@
                     "description": "{4}",
                     "publicationYear": "2020",
                     "path": "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/wege-zu-einem-klimaneutralen-energiesystem-version-2020-21.html",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Technikkatalog Kommunalen Wärmeplanung",
-                    "authors": [
-                        "Peters, M.",
-                        "Bartenstein, B.",
-                        "Hebisch, H.",
-                        "Kaiser, C.",
-                        "Anders, F."
-                    ],
-                    "description": "{5}",
-                    "publicationYear": "2024",
-                    "path": "null",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Technology Data",
-                    "authors": [
-                        "Danish Energy Agency"
-                    ],
-                    "description": "{6}",
-                    "publicationYear": "2024",
-                    "path": "https://ens.dk/",
-                    "sourceLicenses": [
-                        {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
-                        }
-                    ]
-                },
-                {
-                    "title": "Optimierungsmodell REMod-D: Materialien zur Analyse »Sektorkopplung« – Untersuchungen und Überlegungen zur Entwicklung eines integrierten Energiesystems.",
-                    "authors": [
-                        "Erlach, B.",
-                        "Henning, H.-M.",
-                        "Kost, C.",
-                        "Palzer, A.",
-                        "Stephanos, C."
-                    ],
-                    "description": "{7}",
-                    "publicationYear": "2023",
-                    "path": "https://energiesysteme-zukunft.de/fileadmin/user_upload/Publikationen/PDFs/ESYS_Materialien_Optimierungsmodell_REMod-D.pdf",
                     "sourceLicenses": [
                         {
                             "name": "null",
@@ -800,146 +662,6 @@
                             {
                                 "name": "life time",
                                 "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "efficiency_2020",
-                        "description": "efficiency in 2020",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": "efficiency value",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "efficiency_2025",
-                        "description": "efficiency in 2025",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": "efficiency value",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "efficiency_2030",
-                        "description": "efficiency in 2030",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": "efficiency value",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "efficiency_2035",
-                        "description": "efficiency in 2035",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": "efficiency value",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "efficiency_2040",
-                        "description": "efficiency in 2040",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": "efficiency value",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "efficiency_2045",
-                        "description": "efficiency in 2045",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": "efficiency value",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "efficiency_2050",
-                        "description": "efficiency in 2050",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": "efficiency value",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
                             }
                         ],
                         "valueReference": [
