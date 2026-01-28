@@ -1,1075 +1,1072 @@
 {
-  "@context": "ToDo",
-  "name": "techno_economic_parameters_for_electrical_Lithium_Ion_energy_storage_technology_HSN_inRET",
-  "title": "techno-economic parameters for electrical Lithium Ion energy storage technology",
-  "description": "techno-economic parameters for electrical Lithium Ion energy storage technology; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
-  "@id": "ToDo",
-  "resources": [
-    {
-      "@id": "",
-      "name": "techno_economic_parameters_for_electrical_Lithium_Ion_energy_storage_technology_HSN_inRET",
-      "topics": [
-        ""
-      ],
-      "title": "techno_economic_parameters_for_electrical_Lithium_Ion_energy_storage_technology_HSN_inRET",
-      "path": "",
-      "description": "techno-economic parameters for electrical Lithium Ion energy storage technology; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
-      "languages": [
-        "en-GB"
-      ],
-      "subject": [
+    "name": "techno_economic_parameters_for_electrical_Lithium_Ion_energy_storage_technology_HSN_inRET",
+    "title": "techno-economic parameters for electrical Lithium Ion energy storage technology",
+    "description": "techno-economic parameters for electrical Lithium Ion energy storage technology; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+    "resources": [
         {
-          "name": "investment cost",
-          "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020167/"
-        },
-        {
-          "name": "fixed cost",
-          "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-        },
-        {
-          "name": "electrical energy storage technology",
-          "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020367"
-        },
-        {
-          "name": "life time",
-          "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-        },
-        {
-          "name": "efficiency value",
-          "id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-        }
-      ],
-      "keywords": [
-        "Thuringia",
-        "oemof",
-        "ZO.RRO II",
-        "climate neutrality",
-        "HSN in.RET"
-      ],
-      "publicationDate": "2025-11-19",
-      "embargoPeriod": {
-        "start": "null",
-        "end": "null",
-        "isActive": false
-      },
-      "context": {
-        "title": "ToDo",
-        "homepage": "https://hs-nordhausen.de/",
-        "documentation": "https://hs-nordhausen.de",
-        "sourceCode": "https://github.com/in-RET",
-        "publisher": "ToDo",
-        "publisherLogo": "ToDo",
-        "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik",
-        "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
-        "fundingAgencyLogo": "null",
-        "grantNo": ""
-      },
-      "spatial": {
-        "location": {
-          "address": "null",
-          "@id": "null",
-          "latitude": "null",
-          "longitude": "null"
-        },
-        "extent": {
-          "name": "null",
-          "@id": "null",
-          "resolutionValue": "null",
-          "resolutionUnit": "null",
-          "boundingBox": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "crs": "null"
-        }
-      },
-      "temporal": {
-        "referenceDate": "2025-01-01",
-        "timeseries": [
-          {
-            "start": "2025-01-01T00:00:00+00:00",
-            "end": "2025-01-01T00:00:00+00:00",
-            "resolutionValue": "5a",
-            "resolutionUnit": "a",
-            "alignment": "null",
-            "aggregationType": "average"
-          }
-        ]
-      },
-      "sources": [
-        {
-          "title": "Technology Data",
-          "authors": [
-            "Danish Energy Agency"
-          ],
-          "description": "{6}",
-          "publicationYear": "2024",
-          "path": "https://ens.dk/",
-          "sourceLicenses": [
-            {
-              "name": "null",
-              "title": "null",
-              "path": "null",
-              "instruction": "null",
-              "attribution": "null",
-              "copyrightStatement": "null"
+            "name": "techno_economic_parameters_for_electrical_Lithium_Ion_energy_storage_technology_HSN_inRET",
+            "topics": [
+                "economy"
+            ],
+            "title": "techno_economic_parameters_for_electrical_Lithium_Ion_energy_storage_technology_HSN_inRET",
+            "path": "",
+            "description": "techno-economic parameters for electrical Lithium Ion energy storage technology; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+            "languages": [
+                "en-GB"
+            ],
+            "subject": [
+                {
+                    "name": "investment cost",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020167/"
+                },
+                {
+                    "name": "fixed cost",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                },
+                {
+                    "name": "electrical energy storage technology",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020367"
+                },
+                {
+                    "name": "life time",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                },
+                {
+                    "name": "efficiency value",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                }
+            ],
+            "keywords": [
+                "Thuringia",
+                "oemof",
+                "ZO.RRO II",
+                "climate neutrality",
+                "HSN in.RET"
+            ],
+            "publicationDate": "2025-11-19",
+            "embargoPeriod": {
+                "start": "null",
+                "end": "null",
+                "isActive": false
+            },
+            "context": {
+                "title": "ZO.RRO II - Zero Carbon Cross Energy System",
+                "homepage": "https://zorro-thueringen.de/",
+                "documentation": "ToDo",
+                "sourceCode": "https://github.com/in-RET/ZO.RRO2",
+                "publisher": "Open Energy Platform",
+                "publisherLogo": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
+                "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik; ret@hs-nordhausen.de",
+                "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
+                "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
+                "grantNo": ""
+            },
+            "spatial": {
+                "location": {
+                    "address": "null",
+                    "@id": "null",
+                    "latitude": "null",
+                    "longitude": "null"
+                },
+                "extent": {
+                    "name": "null",
+                    "@id": "null",
+                    "resolutionValue": "null",
+                    "resolutionUnit": "null",
+                    "boundingBox": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "crs": "null"
+                }
+            },
+            "temporal": {
+                "referenceDate": "2025-01-01",
+                "timeseries": [
+                    {
+                        "start": "2025-01-01T00:00:00+00:00",
+                        "end": "2025-01-01T00:00:00+00:00",
+                        "resolutionValue": "5",
+                        "resolutionUnit": "a",
+                        "alignment": "middle",
+                        "aggregationType": "average"
+                    }
+                ]
+            },
+            "sources": [
+                {
+                    "title": "Technology Data",
+                    "authors": [
+                        "Danish Energy Agency"
+                    ],
+                    "description": "{6}",
+                    "publicationYear": "2024",
+                    "path": "https://ens.dk/",
+                    "sourceLicenses": [
+                        {
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
+                            "instruction": "null",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                },
+                {
+                    "title": "Optimierungsmodell REMod-D: Materialien zur Analyse »Sektorkopplung« – Untersuchungen und Überlegungen zur Entwicklung eines integrierten Energiesystems.",
+                    "authors": [
+                        "Erlach, B.",
+                        "Henning, H.-M.",
+                        "Kost, C.",
+                        "Palzer, A.",
+                        "Stephanos, C."
+                    ],
+                    "description": "{7}",
+                    "publicationYear": "2023",
+                    "path": "https://energiesysteme-zukunft.de/fileadmin/user_upload/Publikationen/PDFs/ESYS_Materialien_Optimierungsmodell_REMod-D.pdf",
+                    "sourceLicenses": [
+                        {
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
+                            "instruction": "null",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                }
+            ],
+            "licenses": [
+                {
+                    "name": "CC-BY-4.0",
+                    "title": "Creative Common Attribution 4.0 International",
+                    "path": "https://creativecommons.org/licenses/by/4.0/",
+                    "instruction": "You are free to use, share and modify; As long as you attribute, include copyright and state changes",
+                    "attribution": "© Hochschule Nordhausen - Institut für Regenerative Energietechnik, © ZO.RRO II Project Team",
+                    "copyrightStatement": ""
+                }
+            ],
+            "contributors": [
+                {
+                    "title": "Amèlie Oberdorfer",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataCollector",
+                        "ProjectMember"
+                    ],
+                    "date": "2024-12-31",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Andreas Lubojanski",
+                    "path": "https://orcid.org/0009-0004-7229-2118",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataManager",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Christoph Schmidt",
+                    "path": "https://orcid.org/0000-0002-4269-3779",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "ContactPerson",
+                        "DataCurator",
+                        "Distributor",
+                        "ProjectManager",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Rohith Krishnan Bala Krishnan",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataCollector",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Theresa Reinhardt",
+                    "path": "https://orcid.org/0009-0004-8449-3443",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Viktor Wesselak",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "Distributor",
+                        "ProjectLeader",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Stefan Kirsch",
+                    "path": "https://orcid.org/0009-0004-0638-4639",
+                    "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
+                    "roles": [
+                        "Other"
+                    ],
+                    "date": "2025-09-01",
+                    "object": "metadata",
+                    "comment": "consulting on FAIR data publication"
+                },
+                {
+                    "title": "Kevin Lindt",
+                    "path": "https://orcid.org/0000-0003-3633-1349",
+                    "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
+                    "roles": [
+                        "Other"
+                    ],
+                    "date": "2025-09-01",
+                    "object": "metadata",
+                    "comment": "consulting on FAIR data publication"
+                }
+            ],
+            "type": "table",
+            "format": "csv",
+            "encoding": "utf8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "model_id",
+                        "description": "model identification number",
+                        "type": "string",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "investment_costs_2020",
+                        "description": "investment costs in 2020",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "investment cost",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "investment_costs_2025",
+                        "description": "investment costs in 2025",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "investment cost",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "investment_costs_2030",
+                        "description": "investment costs in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "investment cost",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "investment_costs_2035",
+                        "description": "investment costs in 2035",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "investment cost",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "investment_costs_2040",
+                        "description": "investment costs in 2040",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "investment cost",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "investment_costs_2045",
+                        "description": "investment costs in 2045",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "investment cost",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "investment_costs_2050",
+                        "description": "investment costs in 2050",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "investment cost",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "operating_costs_2020",
+                        "description": "operating costs in 2020",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "% of Invest",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "operating_costs_2025",
+                        "description": "operating costs in 2025",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "% of Invest",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "operating_costs_2030",
+                        "description": "operating costs in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "% of Invest",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "operating_costs_2035",
+                        "description": "operating costs in 2035",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "% of Invest",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "operating_costs_2040",
+                        "description": "operating costs in 2040",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "% of Invest",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "operating_costs_2045",
+                        "description": "operating costs in 2045",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "% of Invest",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "operating_costs_2050",
+                        "description": "operating costs in 2050",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "% of Invest",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lifetime_2020",
+                        "description": "life time in 2020",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "a",
+                        "isAbout": [
+                            {
+                                "name": "life time",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lifetime_2025",
+                        "description": "life time in 2025",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "a",
+                        "isAbout": [
+                            {
+                                "name": "life time",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lifetime_2030",
+                        "description": "life time in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "a",
+                        "isAbout": [
+                            {
+                                "name": "life time",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lifetime_2035",
+                        "description": "life time in 2035",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "a",
+                        "isAbout": [
+                            {
+                                "name": "life time",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lifetime_2040",
+                        "description": "life time in 2040",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "a",
+                        "isAbout": [
+                            {
+                                "name": "life time",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lifetime_2045",
+                        "description": "life time in 2045",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "a",
+                        "isAbout": [
+                            {
+                                "name": "life time",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "lifetime_2050",
+                        "description": "life time in 2050",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "a",
+                        "isAbout": [
+                            {
+                                "name": "life time",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_in_2020",
+                        "description": "input efficiency in 2020",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_in_2025",
+                        "description": "input efficiency in 2025",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_in_2030",
+                        "description": "input efficiency in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_in_2035",
+                        "description": "input efficiency in 2035",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_in_2040",
+                        "description": "input efficiency in 2040",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_in_2045",
+                        "description": "input efficiency in 2045",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_in_2050",
+                        "description": "input efficiency in 2050",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_out_2020",
+                        "description": "output efficiency in 2020",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_out_2025",
+                        "description": "output efficiency in 2025",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_out_2030",
+                        "description": "output efficiency in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_out_2035",
+                        "description": "output efficiency in 2035",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_out_2040",
+                        "description": "output efficiency in 2040",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_out_2045",
+                        "description": "output efficiency in 2045",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "efficiency_out_2050",
+                        "description": "output efficiency in 2050",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "efficiency value",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "balanced",
+                        "description": "Is the storage level the same at the beginning and end of the simulation period?",
+                        "type": "bool",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "initial_storage_level",
+                        "description": "Percentage specification of the storage level at the start of the simulation period - None means optimised",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "inverse_c_rate",
+                        "description": "Ratio of storage capacity to storage input/output power",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "h",
+                        "isAbout": [
+                            {
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    }
+                ],
+                "primaryKey": [
+                    "model_id"
+                ],
+                "foreignKeys": [
+                    {
+                        "fields": [
+                            "null"
+                        ],
+                        "reference": {
+                            "resource": "null",
+                            "fields": [
+                                "null"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "decimalSeparator": ","
+            },
+            "review": {
+                "path": "",
+                "badge": ""
             }
-          ]
-        },
-        {
-          "title": "Optimierungsmodell REMod-D: Materialien zur Analyse »Sektorkopplung« – Untersuchungen und Überlegungen zur Entwicklung eines integrierten Energiesystems.",
-          "authors": [
-            "Erlach, B.",
-            "Henning, H.-M.",
-            "Kost, C.",
-            "Palzer, A.",
-            "Stephanos, C."
-          ],
-          "description": "{7}",
-          "publicationYear": "2023",
-          "path": "https://energiesysteme-zukunft.de/fileadmin/user_upload/Publikationen/PDFs/ESYS_Materialien_Optimierungsmodell_REMod-D.pdf",
-          "sourceLicenses": [
-            {
-              "name": "null",
-              "title": "null",
-              "path": "null",
-              "instruction": "null",
-              "attribution": "null",
-              "copyrightStatement": "null"
-            }
-          ]
         }
-      ],
-      "licenses": [
-        {
-          "name": "CC-BY-4.0",
-          "title": "Creative Common Attribution 4.0 International",
-          "path": "https://creativecommons.org/licenses/by/4.0/",
-          "instruction": "null",
-          "attribution": "null",
-          "copyrightStatement": "null"
+    ],
+    "metaMetadata": {
+        "metadataVersion": "OEMetadata-2.0.4",
+        "metadataLicense": {
+            "name": "CC0-1.0",
+            "title": "Creative Commons Zero v1.0 Universal",
+            "path": "https://creativecommons.org/publicdomain/zero/1.0"
         }
-      ],
-      "contributors": [
-        {
-          "title": "Amèlie Oberdorfer",
-          "path": "null",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "DataCollector",
-            "ProjectMember"
-          ],
-          "date": "2024-12-31",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Andreas Lubojanski",
-          "path": "null",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "DataManager",
-            "ProjectMember"
-          ],
-          "date": "2026-06-30",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Christoph Schmidt",
-          "path": "https://orcid.org/0000-0002-4269-3779",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "ContactPerson",
-            "DataCurator",
-            "Distributor",
-            "ProjectManager",
-            "ProjectMember"
-          ],
-          "date": "2026-06-30",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Rohith Krishnan Bala Krishnan",
-          "path": "null",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "DataCollector",
-            "ProjectMember"
-          ],
-          "date": "2026-06-30",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Theresa Reinhardt",
-          "path": "null",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "ProjectMember"
-          ],
-          "date": "2026-06-30",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Viktor Wesselak",
-          "path": "null",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "Distributor",
-            "ProjectLeader",
-            "ProjectMember"
-          ],
-          "date": "2026-06-30",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Stefan Kirsch",
-          "path": "null",
-          "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
-          "roles": [
-            "DataManager"
-          ],
-          "date": "2025-09-01",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Kevin Lindt",
-          "path": "null",
-          "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
-          "roles": [
-            "DataManager"
-          ],
-          "date": "2025-09-01",
-          "object": "null",
-          "comment": "null"
-        }
-      ],
-      "type": "table",
-      "format": "csv",
-      "encoding": "utf8",
-      "schema": {
-        "fields": [
-          {
-            "name": "model_id",
-            "description": "model identification number",
-            "type": "string",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "null",
-                "@id": "null"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "investment_costs_2020",
-            "description": "investment costs in 2020",
-            "type": "float",
-            "nullable": true,
-            "unit": "€/MWh",
-            "isAbout": [
-              {
-                "name": "investment cost",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "investment_costs_2025",
-            "description": "investment costs in 2025",
-            "type": "float",
-            "nullable": true,
-            "unit": "€/MWh",
-            "isAbout": [
-              {
-                "name": "investment cost",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "investment_costs_2030",
-            "description": "investment costs in 2030",
-            "type": "float",
-            "nullable": true,
-            "unit": "€/MWh",
-            "isAbout": [
-              {
-                "name": "investment cost",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "investment_costs_2035",
-            "description": "investment costs in 2035",
-            "type": "float",
-            "nullable": true,
-            "unit": "€/MWh",
-            "isAbout": [
-              {
-                "name": "investment cost",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "investment_costs_2040",
-            "description": "investment costs in 2040",
-            "type": "float",
-            "nullable": true,
-            "unit": "€/MWh",
-            "isAbout": [
-              {
-                "name": "investment cost",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "investment_costs_2045",
-            "description": "investment costs in 2045",
-            "type": "float",
-            "nullable": true,
-            "unit": "€/MWh",
-            "isAbout": [
-              {
-                "name": "investment cost",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "investment_costs_2050",
-            "description": "investment costs in 2050",
-            "type": "float",
-            "nullable": true,
-            "unit": "€/MWh",
-            "isAbout": [
-              {
-                "name": "investment cost",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "operating_costs_2020",
-            "description": "operating costs in 2020",
-            "type": "float",
-            "nullable": true,
-            "unit": "% of Invest",
-            "isAbout": [
-              {
-                "name": "null",
-                "@id": "null"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "operating_costs_2025",
-            "description": "operating costs in 2025",
-            "type": "float",
-            "nullable": true,
-            "unit": "% of Invest",
-            "isAbout": [
-              {
-                "name": "null",
-                "@id": "null"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "operating_costs_2030",
-            "description": "operating costs in 2030",
-            "type": "float",
-            "nullable": true,
-            "unit": "% of Invest",
-            "isAbout": [
-              {
-                "name": "null",
-                "@id": "null"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "operating_costs_2035",
-            "description": "operating costs in 2035",
-            "type": "float",
-            "nullable": true,
-            "unit": "% of Invest",
-            "isAbout": [
-              {
-                "name": "null",
-                "@id": "null"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "operating_costs_2040",
-            "description": "operating costs in 2040",
-            "type": "float",
-            "nullable": true,
-            "unit": "% of Invest",
-            "isAbout": [
-              {
-                "name": "null",
-                "@id": "null"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "operating_costs_2045",
-            "description": "operating costs in 2045",
-            "type": "float",
-            "nullable": true,
-            "unit": "% of Invest",
-            "isAbout": [
-              {
-                "name": "null",
-                "@id": "null"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "operating_costs_2050",
-            "description": "operating costs in 2050",
-            "type": "float",
-            "nullable": true,
-            "unit": "% of Invest",
-            "isAbout": [
-              {
-                "name": "null",
-                "@id": "null"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "lifetime_2020",
-            "description": "life time in 2020",
-            "type": "float",
-            "nullable": true,
-            "unit": "a",
-            "isAbout": [
-              {
-                "name": "life time",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "lifetime_2025",
-            "description": "life time in 2025",
-            "type": "float",
-            "nullable": true,
-            "unit": "a",
-            "isAbout": [
-              {
-                "name": "life time",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "lifetime_2030",
-            "description": "life time in 2030",
-            "type": "float",
-            "nullable": true,
-            "unit": "a",
-            "isAbout": [
-              {
-                "name": "life time",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "lifetime_2035",
-            "description": "life time in 2035",
-            "type": "float",
-            "nullable": true,
-            "unit": "a",
-            "isAbout": [
-              {
-                "name": "life time",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "lifetime_2040",
-            "description": "life time in 2040",
-            "type": "float",
-            "nullable": true,
-            "unit": "a",
-            "isAbout": [
-              {
-                "name": "life time",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "lifetime_2045",
-            "description": "life time in 2045",
-            "type": "float",
-            "nullable": true,
-            "unit": "a",
-            "isAbout": [
-              {
-                "name": "life time",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "lifetime_2050",
-            "description": "life time in 2050",
-            "type": "float",
-            "nullable": true,
-            "unit": "a",
-            "isAbout": [
-              {
-                "name": "life time",
-                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_in_2020",
-            "description": "input efficiency in 2020",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_in_2025",
-            "description": "input efficiency in 2025",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_in_2030",
-            "description": "input efficiency in 2030",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_in_2035",
-            "description": "input efficiency in 2035",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_in_2040",
-            "description": "input efficiency in 2040",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_in_2045",
-            "description": "input efficiency in 2045",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_in_2050",
-            "description": "input efficiency in 2050",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_out_2020",
-            "description": "output efficiency in 2020",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_out_2025",
-            "description": "output efficiency in 2025",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_out_2030",
-            "description": "output efficiency in 2030",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_out_2035",
-            "description": "output efficiency in 2035",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_out_2040",
-            "description": "output efficiency in 2040",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_out_2045",
-            "description": "output efficiency in 2045",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "efficiency_out_2050",
-            "description": "output efficiency in 2050",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "efficiency value",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "balanced",
-            "description": "Is the storage level the same at the beginning and end of the simulation period?",
-            "type": "bool",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "null",
-                "@id": "null"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "initial_storage_level",
-            "description": "Percentage specification of the storage level at the start of the simulation period - None means optimised",
-            "type": "float",
-            "nullable": true,
-            "unit": "-",
-            "isAbout": [
-              {
-                "name": "null",
-                "@id": "null"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "inverse_c_rate",
-            "description": "Ratio of storage capacity to storage input/output power",
-            "type": "float",
-            "nullable": true,
-            "unit": "h",
-            "isAbout": [
-              {
-                "name": "null",
-                "@id": "null"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          }
-        ],
-        "primaryKey": [
-          "model_id"
-        ],
-        "foreignKeys": [
-          {
-            "fields": [
-              "null"
-            ],
-            "reference": {
-              "resource": "null",
-              "fields": [
-                "null"
-              ]
-            }
-          }
-        ]
-      },
-      "dialect": {
-        "delimiter": ";",
-        "decimalSeparator": ","
-      },
-      "review": {
-        "path": "",
-        "badge": ""
-      }
     }
-  ],
-  "metaMetadata": {
-    "metadataVersion": "OEMetadata-2.0.4",
-    "metadataLicense": {
-      "name": "CC0-1.0",
-      "title": "Creative Commons Zero v1.0 Universal",
-      "path": "https://creativecommons.org/publicdomain/zero/1.0"
-    }
-  }
 }

@@ -1,15 +1,12 @@
 {
-    "@context": "ToDo",
     "name": "Energy_demand_in_the_industry_sector_Planning_region_swest_HSN_inRET",
     "title": "Energy demand in the industry sector – Planning region swest",
     "description": "Energy demand in the industry sector – Planning region swest. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
-    "@id": "ToDo",
     "resources": [
         {
-            "@id": "",
             "name": "Energy_demand_in_the_industry_sector_Planning_region_swest_HSN_inRET",
             "topics": [
-                ""
+                "demand"
             ],
             "title": "Energy_demand_in_the_industry_sector_Planning_region_swest_HSN_inRET",
             "path": "",
@@ -45,15 +42,15 @@
                 "isActive": false
             },
             "context": {
-                "title": "ToDo",
-                "homepage": "https://hs-nordhausen.de/",
-                "documentation": "https://hs-nordhausen.de",
-                "sourceCode": "https://github.com/in-RET",
-                "publisher": "ToDo",
-                "publisherLogo": "ToDo",
-                "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik",
+                "title": "ZO.RRO II - Zero Carbon Cross Energy System",
+                "homepage": "https://zorro-thueringen.de/",
+                "documentation": "ToDo",
+                "sourceCode": "https://github.com/in-RET/ZO.RRO2",
+                "publisher": "Open Energy Platform",
+                "publisherLogo": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
+                "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik; ret@hs-nordhausen.de",
                 "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
-                "fundingAgencyLogo": "null",
+                "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
             "spatial": [
@@ -133,19 +130,19 @@
                         "ProjectMember"
                     ],
                     "date": "2024-12-31",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
                     "title": "Andreas Lubojanski",
-                    "path": "null",
+                    "path": "https://orcid.org/0009-0004-7229-2118",
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "DataManager",
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
@@ -160,7 +157,7 @@
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
@@ -172,18 +169,18 @@
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
                     "title": "Theresa Reinhardt",
-                    "path": "null",
+                    "path": "https://orcid.org/0009-0004-8449-3443",
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
@@ -196,30 +193,30 @@
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
                     "title": "Stefan Kirsch",
-                    "path": "null",
+                    "path": "https://orcid.org/0009-0004-0638-4639",
                     "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
                     "roles": [
-                        "DataManager"
+                        "Other"
                     ],
                     "date": "2025-09-01",
-                    "object": "null",
-                    "comment": "null"
+                    "object": "metadata",
+                    "comment": "consulting on FAIR data publication"
                 },
                 {
                     "title": "Kevin Lindt",
-                    "path": "null",
+                    "path": "https://orcid.org/0000-0003-3633-1349",
                     "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
                     "roles": [
-                        "DataManager"
+                        "Other"
                     ],
                     "date": "2025-09-01",
-                    "object": "null",
-                    "comment": "null"
+                    "object": "metadata",
+                    "comment": "consulting on FAIR data publication"
                 }
             ],
             "type": "table",

@@ -1,896 +1,893 @@
 {
-  "@context": "ToDo",
-  "name": "Scaled_household_electricity_load_profiles_HSN_inRET",
-  "title": "Scaled household electricity load profiles",
-  "description": "Scaled household electricity load profiles for the various planning regions in Thuringia: Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest). These are generic load profiles created using the RAMP software {1}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
-  "@id": "ToDo",
-  "resources": [
-    {
-      "@id": "",
-      "name": "Scaled_household_electricity_load_profiles_HSN_inRET",
-      "topics": [
-        ""
-      ],
-      "title": "Scaled_household_electricity_load_profiles_HSN_inRET",
-      "path": "",
-      "description": "Scaled household electricity load profiles for the various planning regions in Thuringia: Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest). These are generic load profiles created using the RAMP software {1}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
-      "languages": [
-        "en-GB"
-      ],
-      "subject": [
+    "name": "Scaled_household_electricity_load_profiles_HSN_inRET",
+    "title": "Scaled household electricity load profiles",
+    "description": "Scaled household electricity load profiles for the various planning regions in Thuringia: Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest). These are generic load profiles created using the RAMP software {1}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+    "resources": [
         {
-          "name": "electricity sector",
-          "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000145"
-        },
-        {
-          "name": "household sector",
-          "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000214"
-        },
-        {
-          "name": "electricity demand",
-          "id": "https://openenergyplatform.org/ontology/oeo/OEO_00320062"
-        },
-        {
-          "name": "time series",
-          "id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-        }
-      ],
-      "keywords": [
-        "Thuringia",
-        "oemof",
-        "ZO.RRO II",
-        "climate neutrality",
-        "HSN in.RET"
-      ],
-      "publicationDate": "2025-12-02",
-      "embargoPeriod": {
-        "start": "null",
-        "end": "null",
-        "isActive": false
-      },
-      "context": {
-        "title": "ToDo",
-        "homepage": "https://hs-nordhausen.de/",
-        "documentation": "https://hs-nordhausen.de",
-        "sourceCode": "https://github.com/in-RET",
-        "publisher": "ToDo",
-        "publisherLogo": "ToDo",
-        "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik",
-        "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
-        "fundingAgencyLogo": "null",
-        "grantNo": ""
-      },
-      "spatial": [
-        {
-          "location": {
-            "address": "Binderslebener Landstraße 100, 99092 Erfurt",
-            "@id": "null",
-            "latitude": "50.98",
-            "longitude": "10.97"
-          },
-          "extent": {
-            "name": "Erfurt",
-            "@id": "null",
-            "resolutionValue": "1",
-            "resolutionUnit": "m",
-            "boundingBox": [
-              0,
-              0,
-              0,
-              0
+            "name": "Scaled_household_electricity_load_profiles_HSN_inRET",
+            "topics": [
+                "demand"
             ],
-            "crs": "EPSG:4326"
-          }
-        },
-        {
-          "location": {
-            "address": "Kranichstraße 12, 99734 Nordhausen",
-            "@id": "null",
-            "latitude": "51.5036",
-            "longitude": "10.7913"
-          },
-          "extent": {
-            "name": "Nordhausen",
-            "@id": "null",
-            "resolutionValue": "1",
-            "resolutionUnit": "m",
-            "boundingBox": [
-              0,
-              0,
-              0,
-              0
+            "title": "Scaled_household_electricity_load_profiles_HSN_inRET",
+            "path": "",
+            "description": "Scaled household electricity load profiles for the various planning regions in Thuringia: Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest). These are generic load profiles created using the RAMP software {1}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+            "languages": [
+                "en-GB"
             ],
-            "crs": "EPSG:4326"
-          }
-        },
-        {
-          "location": {
-            "address": "Ronneburger Str. 74, 07546 Gera",
-            "@id": "null",
-            "latitude": "50.8821",
-            "longitude": "12.13"
-          },
-          "extent": {
-            "name": "Gera",
-            "@id": "null",
-            "resolutionValue": "1",
-            "resolutionUnit": "m",
-            "boundingBox": [
-              0,
-              0,
-              0,
-              0
+            "subject": [
+                {
+                    "name": "electricity sector",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000145"
+                },
+                {
+                    "name": "household sector",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000214"
+                },
+                {
+                    "name": "electricity demand",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00320062"
+                },
+                {
+                    "name": "time series",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                }
             ],
-            "crs": "EPSG:4326"
-          }
-        },
-        {
-          "location": {
-            "address": "Untere Braugasse 16, 98646 Hildburghausen",
-            "@id": "null",
-            "latitude": "50.4265",
-            "longitude": "10.7316"
-          },
-          "extent": {
-            "name": "Hildburghausen",
-            "@id": "null",
-            "resolutionValue": "1",
-            "resolutionUnit": "m",
-            "boundingBox": [
-              0,
-              0,
-              0,
-              0
+            "keywords": [
+                "Thuringia",
+                "oemof",
+                "ZO.RRO II",
+                "climate neutrality",
+                "HSN in.RET"
             ],
-            "crs": "EPSG:4326"
-          }
-        }
-      ],
-      "temporal": {
-        "referenceDate": "null",
-        "timeseries": [
-          {
-            "start": "2025-01-01T00:00:00+00:00",
-            "end": "2025-01-01T00:00:00+00:00",
-            "resolutionValue": "1",
-            "resolutionUnit": "h",
-            "alignment": "left",
-            "aggregationType": "current"
-          }
-        ]
-      },
-      "sources": [
-        {
-          "title": "Generating high-resolution multi-energy load profiles for remote areas with an open-source stochastic model",
-          "authors": [
-            "Lombardi, F.",
-            "Balderrama, S.",
-            "Quoilin, S.",
-            "Colombo, E."
-          ],
-          "description": "{1}}",
-          "publicationYear": "2019",
-          "path": "https://doi.org/10.1016/j.energy.2019.04.097",
-          "sourceLicenses": [
-            {
-              "name": "null",
-              "title": "null",
-              "path": "null",
-              "instruction": "Elsevier Ltd.",
-              "attribution": "null",
-              "copyrightStatement": "null"
+            "publicationDate": "2025-12-02",
+            "embargoPeriod": {
+                "start": "null",
+                "end": "null",
+                "isActive": false
+            },
+            "context": {
+                "title": "ZO.RRO II - Zero Carbon Cross Energy System",
+                "homepage": "https://zorro-thueringen.de/",
+                "documentation": "ToDo",
+                "sourceCode": "https://github.com/in-RET/ZO.RRO2",
+                "publisher": "Open Energy Platform",
+                "publisherLogo": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
+                "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik; ret@hs-nordhausen.de",
+                "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
+                "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
+                "grantNo": ""
+            },
+            "spatial": [
+                {
+                    "location": {
+                        "address": "Binderslebener Landstraße 100, 99092 Erfurt",
+                        "@id": "null",
+                        "latitude": "50.98",
+                        "longitude": "10.97"
+                    },
+                    "extent": {
+                        "name": "Erfurt",
+                        "@id": "null",
+                        "resolutionValue": "1",
+                        "resolutionUnit": "m",
+                        "boundingBox": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "crs": "EPSG:4326"
+                    }
+                },
+                {
+                    "location": {
+                        "address": "Kranichstraße 12, 99734 Nordhausen",
+                        "@id": "null",
+                        "latitude": "51.5036",
+                        "longitude": "10.7913"
+                    },
+                    "extent": {
+                        "name": "Nordhausen",
+                        "@id": "null",
+                        "resolutionValue": "1",
+                        "resolutionUnit": "m",
+                        "boundingBox": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "crs": "EPSG:4326"
+                    }
+                },
+                {
+                    "location": {
+                        "address": "Ronneburger Str. 74, 07546 Gera",
+                        "@id": "null",
+                        "latitude": "50.8821",
+                        "longitude": "12.13"
+                    },
+                    "extent": {
+                        "name": "Gera",
+                        "@id": "null",
+                        "resolutionValue": "1",
+                        "resolutionUnit": "m",
+                        "boundingBox": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "crs": "EPSG:4326"
+                    }
+                },
+                {
+                    "location": {
+                        "address": "Untere Braugasse 16, 98646 Hildburghausen",
+                        "@id": "null",
+                        "latitude": "50.4265",
+                        "longitude": "10.7316"
+                    },
+                    "extent": {
+                        "name": "Hildburghausen",
+                        "@id": "null",
+                        "resolutionValue": "1",
+                        "resolutionUnit": "m",
+                        "boundingBox": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "crs": "EPSG:4326"
+                    }
+                }
+            ],
+            "temporal": {
+                "referenceDate": "null",
+                "timeseries": [
+                    {
+                        "start": "2025-01-01T00:00:00+00:00",
+                        "end": "2025-01-01T00:00:00+00:00",
+                        "resolutionValue": "1",
+                        "resolutionUnit": "h",
+                        "alignment": "left",
+                        "aggregationType": "current"
+                    }
+                ]
+            },
+            "sources": [
+                {
+                    "title": "Generating high-resolution multi-energy load profiles for remote areas with an open-source stochastic model",
+                    "authors": [
+                        "Lombardi, F.",
+                        "Balderrama, S.",
+                        "Quoilin, S.",
+                        "Colombo, E."
+                    ],
+                    "description": "{1}}",
+                    "publicationYear": "2019",
+                    "path": "https://doi.org/10.1016/j.energy.2019.04.097",
+                    "sourceLicenses": [
+                        {
+                            "name": "null",
+                            "title": "null",
+                            "path": "null",
+                            "instruction": "Elsevier Ltd.",
+                            "attribution": "null",
+                            "copyrightStatement": "null"
+                        }
+                    ]
+                }
+            ],
+            "licenses": [
+                {
+                    "name": "CC-BY-4.0",
+                    "title": "Creative Common Attribution 4.0 International",
+                    "path": "https://creativecommons.org/licenses/by/4.0/",
+                    "instruction": "You are free to use, share and modify; As long as you attribute, include copyright and state changes",
+                    "attribution": "© Hochschule Nordhausen - Institut für Regenerative Energietechnik, © ZO.RRO II Project Team",
+                    "copyrightStatement": ""
+                }
+            ],
+            "contributors": [
+                {
+                    "title": "Amèlie Oberdorfer",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataCollector",
+                        "ProjectMember"
+                    ],
+                    "date": "2024-12-31",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Andreas Lubojanski",
+                    "path": "https://orcid.org/0009-0004-7229-2118",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataManager",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Christoph Schmidt",
+                    "path": "https://orcid.org/0000-0002-4269-3779",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "ContactPerson",
+                        "DataCurator",
+                        "Distributor",
+                        "ProjectManager",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Rohith Krishnan Bala Krishnan",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "DataCollector",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Theresa Reinhardt",
+                    "path": "https://orcid.org/0009-0004-8449-3443",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Viktor Wesselak",
+                    "path": "null",
+                    "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
+                    "roles": [
+                        "Distributor",
+                        "ProjectLeader",
+                        "ProjectMember"
+                    ],
+                    "date": "2026-06-30",
+                    "object": "data and metadata",
+                    "comment": "null"
+                },
+                {
+                    "title": "Stefan Kirsch",
+                    "path": "https://orcid.org/0009-0004-0638-4639",
+                    "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
+                    "roles": [
+                        "Other"
+                    ],
+                    "date": "2025-09-01",
+                    "object": "metadata",
+                    "comment": "consulting on FAIR data publication"
+                },
+                {
+                    "title": "Kevin Lindt",
+                    "path": "https://orcid.org/0000-0003-3633-1349",
+                    "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
+                    "roles": [
+                        "Other"
+                    ],
+                    "date": "2025-09-01",
+                    "object": "metadata",
+                    "comment": "consulting on FAIR data publication"
+                }
+            ],
+            "type": "table",
+            "format": "csv",
+            "encoding": "utf8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "middle_2020",
+                        "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2020.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middle_2025",
+                        "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2025.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middle_2030",
+                        "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2030.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middle_2035",
+                        "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2035.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middle_2040",
+                        "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2040.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middle_2045",
+                        "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2045.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "middle_2050",
+                        "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2050.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "east_2020",
+                        "description": "Scaled household electricity load profiles for the region near Gera for the year 2020.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "east_2025",
+                        "description": "Scaled household electricity load profiles for the region near Gera for the year 2025.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "east_2030",
+                        "description": "Scaled household electricity load profiles for the region near Gera for the year 2030.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "east_2035",
+                        "description": "Scaled household electricity load profiles for the region near Gera for the year 2035.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "east_2040",
+                        "description": "Scaled household electricity load profiles for the region near Gera for the year 2040.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "east_2045",
+                        "description": "Scaled household electricity load profiles for the region near Gera for the year 2045.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "east_2050",
+                        "description": "Scaled household electricity load profiles for the region near Gera for the year 2050.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "swest_2020",
+                        "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2020.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "swest_2025",
+                        "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2025.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "swest_2030",
+                        "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2030.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "swest_2035",
+                        "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2035.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "swest_2040",
+                        "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2040.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "swest_2045",
+                        "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2045.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "swest_2050",
+                        "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2050.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "north_2020",
+                        "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2020.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "north_2025",
+                        "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2025.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "north_2030",
+                        "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2030.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "north_2035",
+                        "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2035.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "north_2040",
+                        "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2040.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "north_2045",
+                        "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2045.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "north_2050",
+                        "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2050.",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "MWh/MW",
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    }
+                ],
+                "primaryKey": [
+                    "null"
+                ],
+                "foreignKeys": [
+                    {
+                        "fields": [
+                            "null"
+                        ],
+                        "reference": {
+                            "resource": "null",
+                            "fields": [
+                                "null"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "decimalSeparator": ","
+            },
+            "review": {
+                "path": "",
+                "badge": ""
             }
-          ]
         }
-      ],
-      "licenses": [
-        {
-          "name": "CC-BY-4.0",
-          "title": "Creative Common Attribution 4.0 International",
-          "path": "https://creativecommons.org/licenses/by/4.0/",
-          "instruction": "null",
-          "attribution": "null",
-          "copyrightStatement": "null"
+    ],
+    "metaMetadata": {
+        "metadataVersion": "OEMetadata-2.0.4",
+        "metadataLicense": {
+            "name": "CC0-1.0",
+            "title": "Creative Commons Zero v1.0 Universal",
+            "path": "https://creativecommons.org/publicdomain/zero/1.0"
         }
-      ],
-      "contributors": [
-        {
-          "title": "Amèlie Oberdorfer",
-          "path": "null",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "DataCollector",
-            "ProjectMember"
-          ],
-          "date": "2024-12-31",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Andreas Lubojanski",
-          "path": "null",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "DataManager",
-            "ProjectMember"
-          ],
-          "date": "2026-06-30",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Christoph Schmidt",
-          "path": "https://orcid.org/0000-0002-4269-3779",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "ContactPerson",
-            "DataCurator",
-            "Distributor",
-            "ProjectManager",
-            "ProjectMember"
-          ],
-          "date": "2026-06-30",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Rohith Krishnan Bala Krishnan",
-          "path": "null",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "DataCollector",
-            "ProjectMember"
-          ],
-          "date": "2026-06-30",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Theresa Reinhardt",
-          "path": "null",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "ProjectMember"
-          ],
-          "date": "2026-06-30",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Viktor Wesselak",
-          "path": "null",
-          "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
-          "roles": [
-            "Distributor",
-            "ProjectLeader",
-            "ProjectMember"
-          ],
-          "date": "2026-06-30",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Stefan Kirsch",
-          "path": "null",
-          "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
-          "roles": [
-            "DataManager"
-          ],
-          "date": "2025-09-01",
-          "object": "null",
-          "comment": "null"
-        },
-        {
-          "title": "Kevin Lindt",
-          "path": "null",
-          "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
-          "roles": [
-            "DataManager"
-          ],
-          "date": "2025-09-01",
-          "object": "null",
-          "comment": "null"
-        }
-      ],
-      "type": "table",
-      "format": "csv",
-      "encoding": "utf8",
-      "schema": {
-        "fields": [
-          {
-            "name": "middle_2020",
-            "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2020.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "middle_2025",
-            "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2025.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "middle_2030",
-            "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2030.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "middle_2035",
-            "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2035.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "middle_2040",
-            "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2040.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "middle_2045",
-            "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2045.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "middle_2050",
-            "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2050.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "east_2020",
-            "description": "Scaled household electricity load profiles for the region near Gera for the year 2020.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "east_2025",
-            "description": "Scaled household electricity load profiles for the region near Gera for the year 2025.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "east_2030",
-            "description": "Scaled household electricity load profiles for the region near Gera for the year 2030.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "east_2035",
-            "description": "Scaled household electricity load profiles for the region near Gera for the year 2035.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "east_2040",
-            "description": "Scaled household electricity load profiles for the region near Gera for the year 2040.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "east_2045",
-            "description": "Scaled household electricity load profiles for the region near Gera for the year 2045.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "east_2050",
-            "description": "Scaled household electricity load profiles for the region near Gera for the year 2050.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "swest_2020",
-            "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2020.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "swest_2025",
-            "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2025.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "swest_2030",
-            "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2030.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "swest_2035",
-            "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2035.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "swest_2040",
-            "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2040.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "swest_2045",
-            "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2045.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "swest_2050",
-            "description": "Scaled household electricity load profiles for the region near Hildburghausen for the year 2050.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "north_2020",
-            "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2020.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "north_2025",
-            "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2025.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "north_2030",
-            "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2030.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "north_2035",
-            "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2035.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "north_2040",
-            "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2040.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "north_2045",
-            "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2045.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          },
-          {
-            "name": "north_2050",
-            "description": "Scaled household electricity load profiles for the region near Nordhausen for the year 2050.",
-            "type": "float",
-            "nullable": true,
-            "unit": "MWh/MW",
-            "isAbout": [
-              {
-                "name": "time series",
-                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
-              }
-            ],
-            "valueReference": [
-              {
-                "value": "null",
-                "name": "null",
-                "@id": "null"
-              }
-            ]
-          }
-        ],
-        "primaryKey": [
-          "null"
-        ],
-        "foreignKeys": [
-          {
-            "fields": [
-              "null"
-            ],
-            "reference": {
-              "resource": "null",
-              "fields": [
-                "null"
-              ]
-            }
-          }
-        ]
-      },
-      "dialect": {
-        "delimiter": ";",
-        "decimalSeparator": ","
-      },
-      "review": {
-        "path": "",
-        "badge": ""
-      }
     }
-  ],
-  "metaMetadata": {
-    "metadataVersion": "OEMetadata-2.0.4",
-    "metadataLicense": {
-      "name": "CC0-1.0",
-      "title": "Creative Commons Zero v1.0 Universal",
-      "path": "https://creativecommons.org/publicdomain/zero/1.0"
-    }
-  }
 }

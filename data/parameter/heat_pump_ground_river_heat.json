@@ -1,15 +1,12 @@
 {
-    "@context": "ToDo",
     "name": "techno_economic_parameters_for_ground_source_heat_pump_HSN_inRET",
     "title": "techno-economic parameters for ground source heat pump",
     "description": "techno-economic parameters for ground source heat pump; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
-    "@id": "ToDo",
     "resources": [
         {
-            "@id": "",
             "name": "techno_economic_parameters_for_ground_source_heat_pump_HSN_inRET",
             "topics": [
-                ""
+                "economy"
             ],
             "title": "techno_economic_parameters_for_ground_source_heat_pump_HSN_inRET",
             "path": "",
@@ -20,11 +17,11 @@
             "subject": [
                 {
                     "name": "investment cost",
-                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020167/"
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020167/"
                 },
                 {
                     "name": "fixed cost",
-                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                 },
                 {
                     "name": "heat pump",
@@ -32,7 +29,7 @@
                 },
                 {
                     "name": "life time",
-                    "id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                 },
                 {
                     "name": "efficiency value",
@@ -53,15 +50,15 @@
                 "isActive": false
             },
             "context": {
-                "title": "ToDo",
-                "homepage": "https://hs-nordhausen.de/",
-                "documentation": "https://hs-nordhausen.de",
-                "sourceCode": "https://github.com/in-RET",
-                "publisher": "ToDo",
-                "publisherLogo": "ToDo",
-                "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik",
+                "title": "ZO.RRO II - Zero Carbon Cross Energy System",
+                "homepage": "https://zorro-thueringen.de/",
+                "documentation": "ToDo",
+                "sourceCode": "https://github.com/in-RET/ZO.RRO2",
+                "publisher": "Open Energy Platform",
+                "publisherLogo": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
+                "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik; ret@hs-nordhausen.de",
                 "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
-                "fundingAgencyLogo": "null",
+                "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
             "spatial": {
@@ -91,9 +88,9 @@
                     {
                         "start": "2025-01-01T00:00:00+00:00",
                         "end": "2025-01-01T00:00:00+00:00",
-                        "resolutionValue": "5a",
+                        "resolutionValue": "5",
                         "resolutionUnit": "a",
-                        "alignment": "null",
+                        "alignment": "middle",
                         "aggregationType": "average"
                     }
                 ]
@@ -195,9 +192,9 @@
                     "name": "CC-BY-4.0",
                     "title": "Creative Common Attribution 4.0 International",
                     "path": "https://creativecommons.org/licenses/by/4.0/",
-                    "instruction": "null",
-                    "attribution": "null",
-                    "copyrightStatement": "null"
+                    "instruction": "You are free to use, share and modify; As long as you attribute, include copyright and state changes",
+                    "attribution": "© Hochschule Nordhausen - Institut für Regenerative Energietechnik, © ZO.RRO II Project Team",
+                    "copyrightStatement": ""
                 }
             ],
             "contributors": [
@@ -210,19 +207,19 @@
                         "ProjectMember"
                     ],
                     "date": "2024-12-31",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
                     "title": "Andreas Lubojanski",
-                    "path": "null",
+                    "path": "https://orcid.org/0009-0004-7229-2118",
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "DataManager",
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
@@ -237,7 +234,7 @@
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
@@ -249,18 +246,18 @@
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
                     "title": "Theresa Reinhardt",
-                    "path": "null",
+                    "path": "https://orcid.org/0009-0004-8449-3443",
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
@@ -273,30 +270,30 @@
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
+                    "object": "data and metadata",
                     "comment": "null"
                 },
                 {
                     "title": "Stefan Kirsch",
-                    "path": "null",
+                    "path": "https://orcid.org/0009-0004-0638-4639",
                     "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
                     "roles": [
-                        "DataManager"
+                        "Other"
                     ],
                     "date": "2025-09-01",
-                    "object": "null",
-                    "comment": "null"
+                    "object": "metadata",
+                    "comment": "consulting on FAIR data publication"
                 },
                 {
                     "title": "Kevin Lindt",
-                    "path": "null",
+                    "path": "https://orcid.org/0000-0003-3633-1349",
                     "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
                     "roles": [
-                        "DataManager"
+                        "Other"
                     ],
                     "date": "2025-09-01",
-                    "object": "null",
-                    "comment": "null"
+                    "object": "metadata",
+                    "comment": "consulting on FAIR data publication"
                 }
             ],
             "type": "table",
@@ -333,7 +330,7 @@
                         "isAbout": [
                             {
                                 "name": "investment cost",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
                         ],
                         "valueReference": [
@@ -353,7 +350,7 @@
                         "isAbout": [
                             {
                                 "name": "investment cost",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
                         ],
                         "valueReference": [
@@ -373,7 +370,7 @@
                         "isAbout": [
                             {
                                 "name": "investment cost",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
                         ],
                         "valueReference": [
@@ -393,7 +390,7 @@
                         "isAbout": [
                             {
                                 "name": "investment cost",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
                         ],
                         "valueReference": [
@@ -413,7 +410,7 @@
                         "isAbout": [
                             {
                                 "name": "investment cost",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
                         ],
                         "valueReference": [
@@ -433,7 +430,7 @@
                         "isAbout": [
                             {
                                 "name": "investment cost",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
                         ],
                         "valueReference": [
@@ -453,7 +450,7 @@
                         "isAbout": [
                             {
                                 "name": "investment cost",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020168/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
                         ],
                         "valueReference": [
@@ -613,7 +610,7 @@
                         "isAbout": [
                             {
                                 "name": "life time",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
                         ],
                         "valueReference": [
@@ -633,7 +630,7 @@
                         "isAbout": [
                             {
                                 "name": "life time",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
                         ],
                         "valueReference": [
@@ -653,7 +650,7 @@
                         "isAbout": [
                             {
                                 "name": "life time",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
                         ],
                         "valueReference": [
@@ -673,7 +670,7 @@
                         "isAbout": [
                             {
                                 "name": "life time",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
                         ],
                         "valueReference": [
@@ -693,7 +690,7 @@
                         "isAbout": [
                             {
                                 "name": "life time",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
                         ],
                         "valueReference": [
@@ -713,7 +710,7 @@
                         "isAbout": [
                             {
                                 "name": "life time",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
                         ],
                         "valueReference": [
@@ -733,7 +730,7 @@
                         "isAbout": [
                             {
                                 "name": "life time",
-                                "@id": "http://openenergyplatform.org/ontology/oeo/OEO_00020175/"
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
                         ],
                         "valueReference": [
