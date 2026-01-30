@@ -1,23 +1,26 @@
 {
-    "name": "CO2_Limit_HSN_inRET",
-    "title": "CO2-Limit",
-    "description": "CO2-Limit; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+    "@context": "ToDo",
+    "name": "Temp_district_heating_HSN_inRET",
+    "title": "Temperature values describing the forward and return temperatures of the district heating network as a function of the outside temperature.",
+    "description": "Temperature values describing the forward and return temperatures of the district heating network as a function of the outside temperature.; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+    "@id": "ToDo",
     "resources": [
         {
-            "name": "CO2_Limit_HSN_inRET",
+            "@id": "",
+            "name": "Temp_district_heating_HSN_inRET",
             "topics": [
                 ""
             ],
-            "title": "CO2_Limit_HSN_inRET",
+            "title": "Temp_district_heating_HSN_inRET",
             "path": "",
-            "description": "CO2-Limit; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
+            "description": "Temperature values describing the forward and return temperatures of the district heating network as a function of the outside temperature.; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [
                 "en-GB"
             ],
             "subject": [
                 {
-                    "name": "cutoff",
-                    "id": "https://purl.obolibrary.org/obo/STATO_0000633"
+                    "name": "temperature",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                 }
             ],
             "keywords": [
@@ -34,15 +37,15 @@
                 "isActive": false
             },
             "context": {
-                "title": "ZO.RRO II - Zero Carbon Cross Energy System",
-                "homepage": "https://zorro-thueringen.de/",
-                "documentation": "ToDo",
-                "sourceCode": "https://github.com/in-RET/ZO.RRO2",
-                "publisher": "Open Energy Platform",
-                "publisherLogo": "https://github.com/OpenEnergyPlatform/organisation/blob/production/logo/OpenEnergyFamily_Logo_OpenEnergyPlatform.svg",
-                "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik; ret@hs-nordhausen.de",
+                "title": "ToDo",
+                "homepage": "https://hs-nordhausen.de/",
+                "documentation": "https://hs-nordhausen.de",
+                "sourceCode": "https://github.com/in-RET",
+                "publisher": "ToDo",
+                "publisherLogo": "ToDo",
+                "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik",
                 "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
-                "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
+                "fundingAgencyLogo": "null",
                 "grantNo": ""
             },
             "spatial": {
@@ -70,18 +73,18 @@
                 "referenceDate": "2025-01-01",
                 "timeseries": [
                     {
-                        "start": "2025-01-01T00:00:00+01:00",
-                        "end": "2045-12-31T23:59:59+01:00",
-                        "resolutionValue": "5a",
+                        "start": "2025-01-01T00:00:00+00:00",
+                        "end": "2025-01-01T00:00:00+00:00",
+                        "resolutionValue": "5",
                         "resolutionUnit": "a",
                         "alignment": "null",
-                        "aggregationType": "average"
+                        "aggregationType": "null"
                     }
                 ]
             },
             "sources": [
                 {
-                    "title": "null",
+                    "titl]e": "null",
                     "authors": [
                         "null"
                     ],
@@ -120,19 +123,19 @@
                         "ProjectMember"
                     ],
                     "date": "2024-12-31",
-                    "object": "data and metadata",
+                    "object": "null",
                     "comment": "null"
                 },
                 {
                     "title": "Andreas Lubojanski",
-                    "path": "https://orcid.org/0009-0004-7229-2118",
+                    "path": "null",
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "DataManager",
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "data and metadata",
+                    "object": "null",
                     "comment": "null"
                 },
                 {
@@ -147,7 +150,7 @@
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "data and metadata",
+                    "object": "null",
                     "comment": "null"
                 },
                 {
@@ -159,18 +162,18 @@
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "data and metadata",
+                    "object": "null",
                     "comment": "null"
                 },
                 {
                     "title": "Theresa Reinhardt",
-                    "path": "https://orcid.org/0009-0004-8449-3443",
+                    "path": "null",
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "data and metadata",
+                    "object": "null",
                     "comment": "null"
                 },
                 {
@@ -183,30 +186,30 @@
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "data and metadata",
+                    "object": "null",
                     "comment": "null"
                 },
                 {
                     "title": "Stefan Kirsch",
-                    "path": "https://orcid.org/0009-0004-0638-4639",
+                    "path": "null",
                     "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
                     "roles": [
-                        "Other"
+                        "DataManager"
                     ],
                     "date": "2025-09-01",
-                    "object": "metadata",
-                    "comment": "consulting on FAIR data publication"
+                    "object": "null",
+                    "comment": "null"
                 },
                 {
                     "title": "Kevin Lindt",
-                    "path": "https://orcid.org/0000-0003-3633-1349",
+                    "path": "null",
                     "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
                     "roles": [
-                        "Other"
+                        "DataManager"
                     ],
                     "date": "2025-09-01",
-                    "object": "metadata",
-                    "comment": "consulting on FAIR data publication"
+                    "object": "null",
+                    "comment": "null"
                 }
             ],
             "type": "table",
@@ -235,15 +238,15 @@
                         ]
                     },
                     {
-                        "name": "CO2_Grenze_2025",
-                        "description": "CO2-Limit in 2025",
+                        "name": "T_VL_U_2025",
+                        "description": "Flow temperature from the upper limit of the outside temperature in 2025",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2",
+                        "unit": "°C",
                         "isAbout": [
                             {
-                                "name": "cutoff",
-                                "@id": "https://purl.obolibrary.org/obo/STATO_0000633"
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
                         ],
                         "valueReference": [
@@ -255,15 +258,15 @@
                         ]
                     },
                     {
-                        "name": "CO2_Grenze_2030",
-                        "description": "CO2-Limit in 2030",
+                        "name": "T_VL_U_2030",
+                        "description": "Flow temperature from the upper limit of the outside temperature in 2030",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2",
+                        "unit": "°C",
                         "isAbout": [
                             {
-                                "name": "cutoff",
-                                "@id": "https://purl.obolibrary.org/obo/STATO_0000633"
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
                         ],
                         "valueReference": [
@@ -275,15 +278,15 @@
                         ]
                     },
                     {
-                        "name": "CO2_Grenze_2035",
-                        "description": "CO2-Limit in 2035",
+                        "name": "T_VL_U_2035",
+                        "description": "Flow temperature from the upper limit of the outside temperature in 2035",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2",
+                        "unit": "°C",
                         "isAbout": [
                             {
-                                "name": "cutoff",
-                                "@id": "https://purl.obolibrary.org/obo/STATO_0000633"
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
                         ],
                         "valueReference": [
@@ -295,15 +298,15 @@
                         ]
                     },
                     {
-                        "name": "CO2_Grenze_2040",
-                        "description": "CO2-Limit in 2040",
+                        "name": "T_VL_U_2040",
+                        "description": "Flow temperature from the upper limit of the outside temperature in 2040",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2",
+                        "unit": "°C",
                         "isAbout": [
                             {
-                                "name": "cutoff",
-                                "@id": "https://purl.obolibrary.org/obo/STATO_0000633"
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
                         ],
                         "valueReference": [
@@ -315,15 +318,15 @@
                         ]
                     },
                     {
-                        "name": "CO2_Grenze_2045",
-                        "description": "CO2-Limit in 2045",
+                        "name": "T_VL_U_2045",
+                        "description": "Flow temperature from the upper limit of the outside temperature in 2045",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2",
+                        "unit": "°C",
                         "isAbout": [
                             {
-                                "name": "cutoff",
-                                "@id": "https://purl.obolibrary.org/obo/STATO_0000633"
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
                         ],
                         "valueReference": [
@@ -335,15 +338,295 @@
                         ]
                     },
                     {
-                        "name": "CO2_Grenze_2050",
-                        "description": "CO2-Limit in 2050",
+                        "name": "T_VL_U_2050",
+                        "description": "Flow temperature from the upper limit of the outside temperature in 2050",
                         "type": "float",
                         "nullable": true,
-                        "unit": "kg_CO2",
+                        "unit": "°C",
                         "isAbout": [
                             {
-                                "name": "cutoff",
-                                "@id": "https://purl.obolibrary.org/obo/STATO_0000633"
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_VL_L_2025",
+                        "description": "Flow temperature from the lower limit of the outside temperature in 2025",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_VL_L_2030",
+                        "description": "Flow temperature from the lower limit of the outside temperature in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_VL_L_2035",
+                        "description": "Flow temperature from the lower limit of the outside temperature in 2035",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_VL_L_2040",
+                        "description": "Flow temperature from the lower limit of the outside temperature in 2040",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_VL_L_2045",
+                        "description": "Flow temperature from the lower limit of the outside temperature in 2045",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_VL_L_2050",
+                        "description": "Flow temperature from the lower limit of the outside temperature in 2050",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_RL_2025",
+                        "description": "Return temperature in 2025",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_RL_2030",
+                        "description": "Return temperature in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_RL_2035",
+                        "description": "Return temperature in 2035",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_RL_2040",
+                        "description": "Return temperature in 2040",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_RL_2045",
+                        "description": "Return temperature in 2045",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_RL_2050",
+                        "description": "Return temperature in 2050",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_L",
+                        "description": "Lower ambient temperature limit",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "T_U",
+                        "description": "Upper ambient temperature limit",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
                         ],
                         "valueReference": [
@@ -357,6 +640,19 @@
                 ],
                 "primaryKey": [
                     "model_id"
+                ],
+                "foreignKeys": [
+                    {
+                        "fields": [
+                            "null"
+                        ],
+                        "reference": {
+                            "resource": "null",
+                            "fields": [
+                                "null"
+                            ]
+                        }
+                    }
                 ]
             },
             "dialect": {

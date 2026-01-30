@@ -839,7 +839,7 @@
                                 "@id": "null"
                             }
                         ]
-                    },
+                    }
                 ],
                 "primaryKey": [
                     "index"

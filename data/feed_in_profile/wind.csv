@@ -1,4 +1,4 @@
-;Wind_east;Wind_swest;Wind_north;Wind_middle
+index;Wind_east;Wind_swest;Wind_north;Wind_middle
 0;0,03417525;0,065541;0,03417525;0,010715725
 1;0,02629525;0,038689;0,03337725;0,012131
 2;0,012131;0,01959675;0,012131;0,002469958

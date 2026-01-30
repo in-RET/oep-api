@@ -233,6 +233,25 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "index",
+                        "description": "Index column.",
+                        "type": "integer",
+                        "nullable": false,
+                        "isAbout": [
+                            {
+                                "name": "index",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
                         "name": "car_2025",
                         "description": "Scaled time series of passenger transport by car for the year 2025",
                         "type": "float",
@@ -594,7 +613,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "null"
+                    "index"
                 ],
                 "foreignKeys": [
                     {

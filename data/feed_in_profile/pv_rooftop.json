@@ -280,6 +280,25 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "index",
+                        "description": "Index column.",
+                        "type": "integer",
+                        "nullable": false,
+                        "isAbout": [
+                            {
+                                "name": "index",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
                         "name": "PV_rooftop_middle",
                         "description": "feed-in profile for rooftop photovoltaik power plant in Erfurt",
                         "type": "float",
@@ -361,7 +380,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "model_id"
+                    "index"
                 ],
                 "foreignKeys": [
                     {

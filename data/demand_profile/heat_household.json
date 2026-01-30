@@ -301,6 +301,25 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "index",
+                        "description": "Index column.",
+                        "type": "integer",
+                        "nullable": false,
+                        "isAbout": [
+                            {
+                                "name": "index",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
                         "name": "Heat+TWW_middle",
                         "description": "Scaled, combined space heating and domestic hot water time series for households for the region near Erfurt.",
                         "type": "float",
@@ -382,7 +401,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "null"
+                    "index"
                 ],
                 "foreignKeys": [
                     {

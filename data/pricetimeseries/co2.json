@@ -217,6 +217,25 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "index",
+                        "description": "Index column.",
+                        "type": "integer",
+                        "nullable": false,
+                        "isAbout": [
+                            {
+                                "name": "index",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
                         "name": "CO2_2025",
                         "description": "carbon tax value in 2025",
                         "type": "float",
@@ -338,7 +357,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "model_id"
+                    "index"
                 ]
             },
             "dialect": {

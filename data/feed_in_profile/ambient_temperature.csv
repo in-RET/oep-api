@@ -1,4 +1,4 @@
-; Ta_middle; Ta_east; Ta_swest; Ta_north
+index; Ta_middle; Ta_east; Ta_swest; Ta_north
 0;4,3;3,6;3,6;3,3
 1;4;3,5;3,8;3
 2;3,6;3,2;3,6;2,7

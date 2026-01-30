@@ -243,7 +243,7 @@
                         ]
                     },
                     {
-                        "name": "Potential_Umweltwärme",
+                        "name": "Potential_Umweltwaerme",
                         "description": "Potential limit for the use ambient heat of rivers",
                         "type": "float",
                         "nullable": true,
@@ -263,7 +263,7 @@
                         ]
                     },
                     {
-                        "name": "Potential_Abwärme",
+                        "name": "Potential_Abwaerme",
                         "description": "Potential limit of waste heat",
                         "type": "float",
                         "nullable": true,

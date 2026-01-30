@@ -221,8 +221,47 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "Brown_coal_2025",
+                        "name": "index",
+                        "description": "Index column.",
+                        "type": "integer",
+                        "nullable": false,
+                        "isAbout": [
+                            {
+                                "name": "index",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Brown_coal_2020",
                         "description": "import price value lignite in 2025",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "import price",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Brown_coal_2025",
+                        "description": "import price value lignite in 2030",
                         "type": "float",
                         "nullable": true,
                         "unit": "€/MWh",
@@ -259,10 +298,90 @@
                                 "@id": "null"
                             }
                         ]
+                    },
+                    {
+                        "name": "Brown_coal_2035",
+                        "description": "import price value lignite in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "import price",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Brown_coal_2040",
+                        "description": "import price value lignite in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "import price",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Brown_coal_2045",
+                        "description": "import price value lignite in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "import price",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Brown_coal_2050",
+                        "description": "import price value lignite in 2030",
+                        "type": "float",
+                        "nullable": true,
+                        "unit": "€/MWh",
+                        "isAbout": [
+                            {
+                                "name": "import price",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
                     }
                 ],
                 "primaryKey": [
-                    "model_id"
+                    "index"
                 ]
             },
             "dialect": {

@@ -295,6 +295,25 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "index",
+                        "description": "Index column.",
+                        "type": "integer",
+                        "nullable": false,
+                        "isAbout": [
+                            {
+                                "name": "index",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
                         "name": "middle_2020",
                         "description": "Scaled household electricity load profiles for the region near Erfurt for the year 2020.",
                         "type": "float",
@@ -856,7 +875,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "null"
+                    "index"
                 ],
                 "foreignKeys": [
                     {

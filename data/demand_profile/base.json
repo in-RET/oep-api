@@ -217,6 +217,25 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "index",
+                        "description": "Index column.",
+                        "type": "integer",
+                        "nullable": false,
+                        "isAbout": [
+                            {
+                                "name": "index",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
                         "name": "base_load",
                         "description": "base load time series",
                         "type": "float",
@@ -238,7 +257,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "null"
+                    "index"
                 ],
                 "foreignKeys": [
                     {

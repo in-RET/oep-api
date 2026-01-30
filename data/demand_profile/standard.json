@@ -255,6 +255,25 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "index",
+                        "description": "Index column.",
+                        "type": "integer",
+                        "nullable": false,
+                        "isAbout": [
+                            {
+                                "name": "index",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
+                            }
+                        ],
+                        "valueReference": [
+                            {
+                                "value": "null",
+                                "name": "null",
+                                "@id": "null"
+                            }
+                        ]
+                    },
+                    {
                         "name": "G0",
                         "description": "Standard load profile G0 ‘General commercial’of the BDEW {3}",
                         "type": "float",
@@ -356,7 +375,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "null"
+                    "index"
                 ],
                 "foreignKeys": [
                     {
