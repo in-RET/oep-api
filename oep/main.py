@@ -182,7 +182,7 @@ class OepUploader:
             table_name: Name of the table
             schema: Table schema dictionary
         """
-        print(f"Creating table '{table_name}' in schema '{self.topic}'...")
+        # print(f"Creating table '{table_name}' in schema '{self.topic}'...")
         try:
             self.client.create_table(table=table_name, definition=schema)
             print(f"Table '{table_name}' created successfully")
@@ -197,7 +197,7 @@ class OepUploader:
             table_name: Name of the table
             data: List of records to upload
         """
-        print(f"Uploading {len(data)} records to table '{table_name}'...")
+        # print(f"Uploading {len(data)} records to table '{table_name}'...")
         try:
             self.client.insert_into_table(table=table_name, data=data)
             print(f"Data uploaded successfully ({len(data)} records)")
@@ -212,10 +212,10 @@ class OepUploader:
             table_name: Name of the table
             metadata: Metadata dictionary
         """
-        print(f"Uploading metadata to table '{table_name}'...")
+        # print(f"Uploading metadata to table '{table_name}'...")
         try:
             self.client.set_metadata(table=table_name, metadata=metadata)
-            print(f"Metadata uploaded successfully")
+            # print(f"Metadata uploaded successfully")
         except Exception as e:
             raise Exception(f"Failed to upload metadata: {str(e)}")
 
@@ -226,10 +226,10 @@ class OepUploader:
         Args:
             table_name: Name of the table
         """
-        print(f"Deleting table '{table_name}'...")
+        # print(f"Deleting table '{table_name}'...")
         try:
             self.client.drop_table(table=table_name)
-            print(f"Table '{table_name}' deleted successfully")
+            # print(f"Table '{table_name}' deleted successfully")
         except Exception as e:
             raise Exception(f"Failed to delete table: {str(e)}")
 
@@ -251,15 +251,15 @@ class OepUploader:
             primary_key: Name of primary key column (optional)
             delete_existing: Delete existing table before upload (default: False)
         """
-        print("="*60)
-        print("OEP Data Upload")
-        print("="*60)
-        print(f"Topic/Schema: {self.topic}")
-        print(f"Table: {table_name}")
-        print(f"Data file: {data_file}")
-        if metadata_file:
-            print(f"Metadata file: {metadata_file}")
-        print("="*60)
+        # print("="*60)
+        # print("OEP Data Upload")
+        # print("="*60)
+        # print(f"Topic/Schema: {self.topic}")
+        # print(f"Table: {table_name}")
+        # print(f"Data file: {data_file}")
+        # if metadata_file:
+        #     print(f"Metadata file: {metadata_file}")
+        # print("="*60)
 
         # Check if table exists
         if self.table_exists(table_name):
@@ -275,15 +275,15 @@ class OepUploader:
                     return
 
         # Read data
-        print(f"\nReading data from '{data_file}'...")
+        # print(f"\nReading data from '{data_file}'...")
         df = self.read_data(data_file)
-        print(f"Data loaded: {len(df)} rows, {len(df.columns)} columns")
-        print(f"Columns: {', '.join(df.columns.tolist())}")
+        # print(f"Data loaded: {len(df)} rows, {len(df.columns)} columns")
+        # print(f"Columns: {', '.join(df.columns.tolist())}")
 
         # Create table schema
-        print(f"\nCreating table schema...")
+        # print(f"\nCreating table schema...")
         schema = self.create_table_schema(df, primary_key=primary_key)
-        print(f"Schema created with {len(schema['columns'])} columns")
+        # print(f"Schema created with {len(schema['columns'])} columns")
 
         # Create table
         self.create_table(table_name, schema)
@@ -294,16 +294,16 @@ class OepUploader:
 
         # Upload metadata if provided
         if metadata_file:
-            print(f"\nReading metadata from '{metadata_file}'...")
+            # print(f"\nReading metadata from '{metadata_file}'...")
             metadata = self.read_metadata(metadata_file)
-            print(f"Metadata loaded")
+            # print(f"Metadata loaded")
             self.upload_metadata(table_name, metadata)
 
-        print("\n" + "="*60)
-        print("Upload completed successfully!")
-        print("="*60)
-        print(f"\nView your table at:")
-        print(f"https://openenergy-platform.org/dataedit/view/{self.topic}/{table_name}")
+        # print("\n" + "="*60)
+        # print("Upload completed successfully!")
+        # print("="*60)
+        # print(f"\nView your table at:")
+        # print(f"https://openenergy-platform.org/dataedit/view/{self.topic}/{table_name}")
 
 
 def main():
