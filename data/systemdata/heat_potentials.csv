@@ -1,2 +1,2 @@
-model_id;Potential_Umweltwaerme;Potential_Abwaerme
-BS0006;151;137
+id;model_id;potential_umweltwaerme;potential_abwaerme
+0;BS0006;151;137

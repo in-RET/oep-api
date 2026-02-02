@@ -1,2 +1,2 @@
-model_id;Emission_Erdgas;Emission_Oel;Emission_Steinkohle;Emission_Braunkohle;Emission_Strom_2020;Emission_Strom_2025;Emission_Strom_2030;Emission_Strom_2035;Emission_Strom_2040;Emission_Strom_2045;Emission_Strom_2050
-BS0006;202;266;338;407;369;269;145;90;35;0;0
+id;model_id;emission_erdgas;emission_oel;emission_steinkohle;emission_braunkohle;emission_strom_2020;emission_strom_2025;emission_strom_2030;emission_strom_2035;emission_strom_2040;emission_strom_2045;emission_strom_2050
+0;BS0006;202;266;338;407;369;269;145;90;35;0;0

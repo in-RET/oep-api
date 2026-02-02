@@ -1,2 +1,2 @@
-model_id;Menge_Steinkohle;Menge_Braunkohle
-BS0006;0;37,9
+id;model_id;menge_steinkohle;menge_braunkohle
+0;BS0006;0;37,9

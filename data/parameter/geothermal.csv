@@ -1,2 +1,2 @@
-model_id;investment_costs_2020;investment_costs_2025;investment_costs_2030;investment_costs_2035;investment_costs_2040;investment_costs_2045;investment_costs_2050;operating_costs_2020;operating_costs_2025;operating_costs_2030;operating_costs_2035;operating_costs_2040;operating_costs_2045;operating_costs_2050;lifetime_2020;lifetime_2025;lifetime_2030;lifetime_2035;lifetime_2040;lifetime_2045;lifetime_2050
-BS0006;3775;3584;3392;3221;3049;2895;2740;2;2;2;2;2;2;2;30;30;35;35;40;40;50
+id;model_id;investment_costs_2020;investment_costs_2025;investment_costs_2030;investment_costs_2035;investment_costs_2040;investment_costs_2045;investment_costs_2050;operating_costs_2020;operating_costs_2025;operating_costs_2030;operating_costs_2035;operating_costs_2040;operating_costs_2045;operating_costs_2050;lifetime_2020;lifetime_2025;lifetime_2030;lifetime_2035;lifetime_2040;lifetime_2045;lifetime_2050
+0;BS0006;3775;3584;3392;3221;3049;2895;2740;2;2;2;2;2;2;2;30;30;35;35;40;40;50

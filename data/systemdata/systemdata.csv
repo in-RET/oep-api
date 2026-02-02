@@ -1,2 +1,2 @@
-model_id;Anzahl_Zeitschritte;Zinssatz;gesamte_Bundesflaeche
-BS0006;8760;8;4,5
+id;model_id;anzahl_zeitschritte;zinssatz;gesamte_bundesflaeche
+0;BS0006;8760;8;4,5
