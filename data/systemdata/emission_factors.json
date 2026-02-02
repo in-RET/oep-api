@@ -49,8 +49,8 @@
             ],
             "publicationDate": "2025-11-19",
             "embargoPeriod": {
-                "start": "null",
-                "end": "null",
+                "start": null,
+                "end": null,
                 "isActive": false
             },
             "context": {
@@ -67,23 +67,23 @@
             },
             "spatial": {
                 "location": {
-                    "address": "null",
-                    "@id": "null",
-                    "latitude": "null",
-                    "longitude": "null"
+                    "address": null,
+                    "@id": null,
+                    "latitude": null,
+                    "longitude": null
                 },
                 "extent": {
-                    "name": "null",
-                    "@id": "null",
-                    "resolutionValue": "null",
-                    "resolutionUnit": "null",
+                    "name": null,
+                    "@id": null,
+                    "resolutionValue": null,
+                    "resolutionUnit": null,
                     "boundingBox": [
                         0,
                         0,
                         0,
                         0
                     ],
-                    "crs": "null"
+                    "crs": null
                 }
             },
             "temporal": {
@@ -94,7 +94,7 @@
                         "end": "2025-01-01T00:00:00+00:00",
                         "resolutionValue": "5a",
                         "resolutionUnit": "a",
-                        "alignment": "null",
+                        "alignment": null,
                         "aggregationType": "average"
                     }
                 ]
@@ -124,12 +124,12 @@
                     "path": "https://www.wasserstoffrat.de/fileadmin/wasserstoffrat/media/Dokumente/2022/2022-12-22_Bottom-up-Studie_final-1.pdf",
                     "sourceLicenses": [
                         {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
+                            "name": null,
+                            "title": null,
+                            "path": null,
+                            "instruction": null,
+                            "attribution": null,
+                            "copyrightStatement": null
                         }
                     ]
                 },
@@ -140,15 +140,15 @@
                     ],
                     "description": "{2}",
                     "publicationYear": "2024",
-                    "path": "null",
+                    "path": null,
                     "sourceLicenses": [
                         {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
+                            "name": null,
+                            "title": null,
+                            "path": null,
+                            "instruction": null,
+                            "attribution": null,
+                            "copyrightStatement": null
                         }
                     ]
                 }
@@ -166,7 +166,7 @@
             "contributors": [
                 {
                     "title": "Amèlie Oberdorfer",
-                    "path": "null",
+                    "path": null,
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "DataCollector",
@@ -174,7 +174,7 @@
                     ],
                     "date": "2024-12-31",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Andreas Lubojanski",
@@ -186,7 +186,7 @@
                     ],
                     "date": "2026-06-30",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Christoph Schmidt",
@@ -201,11 +201,11 @@
                     ],
                     "date": "2026-06-30",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Rohith Krishnan Bala Krishnan",
-                    "path": "null",
+                    "path": null,
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "DataCollector",
@@ -213,7 +213,7 @@
                     ],
                     "date": "2026-06-30",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Theresa Reinhardt",
@@ -224,11 +224,11 @@
                     ],
                     "date": "2026-06-30",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Viktor Wesselak",
-                    "path": "null",
+                    "path": null,
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "Distributor",
@@ -237,7 +237,7 @@
                     ],
                     "date": "2026-06-30",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Stefan Kirsch",
@@ -275,15 +275,15 @@
                         "unit": "-",
                         "isAbout": [
                             {
-                                "name": "null",
-                                "@id": "null"
+                                "name": null,
+                                "@id": null
                             }
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -301,9 +301,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -321,9 +321,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -341,9 +341,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -361,9 +361,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -381,9 +381,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -401,9 +401,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -421,9 +421,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -441,9 +441,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -461,9 +461,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -481,9 +481,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -501,9 +501,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     }

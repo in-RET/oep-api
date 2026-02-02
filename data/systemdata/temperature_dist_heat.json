@@ -1,12 +1,9 @@
 {
-    "@context": "ToDo",
     "name": "Temp_district_heating_HSN_inRET",
     "title": "Temperature values describing the forward and return temperatures of the district heating network as a function of the outside temperature.",
     "description": "Temperature values describing the forward and return temperatures of the district heating network as a function of the outside temperature.; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
-    "@id": "ToDo",
     "resources": [
         {
-            "@id": "",
             "name": "Temp_district_heating_HSN_inRET",
             "topics": [
                 "boundaries"
@@ -32,8 +29,8 @@
             ],
             "publicationDate": "2025-11-19",
             "embargoPeriod": {
-                "start": "null",
-                "end": "null",
+                "start": null,
+                "end": null,
                 "isActive": false
             },
             "context": {
@@ -45,28 +42,28 @@
                 "publisherLogo": "ToDo",
                 "contact": "Hochschule Nordhausen - Institut für Regenerative Energietechnik",
                 "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
-                "fundingAgencyLogo": "null",
+                "fundingAgencyLogo": null,
                 "grantNo": ""
             },
             "spatial": {
                 "location": {
-                    "address": "null",
-                    "@id": "null",
-                    "latitude": "null",
-                    "longitude": "null"
+                    "address": null,
+                    "@id": null,
+                    "latitude": null,
+                    "longitude": null
                 },
                 "extent": {
-                    "name": "null",
-                    "@id": "null",
-                    "resolutionValue": "null",
-                    "resolutionUnit": "null",
+                    "name": null,
+                    "@id": null,
+                    "resolutionValue": null,
+                    "resolutionUnit": null,
                     "boundingBox": [
                         0,
                         0,
                         0,
                         0
                     ],
-                    "crs": "null"
+                    "crs": null
                 }
             },
             "temporal": {
@@ -77,28 +74,28 @@
                         "end": "2025-01-01T00:00:00+00:00",
                         "resolutionValue": "5",
                         "resolutionUnit": "a",
-                        "alignment": "null",
-                        "aggregationType": "null"
+                        "alignment": null,
+                        "aggregationType": null
                     }
                 ]
             },
             "sources": [
                 {
-                    "titl]e": "null",
+                    "titl]e": null,
                     "authors": [
-                        "null"
+                        null
                     ],
-                    "description": "null",
-                    "publicationYear": "null",
-                    "path": "null",
+                    "description": null,
+                    "publicationYear": null,
+                    "path": null,
                     "sourceLicenses": [
                         {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
-                            "instruction": "null",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
+                            "name": null,
+                            "title": null,
+                            "path": null,
+                            "instruction": null,
+                            "attribution": null,
+                            "copyrightStatement": null
                         }
                     ]
                 }
@@ -108,35 +105,35 @@
                     "name": "CC-BY-4.0",
                     "title": "Creative Common Attribution 4.0 International",
                     "path": "https://creativecommons.org/licenses/by/4.0/",
-                    "instruction": "null",
-                    "attribution": "null",
-                    "copyrightStatement": "null"
+                    "instruction": null,
+                    "attribution": null,
+                    "copyrightStatement": null
                 }
             ],
             "contributors": [
                 {
                     "title": "Amèlie Oberdorfer",
-                    "path": "null",
+                    "path": null,
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "DataCollector",
                         "ProjectMember"
                     ],
                     "date": "2024-12-31",
-                    "object": "null",
-                    "comment": "null"
+                    "object": null,
+                    "comment": null
                 },
                 {
                     "title": "Andreas Lubojanski",
-                    "path": "null",
+                    "path": null,
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "DataManager",
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
-                    "comment": "null"
+                    "object": null,
+                    "comment": null
                 },
                 {
                     "title": "Christoph Schmidt",
@@ -150,35 +147,35 @@
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
-                    "comment": "null"
+                    "object": null,
+                    "comment": null
                 },
                 {
                     "title": "Rohith Krishnan Bala Krishnan",
-                    "path": "null",
+                    "path": null,
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "DataCollector",
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
-                    "comment": "null"
+                    "object": null,
+                    "comment": null
                 },
                 {
                     "title": "Theresa Reinhardt",
-                    "path": "null",
+                    "path": null,
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
-                    "comment": "null"
+                    "object": null,
+                    "comment": null
                 },
                 {
                     "title": "Viktor Wesselak",
-                    "path": "null",
+                    "path": null,
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "Distributor",
@@ -186,30 +183,30 @@
                         "ProjectMember"
                     ],
                     "date": "2026-06-30",
-                    "object": "null",
-                    "comment": "null"
+                    "object": null,
+                    "comment": null
                 },
                 {
                     "title": "Stefan Kirsch",
-                    "path": "null",
+                    "path": null,
                     "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Ernst-Abbe-Hochschule Jena",
                     "roles": [
                         "DataManager"
                     ],
                     "date": "2025-09-01",
-                    "object": "null",
-                    "comment": "null"
+                    "object": null,
+                    "comment": null
                 },
                 {
                     "title": "Kevin Lindt",
-                    "path": "null",
+                    "path": null,
                     "organization": "Thüringer Kompetenzzentrum Forschungsdatenmanagement, Technische Universität Ilmenau",
                     "roles": [
                         "DataManager"
                     ],
                     "date": "2025-09-01",
-                    "object": "null",
-                    "comment": "null"
+                    "object": null,
+                    "comment": null
                 }
             ],
             "type": "table",
@@ -225,15 +222,15 @@
                         "unit": "-",
                         "isAbout": [
                             {
-                                "name": "null",
-                                "@id": "null"
+                                "name": null,
+                                "@id": null
                             }
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -251,9 +248,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -271,9 +268,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -291,9 +288,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -311,9 +308,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -331,9 +328,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -351,9 +348,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -371,9 +368,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -391,9 +388,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -411,9 +408,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -431,9 +428,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -451,9 +448,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -471,9 +468,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -491,9 +488,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -511,9 +508,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -531,9 +528,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -551,9 +548,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -571,9 +568,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -591,9 +588,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -611,9 +608,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -631,9 +628,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     }
@@ -644,12 +641,12 @@
                 "foreignKeys": [
                     {
                         "fields": [
-                            "null"
+                            null
                         ],
                         "reference": {
-                            "resource": "null",
+                            "resource": null,
                             "fields": [
-                                "null"
+                                null
                             ]
                         }
                     }

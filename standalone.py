@@ -10,8 +10,8 @@ TOPIC = "sandbox"
 print(f"OEP API Key: {TOKEN}")
 
 data = [
-    ("data/parameter_photovoltaik_openfield.json", "data/parameter_photovoltaik_openfield.csv"),
-    ("data/parameter_photovoltaik_rooftop.json", "data/parameter_photovoltaik_rooftop.csv")
+    ("data/demand/ghd_east.json", "data/demand/ghd_east.csv"),
+    ("data/demand/ghd_middle.json", "data/demand/ghd_middle.csv")
 ]
 
 for meta_file, data_file in data:
@@ -20,6 +20,8 @@ for meta_file, data_file in data:
 
     table_name = json_data['name']
     print(f"Table: {table_name}")
+    if len(table_name) > 50:
+        break
 
     primary_key = json_data['resources'][0]['schema']['primaryKey'][0]
     print(f"Primary Key: {primary_key}")

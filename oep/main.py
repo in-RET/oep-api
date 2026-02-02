@@ -39,7 +39,7 @@ class OepUploader:
             raise ValueError("OEP API token not found. Set OEP_API_TOKEN environment variable or pass token parameter.")
 
         self.topic = topic
-        self.client = OepClient(token=self.token, default_schema=self.topic)
+        self.client = OepClient(token=self.token)
 
     def infer_sql_type(self, dtype: str, sample_value: Any = None) -> str:
         """

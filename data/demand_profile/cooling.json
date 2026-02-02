@@ -41,8 +41,8 @@
             ],
             "publicationDate": "2025-12-02",
             "embargoPeriod": {
-                "start": "null",
-                "end": "null",
+                "start": null,
+                "end": null,
                 "isActive": false
             },
             "context": {
@@ -61,13 +61,13 @@
                 {
                     "location": {
                         "address": "Binderslebener Landstraße 100, 99092 Erfurt",
-                        "@id": "null",
+                        "@id": null,
                         "latitude": "50.98",
                         "longitude": "10.97"
                     },
                     "extent": {
                         "name": "Erfurt",
-                        "@id": "null",
+                        "@id": null,
                         "resolutionValue": "1",
                         "resolutionUnit": "m",
                         "boundingBox": [
@@ -82,13 +82,13 @@
                 {
                     "location": {
                         "address": "Kranichstraße 12, 99734 Nordhausen",
-                        "@id": "null",
+                        "@id": null,
                         "latitude": "51.5036",
                         "longitude": "10.7913"
                     },
                     "extent": {
                         "name": "Nordhausen",
-                        "@id": "null",
+                        "@id": null,
                         "resolutionValue": "1",
                         "resolutionUnit": "m",
                         "boundingBox": [
@@ -103,13 +103,13 @@
                 {
                     "location": {
                         "address": "Ronneburger Str. 74, 07546 Gera",
-                        "@id": "null",
+                        "@id": null,
                         "latitude": "50.8821",
                         "longitude": "12.13"
                     },
                     "extent": {
                         "name": "Gera",
-                        "@id": "null",
+                        "@id": null,
                         "resolutionValue": "1",
                         "resolutionUnit": "m",
                         "boundingBox": [
@@ -124,13 +124,13 @@
                 {
                     "location": {
                         "address": "Untere Braugasse 16, 98646 Hildburghausen",
-                        "@id": "null",
+                        "@id": null,
                         "latitude": "50.4265",
                         "longitude": "10.7316"
                     },
                     "extent": {
                         "name": "Hildburghausen",
-                        "@id": "null",
+                        "@id": null,
                         "resolutionValue": "1",
                         "resolutionUnit": "m",
                         "boundingBox": [
@@ -144,7 +144,7 @@
                 }
             ],
             "temporal": {
-                "referenceDate": "null",
+                "referenceDate": null,
                 "timeseries": [
                     {
                         "start": "2025-01-01T00:00:00+00:00",
@@ -172,12 +172,12 @@
                     "path": "https://www.sciencedirect.com/science/article/pii/S0306261917305810",
                     "sourceLicenses": [
                         {
-                            "name": "null",
-                            "title": "null",
-                            "path": "null",
+                            "name": null,
+                            "title": null,
+                            "path": null,
                             "instruction": "Elsevier Ltd.",
-                            "attribution": "null",
-                            "copyrightStatement": "null"
+                            "attribution": null,
+                            "copyrightStatement": null
                         }
                     ]
                 }
@@ -195,7 +195,7 @@
             "contributors": [
                 {
                     "title": "Amèlie Oberdorfer",
-                    "path": "null",
+                    "path": null,
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "DataCollector",
@@ -203,7 +203,7 @@
                     ],
                     "date": "2024-12-31",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Andreas Lubojanski",
@@ -215,7 +215,7 @@
                     ],
                     "date": "2026-06-30",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Christoph Schmidt",
@@ -230,11 +230,11 @@
                     ],
                     "date": "2026-06-30",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Rohith Krishnan Bala Krishnan",
-                    "path": "null",
+                    "path": null,
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "DataCollector",
@@ -242,7 +242,7 @@
                     ],
                     "date": "2026-06-30",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Theresa Reinhardt",
@@ -253,11 +253,11 @@
                     ],
                     "date": "2026-06-30",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Viktor Wesselak",
-                    "path": "null",
+                    "path": null,
                     "organization": "University of Applied Sciences Nordhausen - Institute for Renewable Energy Technology",
                     "roles": [
                         "Distributor",
@@ -266,7 +266,7 @@
                     ],
                     "date": "2026-06-30",
                     "object": "data and metadata",
-                    "comment": "null"
+                    "comment": null
                 },
                 {
                     "title": "Stefan Kirsch",
@@ -309,9 +309,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -329,9 +329,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -349,9 +349,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -369,9 +369,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     },
@@ -389,9 +389,9 @@
                         ],
                         "valueReference": [
                             {
-                                "value": "null",
-                                "name": "null",
-                                "@id": "null"
+                                "value": null,
+                                "name": null,
+                                "@id": null
                             }
                         ]
                     }
@@ -402,12 +402,12 @@
                 "foreignKeys": [
                     {
                         "fields": [
-                            "null"
+                            null
                         ],
                         "reference": {
-                            "resource": "null",
+                            "resource": null,
                             "fields": [
-                                "null"
+                                null
                             ]
                         }
                     }
