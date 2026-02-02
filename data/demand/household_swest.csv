@@ -1,11 +1,11 @@
-index;EER_2020;EER_2025;EER_2030;EER_2035;EER_2040;EER_2045;Raumwaerme_2020_abs;Raumwaerme_2025i_abs;Raumwaerme_2025b_abs;Raumwaerme_2030i_abs;Raumwaerme_2030b_abs;Raumwaerme_2035i_abs;Raumwaerme_2035b_abs;Raumwaerme_2040i_abs;Raumwaerme_2040b_abs;Raumwaerme_2045i_abs;Raumwaerme_2045b_abs;Strom_2020_abs;Strom_2025i_abs;Strom_2025b_abs;Strom_2030i_abs;Strom_2030b_abs;Strom_2035i_abs;Strom_2035b_abs;Strom_2040i_abs;Strom_2040b_abs;Strom_2045i_abs;Strom_2045b_abs;Klima- und Prozesskaelte_2020_abs;Klima- und Prozesskaelte_2025i_abs;Klima- und Prozesskaelte_2025b_abs;Klima- und Prozesskaelte_2030i_abs;Klima- und Prozesskaelte_2030b_abs;Klima- und Prozesskaelte_2035i_abs;Klima- und Prozesskaelte_2035b_abs;Klima- und Prozesskaelte_2040i_abs;Klima- und Prozesskaelte_2040b_abs;Klima- und Prozesskaelte_2045i_abs;Klima- und Prozesskaelte_2045b_abs
-PtH Heizstab;0,99;0,99;0,99;0,99;0,99;0,99;104412;84939;84939;69170;69170;55132;59524;42358;43445;32243;32369;;;;;;;;;;;;;;;;;;;;;;
-PtH Luftwaermepumpe;3;3,2;3,4;3,5;3,6;3,8;39154;155722;155722;293449;293449;387761;414683;432989;436062;432054;443719;;;;;;;;;;;;;;;;;;;;;;
-PtH Erdwaermepumpe;3,4;3,6;3,8;3,9;4;4,2;39154;92018;92018;157205;157205;202150;216270;221201;222054;219251;222534;;;;;;;;;;;;;;;;;;;;;;
-Solarthermie;1;1;1;1;1;1;39154;44829;44829;50306;50306;51456;55556;51770;51491;47719;48553;;;;;;;;;;;;;;;;;;;;;;
-Festbrennstoffkessel;0,77;0,8;0,85;0,87;0,88;0,88;352389;330320;330320;306026;306026;275659;293651;241595;242972;203775;206349;;;;;;;;;;;;;;;;;;;;;;
-Heizkessel Gas;0,89;0,91;0,93;0,95;0,96;0,98;1279042;1066462;1066462;781832;781832;551319;597222;352980;381353;156055;194211;;;;;;;;;;;;;;;;;;;;;;
-Heizkessel Oel;0,84;0,87;0,9;0,93;0,96;0,98;495955;323242;323242;182358;182358;69834;85317;0;4827;0;0;;;;;;;;;;;;;;;;;;;;;;
-Waermeuebergabestation;0,9;0,9;0,91;0,91;0,92;0,93;261029;261897;261897;255720;255720;244418;261905;225907;226881;198616;200955;;;;;;;;;;;;;;;;;;;;;;
-Kompressionskaelte;2,9;3,1;3,3;3,4;3,5;3,7;;;;;;;;;;;;;;;;;;;;;;;20722;24878;22576;29895;24619;35872;26808;43040;29188;51558;31730
-Elektrogeraete;1;1;1;1;1;1;;;;;;;;;;;;455877;438720;434329;422596;414178;406471;394387;390923;375504;375372;356957;;;;;;;;;;;
+id;index;eer_2020;eer_2025;eer_2030;eer_2035;eer_2040;eer_2045;raumwaerme_2020_abs;raumwaerme_2025_abs;raumwaerme_2030_abs;raumwaerme_2035_abs;raumwaerme_2040_abs;raumwaerme_2045_abs;strom_2020_abs;strom_2025_abs;strom_2030_abs;strom_2035_abs;strom_2040_abs;strom_2045_abs;klima_und_prozesskaelte_2020_abs;klima_und_prozesskaelte_2025_abs;klima_und_prozesskaelte_2030_abs;klima_und_prozesskaelte_2035_abs;klima_und_prozesskaelte_2040_abs;klima_und_prozesskaelte_2045_abs
+0;PtH Heizstab;0,99;0,99;0,99;0,99;0,99;0,99;104412;84939;69170;59524;43445;32369;0;0;0;0;0;0;0;0;0;0;0;0
+1;PtH Luftwaermepumpe;3;3,2;3,4;3,5;3,6;3,8;39154;155722;293449;414683;436062;443719;0;0;0;0;0;0;0;0;0;0;0;0
+2;PtH Erdwaermepumpe;3,4;3,6;3,8;3,9;4;4,2;39154;92018;157205;216270;222054;222534;0;0;0;0;0;0;0;0;0;0;0;0
+3;Solarthermie;1;1;1;1;1;1;39154;44829;50306;55556;51491;48553;0;0;0;0;0;0;0;0;0;0;0;0
+4;Festbrennstoffkessel;0,77;0,8;0,85;0,87;0,88;0,88;352389;330320;306026;293651;242972;206349;0;0;0;0;0;0;0;0;0;0;0;0
+5;Heizkessel Gas;0,89;0,91;0,93;0,95;0,96;0,98;1279042;1066462;781832;597222;381353;194211;0;0;0;0;0;0;0;0;0;0;0;0
+6;Heizkessel Oel;0,84;0,87;0,9;0,93;0,96;0,98;495955;323242;182358;85317;4827;0;0;0;0;0;0;0;0;0;0;0;0;0
+7;Waermeuebergabestation;0,9;0,9;0,91;0,91;0,92;0,93;261029;261897;255720;261905;226881;200955;0;0;0;0;0;0;0;0;0;0;0;0
+8;Kompressionskaelte;2,9;3,1;3,3;3,4;3,5;3,7;0;0;0;0;0;0;0;0;0;0;0;0;20722;22576;24619;26808;29188;31730
+9;Elektrogeraete;1;1;1;1;1;1;0;0;0;0;0;0;455877;434329;414178;394387;375504;356957;0;0;0;0;0;0
