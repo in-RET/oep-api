@@ -9,7 +9,7 @@
             "@id": "",
             "name": "Temp_district_heating_HSN_inRET",
             "topics": [
-                ""
+                "boundaries"
             ],
             "title": "Temp_district_heating_HSN_inRET",
             "path": "",

@@ -6,7 +6,7 @@
         {
             "name": "ambient_temperature_HSN_inRET",
             "topics": [
-                "supply"
+                "weatherdata"
             ],
             "title": "ambient_temperature_HSN_inRET",
             "path": "",

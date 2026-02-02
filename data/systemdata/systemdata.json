@@ -267,7 +267,7 @@
                         "description": "interest rate",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
+                        "unit": "%",
                         "isAbout": [
                             {
                                 "name": "determine discount and interest rate",
