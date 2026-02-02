@@ -87,9 +87,9 @@
                     "name": "CC-BY-4.0",
                     "title": "Creative Common Attribution 4.0 International",
                     "path": "https://creativecommons.org/licenses/by/4.0/",
-                    "instruction": null,
-                    "attribution": null,
-                    "copyrightStatement": null
+                    "instruction": "You are free to use, share and modify; As long as you attribute, include copyright and state changes",
+                    "attribution": "© Hochschule Nordhausen - Institut für Regenerative Energietechnik, © ZO.RRO II Project Team",
+                    "copyrightStatement": ""
                 }
             ],
             "contributors": [

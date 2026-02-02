@@ -1,5 +1,5 @@
 {
-    "name": "Energy_demand_in_the_industry_sector_Planning_region_middle_HSN_inRET",
+    "name": "energy_demand_household_sector_mid",
     "title": "Energy demand in the industry sector – Planning region middle",
     "description": "Energy demand in the industry sector – Planning region middle. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
@@ -53,29 +53,25 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [
-                {
-                    "location": {
-                        "address": "Binderslebener Landstraße 100, 99092 Erfurt",
-                        "@id": null,
-                        "latitude": "50.98",
-                        "longitude": "10.97"
-                    },
-                    "extent": {
-                        "name": "Erfurt",
-                        "@id": null,
-                        "resolutionValue": "1",
-                        "resolutionUnit": "m",
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": "EPSG:4326"
-                    }
+            "spatial": {
+                "location": {
+                    "address": "Binderslebener Landstraße 100, 99092 Erfurt",
+                    "latitude": "50.98",
+                    "longitude": "10.97"
+                },
+                "extent": {
+                    "name": "Erfurt",
+                    "resolutionValue": "1",
+                    "resolutionUnit": "m",
+                    "boundingBox": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "crs": "EPSG:4326"
                 }
-            ],
+            },
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -89,35 +85,15 @@
                     }
                 ]
             },
-            "sources": [
-                {
-                    "title": null,
-                    "authors": [
-                        null
-                    ],
-                    "description": null,
-                    "publicationYear": null,
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
-                }
-            ],
+            "sources": [],
             "licenses": [
                 {
                     "name": "CC-BY-4.0",
                     "title": "Creative Common Attribution 4.0 International",
                     "path": "https://creativecommons.org/licenses/by/4.0/",
-                    "instruction": null,
-                    "attribution": null,
-                    "copyrightStatement": null
+                    "instruction": "You are free to use, share and modify; As long as you attribute, include copyright and state changes",
+                    "attribution": "© Hochschule Nordhausen - Institut für Regenerative Energietechnik, © ZO.RRO II Project Team",
+                    "copyrightStatement": ""
                 }
             ],
             "contributors": [
@@ -225,27 +201,25 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "index",
+                        "name": "id",
+                        "description": "id",
+                        "type": "integer",
+                        "nullable": false,
+                        "unit": "-",
+                        "isAbout": [],
+                        "valueReference": []
+                    },
+                    {
+                        "name": "name",
                         "description": "Energy conversion technology",
                         "type": "string",
                         "nullable": true,
                         "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "isAbout": [],
+                        "valueReference": []
                     },
                     {
-                        "name": "EER_2030",
+                        "name": "eer_2030",
                         "description": "Energy Efficiency Ratio for 2030",
                         "type": "float",
                         "nullable": true,
@@ -256,16 +230,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "EER_2035",
+                        "name": "eer_2035",
                         "description": "Energy Efficiency Ratio for 2035",
                         "type": "float",
                         "nullable": true,
@@ -276,16 +244,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "EER_2040",
+                        "name": "eer_2040",
                         "description": "Energy Efficiency Ratio for 2040",
                         "type": "float",
                         "nullable": true,
@@ -296,16 +258,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "EER_2045",
+                        "name": "eer_2045",
                         "description": "Energy Efficiency Ratio for 2045",
                         "type": "float",
                         "nullable": true,
@@ -316,16 +272,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "EER_2020",
+                        "name": "eer_2020",
                         "description": "Energy Efficiency Ratio for 2020",
                         "type": "float",
                         "nullable": true,
@@ -336,16 +286,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "EER_2025",
+                        "name": "eer_2025",
                         "description": "Energy Efficiency Ratio for 2025",
                         "type": "float",
                         "nullable": true,
@@ -356,16 +300,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Raumwaerme_2020_abs",
+                        "name": "raumwaerme_2020_abs",
                         "description": "energy demand for room heating and domestic hot water in 2020",
                         "type": "float",
                         "nullable": true,
@@ -376,16 +314,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Raumwaerme_2025_abs",
+                        "name": "raumwaerme_2025_abs",
                         "description": "energy demand for room heating and domestic hot water in 2025",
                         "type": "float",
                         "nullable": true,
@@ -396,16 +328,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Raumwaerme_2030_abs",
+                        "name": "raumwaerme_2030_abs",
                         "description": "energy demand for room heating and domestic hot water in 2030",
                         "type": "float",
                         "nullable": true,
@@ -416,16 +342,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Raumwaerme_2035_abs",
+                        "name": "raumwaerme_2035_abs",
                         "description": "energy demand for room heating and domestic hot water in 2035",
                         "type": "float",
                         "nullable": true,
@@ -436,16 +356,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Raumwaerme_2040_abs",
+                        "name": "raumwaerme_2040_abs",
                         "description": "energy demand for room heating and domestic hot water in 2040",
                         "type": "float",
                         "nullable": true,
@@ -456,16 +370,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Raumwaerme_2045_abs",
+                        "name": "raumwaerme_2045_abs",
                         "description": "energy demand for room heating and domestic hot water in 2045",
                         "type": "float",
                         "nullable": true,
@@ -476,16 +384,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Prozesswaerme_2020_abs",
+                        "name": "prozesswaerme_2020_abs",
                         "description": "energy demand for process heating in 2020",
                         "type": "float",
                         "nullable": true,
@@ -496,16 +398,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Prozesswaerme_2025_abs",
+                        "name": "prozesswaerme_2025_abs",
                         "description": "energy demand for process heating in 2025",
                         "type": "float",
                         "nullable": true,
@@ -516,16 +412,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Prozesswaerme_2030_abs",
+                        "name": "prozesswaerme_2030_abs",
                         "description": "energy demand for process heating in 2030",
                         "type": "float",
                         "nullable": true,
@@ -536,16 +426,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Prozesswaerme_2035_abs",
+                        "name": "prozesswaerme_2035_abs",
                         "description": "energy demand for process heating in 2035",
                         "type": "float",
                         "nullable": true,
@@ -556,16 +440,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Prozesswaerme_2040_abs",
+                        "name": "prozesswaerme_2040_abs",
                         "description": "energy demand for process heating in 2040",
                         "type": "float",
                         "nullable": true,
@@ -576,16 +454,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Prozesswaerme_2045_abs",
+                        "name": "prozesswaerme_2045_abs",
                         "description": "energy demand for process heating in 2045",
                         "type": "float",
                         "nullable": true,
@@ -596,16 +468,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Klima_und_Prozesskaelte_2020_abs",
+                        "name": "klima_und_prozesskaelte_2020_abs",
                         "description": "Climate- and process cooling in 2020",
                         "type": "float",
                         "nullable": true,
@@ -616,16 +482,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Klima_und_Prozesskaelte_2025_abs",
+                        "name": "klima_und_prozesskaelte_2025_abs",
                         "description": "Climate- and process cooling in 2025",
                         "type": "float",
                         "nullable": true,
@@ -636,16 +496,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Klima_und_Prozesskaelte_2030_abs",
+                        "name": "klima_und_prozesskaelte_2030_abs",
                         "description": "Climate- and process cooling in 2030",
                         "type": "float",
                         "nullable": true,
@@ -656,16 +510,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Klima_und_Prozesskaelte_2035_abs",
+                        "name": "klima_und_prozesskaelte_2035_abs",
                         "description": "Climate- and process cooling in 2035",
                         "type": "float",
                         "nullable": true,
@@ -676,16 +524,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Klima_und_Prozesskaelte_2040_abs",
+                        "name": "klima_und_prozesskaelte_2040_abs",
                         "description": "Climate- and process cooling in 2040",
                         "type": "float",
                         "nullable": true,
@@ -696,16 +538,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Klima_und_Prozesskaelte_2045_abs",
+                        "name": "klima_und_prozesskaelte_2045_abs",
                         "description": "Climate- and process cooling in 2045",
                         "type": "float",
                         "nullable": true,
@@ -716,16 +552,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Strom_2020_abs",
+                        "name": "strom_2020_abs",
                         "description": "Electricity demand in 2020",
                         "type": "float",
                         "nullable": true,
@@ -736,16 +566,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00320062"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Strom_2025_abs",
+                        "name": "strom_2025_abs",
                         "description": "Electricity demand in 2025",
                         "type": "float",
                         "nullable": true,
@@ -756,16 +580,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00320062"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Strom_2030_abs",
+                        "name": "strom_2030_abs",
                         "description": "Electricity demand in 2030",
                         "type": "float",
                         "nullable": true,
@@ -776,16 +594,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00320062"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Strom_2035_abs",
+                        "name": "strom_2035_abs",
                         "description": "Electricity demand in 2035",
                         "type": "float",
                         "nullable": true,
@@ -796,16 +608,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00320062"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Strom_2040_abs",
+                        "name": "strom_2040_abs",
                         "description": "Electricity demand in 2040",
                         "type": "float",
                         "nullable": true,
@@ -816,16 +622,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00320062"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Strom_2045_abs",
+                        "name": "strom_2045_abs",
                         "description": "Electricity demand in 2045",
                         "type": "float",
                         "nullable": true,
@@ -836,16 +636,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00320062"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Stoffl_Nutzung_2020_abs",
+                        "name": "stoffl_nutzung_2020_abs",
                         "description": "energy demand for material utilisation in 2020",
                         "type": "float",
                         "nullable": true,
@@ -856,16 +650,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Stoffl_Nutzung_2025_abs",
+                        "name": "stoffl_nutzung_2025_abs",
                         "description": "energy demand for material utilisation in 2025",
                         "type": "float",
                         "nullable": true,
@@ -876,16 +664,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Stoffl_Nutzung_2030_abs",
+                        "name": "stoffl_nutzung_2030_abs",
                         "description": "energy demand for material utilisation in 2030",
                         "type": "float",
                         "nullable": true,
@@ -896,16 +678,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Stoffl_Nutzung_2035_abs",
+                        "name": "stoffl_nutzung_2035_abs",
                         "description": "energy demand for material utilisation in 2035",
                         "type": "float",
                         "nullable": true,
@@ -916,16 +692,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Stoffl_Nutzung_2040_abs",
+                        "name": "stoffl_nutzung_2040_abs",
                         "description": "energy demand for material utilisation in 2040",
                         "type": "float",
                         "nullable": true,
@@ -936,16 +706,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Stoffl_Nutzung_2045_abs",
+                        "name": "stoffl_nutzung_2045_abs",
                         "description": "energy demand for material utilisation in 2045",
                         "type": "float",
                         "nullable": true,
@@ -956,31 +720,13 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140049"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     }
                 ],
                 "primaryKey": [
-                    "index"
+                    "id"
                 ],
-                "foreignKeys": [
-                    {
-                        "fields": [
-                            null
-                        ],
-                        "reference": {
-                            "resource": null,
-                            "fields": [
-                                null
-                            ]
-                        }
-                    }
-                ]
+                "foreignKeys": []
             },
             "dialect": {
                 "delimiter": ";",

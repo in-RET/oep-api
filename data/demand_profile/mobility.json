@@ -1,14 +1,14 @@
 {
-    "name": "scaled_time_series_for_mobility_HSN_inRET",
+    "name": "scaled_time_series_for_mobility",
     "title": "scaled time series for mobility",
     "description": "Scaled time series for the mobility sector. A distinction is made between different modes of transport: car; bus; train. The table shows profiles for passenger transport only. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
         {
-            "name": "scaled_time_series_for_mobility_HSN_inRET",
+            "name": "scaled_time_series_for_mobility",
             "topics": [
                 "demand"
             ],
-            "title": "scaled_time_series_for_mobility_HSN_inRET",
+            "title": "scaled time series for mobility",
             "path": "",
             "description": "Scaled time series for the mobility sector. A distinction is made between different modes of transport: car; bus; train. The table shows profiles for passenger transport only. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
             "languages": [
@@ -61,29 +61,6 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [
-                {
-                    "location": {
-                        "address": null,
-                        "@id": null,
-                        "latitude": null,
-                        "longitude": null
-                    },
-                    "extent": {
-                        "name": null,
-                        "@id": null,
-                        "resolutionValue": null,
-                        "resolutionUnit": null,
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": null
-                    }
-                }
-            ],
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -97,27 +74,7 @@
                     }
                 ]
             },
-            "sources": [
-                {
-                    "title": null,
-                    "authors": [
-                        null
-                    ],
-                    "description": null,
-                    "publicationYear": null,
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
-                }
-            ],
+            "sources": [],
             "licenses": [
                 {
                     "name": "CC-BY-4.0",
@@ -233,7 +190,7 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "index",
+                        "name": "id",
                         "description": "Index column.",
                         "type": "integer",
                         "nullable": false,
@@ -243,13 +200,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "car_2025",
@@ -263,13 +214,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "car_2030",
@@ -283,13 +228,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "car_2035",
@@ -303,13 +242,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "car_2040",
@@ -323,13 +256,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "car_2045",
@@ -343,13 +270,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "car_2050",
@@ -363,13 +284,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "bus_2025",
@@ -383,13 +298,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "bus_2030",
@@ -403,13 +312,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "bus_2035",
@@ -423,13 +326,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "bus_2040",
@@ -443,13 +340,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "bus_2045",
@@ -463,13 +354,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "bus_2050",
@@ -483,13 +368,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "train_2025",
@@ -503,13 +382,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "train_2030",
@@ -523,13 +396,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "train_2035",
@@ -543,13 +410,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "train_2040",
@@ -563,13 +424,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "train_2045",
@@ -583,13 +438,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "train_2050",
@@ -603,31 +452,13 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     }
                 ],
                 "primaryKey": [
-                    "index"
+                    "id"
                 ],
-                "foreignKeys": [
-                    {
-                        "fields": [
-                            null
-                        ],
-                        "reference": {
-                            "resource": null,
-                            "fields": [
-                                null
-                            ]
-                        }
-                    }
-                ]
+                "foreignKeys": []
             },
             "dialect": {
                 "delimiter": ";",

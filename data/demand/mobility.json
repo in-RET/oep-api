@@ -1,5 +1,5 @@
 {
-    "name": "energy_demand_transport_sector_HSN_inRET",
+    "name": "energy_demand_transport_sector",
     "title": "Energy demand in the transport sector",
     "description": "Energy demand in the transport sector. The sector is divided into passenger transport and freight transport. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
@@ -53,29 +53,6 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [
-                {
-                    "location": {
-                        "address": null,
-                        "@id": null,
-                        "latitude": null,
-                        "longitude": null
-                    },
-                    "extent": {
-                        "name": null,
-                        "@id": null,
-                        "resolutionValue": null,
-                        "resolutionUnit": null,
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": null
-                    }
-                }
-            ],
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -89,27 +66,7 @@
                     }
                 ]
             },
-            "sources": [
-                {
-                    "title": null,
-                    "authors": [
-                        null
-                    ],
-                    "description": null,
-                    "publicationYear": null,
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
-                }
-            ],
+            "sources": [],
             "licenses": [
                 {
                     "name": "CC-BY-4.0",
@@ -225,7 +182,25 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "Personenverkehr_2020_abs",
+                        "name": "id",
+                        "description": "id",
+                        "type": "integer",
+                        "nullable": false,
+                        "unit": "-",
+                        "isAbout": [],
+                        "valueReference": []
+                    },
+                    {
+                        "name": "name",
+                        "description": "Energy conversion technology",
+                        "type": "string",
+                        "nullable": true,
+                        "unit": "-",
+                        "isAbout": [],
+                        "valueReference": []
+                    },
+                    {
+                        "name": "personenverkehr_2020_abs",
                         "description": "passenger transport in 2020",
                         "type": "float",
                         "nullable": true,
@@ -245,7 +220,7 @@
                         ]
                     },
                     {
-                        "name": "Personenverkehr_2025_abs",
+                        "name": "personenverkehr_2025_abs",
                         "description": "passenger transport in 2025",
                         "type": "float",
                         "nullable": true,
@@ -256,16 +231,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Personenverkehr_2030_abs",
+                        "name": "personenverkehr_2030_abs",
                         "description": "passenger transport in 2030",
                         "type": "float",
                         "nullable": true,
@@ -276,16 +245,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Personenverkehr_2035_abs",
+                        "name": "personenverkehr_2035_abs",
                         "description": "passenger transport in 2035",
                         "type": "float",
                         "nullable": true,
@@ -296,16 +259,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Personenverkehr_2040_abs",
+                        "name": "personenverkehr_2040_abs",
                         "description": "passenger transport in 2040",
                         "type": "float",
                         "nullable": true,
@@ -316,16 +273,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Personenverkehr_2045_abs",
+                        "name": "personenverkehr_2045_abs",
                         "description": "passenger transport in 2045",
                         "type": "float",
                         "nullable": true,
@@ -336,16 +287,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Gueterverkehr_2020_abs",
+                        "name": "gueterverkehr__2020_abs",
                         "description": "freight transport in 2020",
                         "type": "float",
                         "nullable": true,
@@ -356,16 +301,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Gueterverkehr_2025_abs",
+                        "name": "gueterverkehr__2025_abs",
                         "description": "freight transport in 2025",
                         "type": "float",
                         "nullable": true,
@@ -376,16 +315,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Gueterverkehr_2030_abs",
+                        "name": "gueterverkehr__2030_abs",
                         "description": "freight transport in 2030",
                         "type": "float",
                         "nullable": true,
@@ -396,16 +329,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Gueterverkehr_2035_abs",
+                        "name": "gueterverkehr__2035_abs",
                         "description": "freight transport in 2035",
                         "type": "float",
                         "nullable": true,
@@ -416,16 +343,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Gueterverkehr_2040_abs",
+                        "name": "gueterverkehr__2040_abs",
                         "description": "freight transport in 2040",
                         "type": "float",
                         "nullable": true,
@@ -436,16 +357,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Gueterverkehr_2045_abs",
+                        "name": "gueterverkehr__2045_abs",
                         "description": "freight transport in 2045",
                         "type": "float",
                         "nullable": true,
@@ -456,31 +371,13 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     }
                 ],
                 "primaryKey": [
-                    "index"
+                    "id"
                 ],
-                "foreignKeys": [
-                    {
-                        "fields": [
-                            null
-                        ],
-                        "reference": {
-                            "resource": null,
-                            "fields": [
-                                null
-                            ]
-                        }
-                    }
-                ]
+                "foreignKeys": []
             },
             "dialect": {
                 "delimiter": ";",

@@ -1,5 +1,5 @@
 {
-    "name": "feed_in_profile_for_solar_thermal_heat_plant_HSN_inRET",
+    "name": "feed_in_profile_for_solar_thermal_heat_plant",
     "title": "feed-in profile for solar thermal heat plant",
     "description": "feed-in-profile for solar thermal heat plant. The solar thermal feed-in profile was calculated synthetically using a time step simulation in accordance with VDI 3988 {1}. A standard flat-plate collector with an inclination of 45°, a south-facing orientation and an average collector temperature of 50°C was assumed. The irradiation data represent the long-term (1996-2005) average irradiation for the Würzburg location. This results in a specific annual collector yield of 422 kWh/m². The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
@@ -45,29 +45,7 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [
-                {
-                    "location": {
-                        "address": null,
-                        "@id": null,
-                        "latitude": null,
-                        "longitude": null
-                    },
-                    "extent": {
-                        "name": null,
-                        "@id": null,
-                        "resolutionValue": null,
-                        "resolutionUnit": null,
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": null
-                    }
-                }
-            ],
+            "spatial": [],
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -93,16 +71,7 @@
                     "description": "{1}",
                     "publicationYear": "2017",
                     "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "sourceLicenses": []
                 }
             ],
             "licenses": [
@@ -220,7 +189,7 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "index",
+                        "name": "id",
                         "description": "Index column.",
                         "type": "integer",
                         "nullable": false,
@@ -230,16 +199,10 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Solarthermal",
+                        "name": "solarthermal",
                         "description": "feed-in profile for solar thermal heat plant in Erfurt",
                         "type": "float",
                         "nullable": true,
@@ -250,31 +213,13 @@
                                 "@id": null
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     }
                 ],
                 "primaryKey": [
-                    "index"
+                    "id"
                 ],
-                "foreignKeys": [
-                    {
-                        "fields": [
-                            null
-                        ],
-                        "reference": {
-                            "resource": null,
-                            "fields": [
-                                null
-                            ]
-                        }
-                    }
-                ]
+                "foreignKeys": []
             },
             "dialect": {
                 "delimiter": ";",

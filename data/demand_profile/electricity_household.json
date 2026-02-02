@@ -1,5 +1,5 @@
 {
-    "name": "Scaled_household_electricity_load_profiles_HSN_inRET",
+    "name": "scaled_household_electricity_load_profiles",
     "title": "Scaled household electricity load profiles",
     "description": "Scaled household electricity load profiles for the various planning regions in Thuringia: Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest). These are generic load profiles created using the RAMP software {1}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [

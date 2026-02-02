@@ -1,5 +1,5 @@
 {
-    "name": "standard_load_profiles_HSN_inRET",
+    "name": "standard_load_profiles",
     "title": "standard load profiles",
     "description": "Standard load profiles for describing load curves for various sectors. The data was taken from the following sources: {1-3}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
@@ -45,29 +45,6 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [
-                {
-                    "location": {
-                        "address": null,
-                        "@id": null,
-                        "latitude": null,
-                        "longitude": null
-                    },
-                    "extent": {
-                        "name": null,
-                        "@id": null,
-                        "resolutionValue": null,
-                        "resolutionUnit": null,
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": null
-                    }
-                }
-            ],
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -87,57 +64,21 @@
                     "authors": [
                         "Thüringer Energienetze"
                     ],
-                    "description": "{1}",
-                    "publicationYear": null,
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "description": "{1}"
                 },
                 {
                     "title": "Basisdaten der neuen Gaslastprofile",
                     "authors": [
                         "Gas Clearing and Settlement AG"
                     ],
-                    "description": "{2}",
-                    "publicationYear": null,
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "description": "{2}"
                 },
                 {
                     "title": "Standardlastprofile“ 2018.",
                     "authors": [
                         "BDEW"
                     ],
-                    "description": "{3}",
-                    "publicationYear": null,
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "description": "{3}"
                 }
             ],
             "licenses": [
@@ -255,7 +196,7 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "index",
+                        "name": "id",
                         "description": "Index column.",
                         "type": "integer",
                         "nullable": false,
@@ -265,13 +206,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "G0",
@@ -285,13 +220,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "G3",
@@ -305,13 +234,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "HA4",
@@ -325,13 +248,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "Prozessgas",
@@ -345,13 +262,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "T24",

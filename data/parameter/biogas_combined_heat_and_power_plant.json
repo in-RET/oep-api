@@ -1,5 +1,5 @@
 {
-    "name": "techno_economic_parameters_for_biogas_power_plant_HSN_inRET",
+    "name": "techno_economic_parameters_for_biogas_power_plant",
     "title": "techno-economic parameters for biogas power plant plant",
     "description": "techno-economic parameters for biogas power plant; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "resources": [
@@ -65,27 +65,6 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": {
-                "location": {
-                    "address": null,
-                    "@id": null,
-                    "latitude": null,
-                    "longitude": null
-                },
-                "extent": {
-                    "name": null,
-                    "@id": null,
-                    "resolutionValue": null,
-                    "resolutionUnit": null,
-                    "boundingBox": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "crs": null
-                }
-            },
             "temporal": {
                 "referenceDate": "2025-01-01",
                 "timeseries": [
@@ -134,16 +113,7 @@
                     "description": "{3}",
                     "publicationYear": "2020",
                     "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "sourceLicenses": []
                 },
                 {
                     "title": "Technologien für die Energiewende - Politikbericht an das Bundesministerium für Wirtschaft und Energie (BMWi)",
@@ -161,16 +131,7 @@
                     "description": "{8}",
                     "publicationYear": "2018",
                     "path": "https://d-nb.info/1164076981/34",
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "sourceLicenses": []
                 }
             ],
             "licenses": [

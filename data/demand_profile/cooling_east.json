@@ -1,23 +1,35 @@
 {
-    "name": "base_load_time_series",
-    "title": "base load time series",
-    "description": "Base load time series for constant load or constant feed in. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+    "name": "scaled_household_cooling_load_profiles_east",
+    "title": "Scaled household cooling load profiles east",
+    "description": "Scaled household cooling load profiles for the planning region Gera (east). These are generic load profiles created using the 5R1C Building Simulation Model {1}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
         {
-            "name": "base_load_time_series_HSN_inRET",
+            "name": "scaled_household_cooling_load_profiles_east",
             "topics": [
                 "demand"
             ],
-            "title": "base_load_time_series_HSN_inRET",
+            "title": "Scaled household cooling load profiles east",
             "path": "",
-            "description": "Base load time series for constant load or constant feed in. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+            "description": "Scaled household cooling load profiles for the planning region Gera (east). These are generic load profiles created using the 5R1C Building Simulation Model {1}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
             "languages": [
                 "en-GB"
             ],
             "subject": [
                 {
+                    "name": "heating and cooling sector",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000213"
+                },
+                {
+                    "name": "household sector",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000214"
+                },
+                {
                     "name": "time series",
                     "id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                },
+                {
+                    "name": "energy demand",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
                 }
             ],
             "keywords": [
@@ -44,6 +56,25 @@
                 "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
+            },
+            "spatial": {
+                "location": {
+                    "address": "Ronneburger Str. 74, 07546 Gera",
+                    "latitude": "50.8821",
+                    "longitude": "12.13"
+                },
+                "extent": {
+                    "name": "Gera",
+                    "resolutionValue": "1",
+                    "resolutionUnit": "m",
+                    "boundingBox": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "crs": "EPSG:4326"
+                }
             },
             "temporal": {
                 "referenceDate": null,
@@ -184,11 +215,17 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
                         ],
-                        "valueReference": []
+                        "valueReference": [
+                            {
+                                "value": null,
+                                "name": null,
+                                "@id": null
+                            }
+                        ]
                     },
                     {
-                        "name": "base_load",
-                        "description": "base load time series",
+                        "name": "east",
+                        "description": "Scaled household cooling load profiles for the region near Gera.",
                         "type": "float",
                         "nullable": true,
                         "unit": "MWh/MW",
@@ -204,19 +241,7 @@
                 "primaryKey": [
                     "id"
                 ],
-                "foreignKeys": [
-                    {
-                        "fields": [
-                            null
-                        ],
-                        "reference": {
-                            "resource": null,
-                            "fields": [
-                                null
-                            ]
-                        }
-                    }
-                ]
+                "foreignKeys": []
             },
             "dialect": {
                 "delimiter": ";",

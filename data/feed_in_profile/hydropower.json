@@ -1,5 +1,5 @@
 {
-    "name": "feed_in_profile_for_run_of_river_power_plant_HSN_inRET",
+    "name": "feed_in_profile_for_run_of_river_power_plant",
     "title": "feed-in profile for run of river power plant",
     "description": "feed-in-profile for run of river power plant. For run river power plants, the EnBW-Ek0 ‘Kleine Wasserkraftwerke’ feed-in profile should be used, which specifies the feed-in for each month of the year depending on the water flow {1}. These values were extrapolated to the average number of approximately 6300 full utilisation hours prevailing for Thuringia.The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
@@ -45,29 +45,7 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [
-                {
-                    "location": {
-                        "address": null,
-                        "@id": null,
-                        "latitude": null,
-                        "longitude": null
-                    },
-                    "extent": {
-                        "name": null,
-                        "@id": null,
-                        "resolutionValue": null,
-                        "resolutionUnit": null,
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": null
-                    }
-                }
-            ],
+            "spatial": [],
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -217,7 +195,7 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "index",
+                        "name": "id",
                         "description": "Index column.",
                         "type": "integer",
                         "nullable": false,
@@ -236,7 +214,7 @@
                         ]
                     },
                     {
-                        "name": "Hydro_power",
+                        "name": "hydro_power",
                         "description": "feed-in profile for run of river power plant in Erfurt",
                         "type": "float",
                         "nullable": true,
@@ -257,7 +235,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "index"
+                    "id"
                 ],
                 "foreignKeys": [
                     {

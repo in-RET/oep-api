@@ -1,4 +1,4 @@
-id;index;personenverkehr_2020_abs;gueterverkehr_2020_abs;personenverkehr_2025_abs;gueterverkehr_2025_abs;personenverkehr_2030_abs;gueterverkehr_2030_abs;personenverkehr_2035_abs;gueterverkehr_2035_abs;personenverkehr_2040_abs;gueterverkehr_2040_abs;personenverkehr_2045_abs;gueterverkehr_2045_abs
+id;name;personenverkehr_2020_abs;gueterverkehr_2020_abs;personenverkehr_2025_abs;gueterverkehr_2025_abs;personenverkehr_2030_abs;gueterverkehr_2030_abs;personenverkehr_2035_abs;gueterverkehr_2035_abs;personenverkehr_2040_abs;gueterverkehr_2040_abs;personenverkehr_2045_abs;gueterverkehr_2045_abs
 0;PKW Verbrenner;3280012,539;0;3072980,747;0;2869855,119;0;1930245,078;0;1161396,633;0;241900,5618;0
 1;PKW Verbrenner CNG;34852,55354;0;16514,22796;0;0;0;0;0;0;0;0;0
 2;PKW - Batterie;2025,743658;0;42396,51016;0;78296,36742;0;262874,4903;0;330168,7936;0;483753,4804;0
