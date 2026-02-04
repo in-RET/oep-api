@@ -61,23 +61,14 @@
             },
             "sources": [
                 {
-                    "title": "Einspeiseprofil Kleine Wsserkraftwerke",
+                    "title": "Einspeiseprofil Kleine Wasserkraftwerke",
                     "authors": [
                         "EnBW"
                     ],
                     "description": "{1}",
                     "publicationYear": "2019",
                     "path": "https://swe-emmendingen.de/strom-netz/lastprofile",
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "sourceLicenses": []
                 }
             ],
             "licenses": [
@@ -205,13 +196,7 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
                         "name": "hydro_power",
@@ -219,37 +204,14 @@
                         "type": "float",
                         "nullable": true,
                         "unit": "MWh/MW",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "isAbout": [],
+                        "valueReference": []
                     }
                 ],
                 "primaryKey": [
                     "id"
                 ],
-                "foreignKeys": [
-                    {
-                        "fields": [
-                            null
-                        ],
-                        "reference": {
-                            "resource": null,
-                            "fields": [
-                                null
-                            ]
-                        }
-                    }
-                ]
+                "foreignKeys": []
             },
             "dialect": {
                 "delimiter": ";",

@@ -1,23 +1,39 @@
 {
-    "name": "feed_in_profile_for_solar_thermal_heat_plant",
-    "title": "feed-in profile for solar thermal heat plant",
-    "description": "feed-in-profile for solar thermal heat plant. The solar thermal feed-in profile was calculated synthetically using a time step simulation in accordance with VDI 3988 {1}. A standard flat-plate collector with an inclination of 45°, a south-facing orientation and an average collector temperature of 50°C was assumed. The irradiation data represent the long-term (1996-2005) average irradiation for the Würzburg location. This results in a specific annual collector yield of 422 kWh/m². The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+    "name": "domestic_hotwater_timeseries_for_households_east",
+    "title": "Scaled, combined space heating and domestic hot water time series for households in various regions of Thuringia",
+    "description": "Scaled, combined space heating and domestic hot water time series for households for the various planning regions in Thuringia: Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest). These are generic load profiles created using the 5R1C Building Simulation Model {1}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
         {
-            "name": "feed_in_profile_for_solar_thermal_heat_plant_HSN_inRET",
+            "name": "Scaled_combined_space_heating_and_domestic_hot_water_time_series_for_households_HSN_inRET",
             "topics": [
-                "supply"
+                "demand"
             ],
-            "title": "feed_in_profile_for_solar_thermal_heat_plant_HSN_inRET",
+            "title": "Scaled_combined_space_heating_and_domestic_hot_water_time_series_for_households_HSN_inRET",
             "path": "",
-            "description": "feed-in-profile for solar thermal heat plant. The solar thermal feed-in profile was calculated synthetically using a time step simulation in accordance with VDI 3988 {1}. A standard flat-plate collector with an inclination of 45°, a south-facing orientation and an average collector temperature of 50°C was assumed. The irradiation data represent the long-term (1996-2005) average irradiation for the Würzburg location. This results in a specific annual collector yield of 422 kWh/m². The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+            "description": "Scaled, combined space heating and domestic hot water time series for households for the various planning regions in Thuringia: Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest). These are generic load profiles created using the 5R1C Building Simulation Model {1}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
             "languages": [
                 "en-GB"
             ],
             "subject": [
                 {
-                    "name": "solar thermal heat technology",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020307"
+                    "name": "heating and cooling sector",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000213"
+                },
+                {
+                    "name": "household sector",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000214"
+                },
+                {
+                    "name": "time series",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                },
+                {
+                    "name": "energy demand",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
+                },
+                {
+                    "name": "building sector",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010034"
                 }
             ],
             "keywords": [
@@ -45,7 +61,27 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [],
+            "spatial": {
+                "location": {
+                    "address": "Ronneburger Str. 74, 07546 Gera",
+                    "@id": null,
+                    "latitude": "50.8821",
+                    "longitude": "12.13"
+                },
+                "extent": {
+                    "name": "Gera",
+                    "@id": null,
+                    "resolutionValue": "1",
+                    "resolutionUnit": "m",
+                    "boundingBox": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "crs": "EPSG:4326"
+                }
+            },
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -61,17 +97,28 @@
             },
             "sources": [
                 {
-                    "title": "Handbuch Regenerative Energietechnik",
+                    "title": "Optimising building net energy demand with dynamic BIPV shading",
                     "authors": [
-                        "Wesselak, V.",
-                        "Schabbach, T.",
-                        "Link, T.",
-                        "Fischer, J."
+                        "Jayathissa, P.",
+                        "Luzzatto, M.",
+                        "Schmidli, J.",
+                        "Hofer, J.",
+                        "Nagy, Z.",
+                        "Schlueter, A."
                     ],
-                    "description": "{1}",
+                    "description": "{1}}",
                     "publicationYear": "2017",
-                    "path": null,
-                    "sourceLicenses": []
+                    "path": "https://www.sciencedirect.com/science/article/pii/S0306261917305810",
+                    "sourceLicenses": [
+                        {
+                            "name": null,
+                            "title": null,
+                            "path": null,
+                            "instruction": "Elsevier Ltd.",
+                            "attribution": null,
+                            "copyrightStatement": null
+                        }
+                    ]
                 }
             ],
             "licenses": [
@@ -202,12 +249,17 @@
                         "valueReference": []
                     },
                     {
-                        "name": "solarthermal",
-                        "description": "feed-in profile for solar thermal heat plant in Erfurt",
+                        "name": "heat_tww",
+                        "description": "Scaled, combined space heating and domestic hot water time series for households for the region.",
                         "type": "float",
                         "nullable": true,
                         "unit": "MWh/MW",
-                        "isAbout": [],
+                        "isAbout": [
+                            {
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                            }
+                        ],
                         "valueReference": []
                     }
                 ],

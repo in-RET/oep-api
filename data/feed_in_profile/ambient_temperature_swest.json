@@ -1,23 +1,23 @@
 {
-    "name": "feed_in_profile_for_solar_thermal_heat_plant",
-    "title": "feed-in profile for solar thermal heat plant",
-    "description": "feed-in-profile for solar thermal heat plant. The solar thermal feed-in profile was calculated synthetically using a time step simulation in accordance with VDI 3988 {1}. A standard flat-plate collector with an inclination of 45°, a south-facing orientation and an average collector temperature of 50°C was assumed. The irradiation data represent the long-term (1996-2005) average irradiation for the Würzburg location. This results in a specific annual collector yield of 422 kWh/m². The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+    "name": "ambient_temperature_swest",
+    "title": "ambient temperature swest",
+    "description": "Ambient temperature profile for the four planning regions of Thuringia. Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest); The profiles are based on weather data for a typical year from Meteonorm version 7.3.4.21143. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
         {
-            "name": "feed_in_profile_for_solar_thermal_heat_plant_HSN_inRET",
+            "name": "ambient_temperature_HSN_inRET",
             "topics": [
-                "supply"
+                "weatherdata"
             ],
-            "title": "feed_in_profile_for_solar_thermal_heat_plant_HSN_inRET",
+            "title": "ambient_temperature_HSN_inRET",
             "path": "",
-            "description": "feed-in-profile for solar thermal heat plant. The solar thermal feed-in profile was calculated synthetically using a time step simulation in accordance with VDI 3988 {1}. A standard flat-plate collector with an inclination of 45°, a south-facing orientation and an average collector temperature of 50°C was assumed. The irradiation data represent the long-term (1996-2005) average irradiation for the Würzburg location. This results in a specific annual collector yield of 422 kWh/m². The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+            "description": "Ambient temperature profile for the four planning regions of Thuringia. Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest); The profiles are based on weather data for a typical year from Meteonorm version 7.3.4.21143. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
             "languages": [
                 "en-GB"
             ],
             "subject": [
                 {
-                    "name": "solar thermal heat technology",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020307"
+                    "name": "temperature",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                 }
             ],
             "keywords": [
@@ -45,7 +45,27 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [],
+            "spatial": {
+                "location": {
+                    "address": "Untere Braugasse 16, 98646 Hildburghausen",
+                    "@id": null,
+                    "latitude": "50.4265",
+                    "longitude": "10.7316"
+                },
+                "extent": {
+                    "name": "Hildburghausen",
+                    "@id": null,
+                    "resolutionValue": "1",
+                    "resolutionUnit": "m",
+                    "boundingBox": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "crs": "EPSG:4326"
+                }
+            },
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -59,21 +79,7 @@
                     }
                 ]
             },
-            "sources": [
-                {
-                    "title": "Handbuch Regenerative Energietechnik",
-                    "authors": [
-                        "Wesselak, V.",
-                        "Schabbach, T.",
-                        "Link, T.",
-                        "Fischer, J."
-                    ],
-                    "description": "{1}",
-                    "publicationYear": "2017",
-                    "path": null,
-                    "sourceLicenses": []
-                }
-            ],
+            "sources": [],
             "licenses": [
                 {
                     "name": "CC-BY-4.0",
@@ -202,12 +208,17 @@
                         "valueReference": []
                     },
                     {
-                        "name": "solarthermal",
-                        "description": "feed-in profile for solar thermal heat plant in Erfurt",
+                        "name": "Ta",
+                        "description": "Ambient temperature profile for the region.",
                         "type": "float",
                         "nullable": true,
-                        "unit": "MWh/MW",
-                        "isAbout": [],
+                        "unit": "°C",
+                        "isAbout": [
+                            {
+                                "name": "temperature",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                            }
+                        ],
                         "valueReference": []
                     }
                 ],

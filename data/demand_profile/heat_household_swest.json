@@ -1,23 +1,39 @@
 {
-    "name": "ambient_temperature_HSN_inRET",
-    "title": "ambient temperature",
-    "description": "Ambient temperature profile for the four planning regions of Thuringia. Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest); The profiles are based on weather data for a typical year from Meteonorm version 7.3.4.21143. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+    "name": "domestic_hotwater_timeseries_for_households_swest",
+    "title": "Scaled, combined space heating and domestic hot water time series for households various regions in Thuringia",
+    "description": "Scaled, combined space heating and domestic hot water time series for households for the various planning regions in Thuringia: Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest). These are generic load profiles created using the 5R1C Building Simulation Model {1}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
         {
-            "name": "ambient_temperature_HSN_inRET",
+            "name": "Scaled_combined_space_heating_and_domestic_hot_water_time_series_for_households_HSN_inRET",
             "topics": [
-                "weatherdata"
+                "demand"
             ],
-            "title": "ambient_temperature_HSN_inRET",
+            "title": "Scaled_combined_space_heating_and_domestic_hot_water_time_series_for_households_HSN_inRET",
             "path": "",
-            "description": "Ambient temperature profile for the four planning regions of Thuringia. Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest); The profiles are based on weather data for a typical year from Meteonorm version 7.3.4.21143. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
+            "description": "Scaled, combined space heating and domestic hot water time series for households for the various planning regions in Thuringia: Erfurt (middle), Nordhausen (north), Gera (east) and Hildburghausen (swest). These are generic load profiles created using the 5R1C Building Simulation Model {1}. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
             "languages": [
                 "en-GB"
             ],
             "subject": [
                 {
-                    "name": "temperature",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                    "name": "heating and cooling sector",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000213"
+                },
+                {
+                    "name": "household sector",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00000214"
+                },
+                {
+                    "name": "time series",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
+                },
+                {
+                    "name": "energy demand",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00140146"
+                },
+                {
+                    "name": "building sector",
+                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00010034"
                 }
             ],
             "keywords": [
@@ -45,92 +61,27 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [
-                {
-                    "location": {
-                        "address": "Binderslebener Landstraße 100, 99092 Erfurt",
-                        "@id": null,
-                        "latitude": "50.98",
-                        "longitude": "10.97"
-                    },
-                    "extent": {
-                        "name": "Erfurt",
-                        "@id": null,
-                        "resolutionValue": "1",
-                        "resolutionUnit": "m",
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": "EPSG:4326"
-                    }
+            "spatial": {
+                "location": {
+                    "address": "Untere Braugasse 16, 98646 Hildburghausen",
+                    "@id": null,
+                    "latitude": "50.4265",
+                    "longitude": "10.7316"
                 },
-                {
-                    "location": {
-                        "address": "Kranichstraße 12, 99734 Nordhausen",
-                        "@id": null,
-                        "latitude": "51.5036",
-                        "longitude": "10.7913"
-                    },
-                    "extent": {
-                        "name": "Nordhausen",
-                        "@id": null,
-                        "resolutionValue": "1",
-                        "resolutionUnit": "m",
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": "EPSG:4326"
-                    }
-                },
-                {
-                    "location": {
-                        "address": "Ronneburger Str. 74, 07546 Gera",
-                        "@id": null,
-                        "latitude": "50.8821",
-                        "longitude": "12.13"
-                    },
-                    "extent": {
-                        "name": "Gera",
-                        "@id": null,
-                        "resolutionValue": "1",
-                        "resolutionUnit": "m",
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": "EPSG:4326"
-                    }
-                },
-                {
-                    "location": {
-                        "address": "Untere Braugasse 16, 98646 Hildburghausen",
-                        "@id": null,
-                        "latitude": "50.4265",
-                        "longitude": "10.7316"
-                    },
-                    "extent": {
-                        "name": "Hildburghausen",
-                        "@id": null,
-                        "resolutionValue": "1",
-                        "resolutionUnit": "m",
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": "EPSG:4326"
-                    }
+                "extent": {
+                    "name": "Hildburghausen",
+                    "@id": null,
+                    "resolutionValue": "1",
+                    "resolutionUnit": "m",
+                    "boundingBox": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "crs": "EPSG:4326"
                 }
-            ],
+            },
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -146,19 +97,24 @@
             },
             "sources": [
                 {
-                    "title": null,
+                    "title": "Optimising building net energy demand with dynamic BIPV shading",
                     "authors": [
-                        null
+                        "Jayathissa, P.",
+                        "Luzzatto, M.",
+                        "Schmidli, J.",
+                        "Hofer, J.",
+                        "Nagy, Z.",
+                        "Schlueter, A."
                     ],
-                    "description": null,
-                    "publicationYear": null,
-                    "path": null,
+                    "description": "{1}}",
+                    "publicationYear": "2017",
+                    "path": "https://www.sciencedirect.com/science/article/pii/S0306261917305810",
                     "sourceLicenses": [
                         {
                             "name": null,
                             "title": null,
                             "path": null,
-                            "instruction": null,
+                            "instruction": "Elsevier Ltd.",
                             "attribution": null,
                             "copyrightStatement": null
                         }
@@ -280,7 +236,7 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "index",
+                        "name": "id",
                         "description": "Index column.",
                         "type": "integer",
                         "nullable": false,
@@ -290,111 +246,27 @@
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     },
                     {
-                        "name": "Ta_middle",
-                        "description": "Ambient temperature profile for the region near Erfurt.",
+                        "name": "heat_tww",
+                        "description": "Scaled, combined space heating and domestic hot water time series for households for the region.",
                         "type": "float",
                         "nullable": true,
-                        "unit": "°C",
+                        "unit": "MWh/MW",
                         "isAbout": [
                             {
-                                "name": "temperature",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
+                                "name": "time series",
+                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030034"
                             }
                         ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Ta_north",
-                        "description": "Ambient temperature profile for the region near Nordhausen.",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "°C",
-                        "isAbout": [
-                            {
-                                "name": "temperature",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Ta_east",
-                        "description": "Ambient temperature profile for the region near Gera.",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "°C",
-                        "isAbout": [
-                            {
-                                "name": "temperature",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Ta_swest",
-                        "description": "Ambient temperature profile for the region near Hildburghausen.",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "°C",
-                        "isAbout": [
-                            {
-                                "name": "temperature",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "valueReference": []
                     }
                 ],
                 "primaryKey": [
-                    "index"
+                    "id"
                 ],
-                "foreignKeys": [
-                    {
-                        "fields": [
-                            null
-                        ],
-                        "reference": {
-                            "resource": null,
-                            "fields": [
-                                null
-                            ]
-                        }
-                    }
-                ]
+                "foreignKeys": []
             },
             "dialect": {
                 "delimiter": ";",
