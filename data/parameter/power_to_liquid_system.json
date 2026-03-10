@@ -1,14 +1,14 @@
 {
-    "name": "techno_economic_parameters_for_power_to_liquid_system_HSN_inRET",
+    "name": "parameters_for_power_to_liquid_system",
     "title": "techno-economic parameters for water electrolyser",
     "description": "techno-economic parameters for power-to-liquid system; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "resources": [
         {
-            "name": "techno_economic_parameters_for_power_to_liquid_system_HSN_inRET",
+            "name": "parameters_for_power_to_liquid_system",
             "topics": [
                 "economy"
             ],
-            "title": "techno_economic_parameters_for_power_to_liquid_system_HSN_inRET",
+            "title": "parameters_for_power_to_liquid_system",
             "path": "",
             "description": "techno-economic parameters for power-to-liquid system; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [

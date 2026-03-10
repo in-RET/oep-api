@@ -1,14 +1,14 @@
 {
-    "name": "system_configurations_HSN_inRET",
+    "name": "system_configurations_hsn_inret",
     "title": "System configurations",
     "description": "System configurations; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "resources": [
         {
-            "name": "System_configurations_HSN_inRET",
+            "name": "System_configurations_hsn_inret",
             "topics": [
                 ""
             ],
-            "title": "System_configurations_HSN_inRET",
+            "title": "System_configurations_hsn_inret",
             "path": "",
             "description": "System configurations; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [
@@ -53,27 +53,6 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": {
-                "location": {
-                    "address": null,
-                    "@id": null,
-                    "latitude": null,
-                    "longitude": null
-                },
-                "extent": {
-                    "name": null,
-                    "@id": null,
-                    "resolutionValue": null,
-                    "resolutionUnit": null,
-                    "boundingBox": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "crs": null
-                }
-            },
             "temporal": {
                 "referenceDate": "2025-01-01",
                 "timeseries": [
@@ -87,27 +66,6 @@
                     }
                 ]
             },
-            "sources": [
-                {
-                    "title": null,
-                    "authors": [
-                        null
-                    ],
-                    "description": null,
-                    "publicationYear": null,
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
-                }
-            ],
             "licenses": [
                 {
                     "name": "CC-BY-4.0",
@@ -223,24 +181,18 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "id",
+                        "description": "identification number",
+                        "type": "integer",
+                        "nullable": false,
+                        "unit": "-"
+                    },
+                    {
                         "name": "model_id",
                         "description": "model identification number",
                         "type": "string",
                         "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "-"
                     },
                     {
                         "name": "Anzahl_Zeitschritte",
@@ -252,13 +204,6 @@
                             {
                                 "name": "time step",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -273,13 +218,6 @@
                                 "name": "determine discount and interest rate",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00390052"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -293,18 +231,11 @@
                                 "name": "area value",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020143"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     }
                 ],
                 "primaryKey": [
-                    "model_id"
+                    "id"
                 ]
             },
             "dialect": {

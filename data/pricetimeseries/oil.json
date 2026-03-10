@@ -1,14 +1,14 @@
 {
-    "name": "import_price_value_oil_HSN_inRET",
+    "name": "import_price_value_oil_hsn_inret",
     "title": "import price value oil",
     "description": "import price value oil. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
         {
-            "name": "import_price_value_oil_HSN_inRET",
+            "name": "import_price_value_oil_hsn_inret",
             "topics": [
                 "economy"
             ],
-            "title": "import_price_value_oil_HSN_inRET",
+            "title": "import_price_value_oil_hsn_inret",
             "path": "",
             "description": "import price value oil. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
             "languages": [
@@ -49,29 +49,6 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [
-                {
-                    "location": {
-                        "address": null,
-                        "@id": null,
-                        "latitude": null,
-                        "longitude": null
-                    },
-                    "extent": {
-                        "name": null,
-                        "@id": null,
-                        "resolutionValue": null,
-                        "resolutionUnit": null,
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": null
-                    }
-                }
-            ],
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -85,27 +62,6 @@
                     }
                 ]
             },
-            "sources": [
-                {
-                    "title": null,
-                    "authors": [
-                        null
-                    ],
-                    "description": null,
-                    "publicationYear": null,
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
-                }
-            ],
             "licenses": [
                 {
                     "name": "CC-BY-4.0",
@@ -230,13 +186,6 @@
                                 "name": "index",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -249,13 +198,6 @@
                             {
                                 "name": "import price",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -270,13 +212,6 @@
                                 "name": "import price",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -289,13 +224,6 @@
                             {
                                 "name": "import price",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -310,13 +238,6 @@
                                 "name": "import price",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -329,13 +250,6 @@
                             {
                                 "name": "import price",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -350,13 +264,6 @@
                                 "name": "import price",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -369,13 +276,6 @@
                             {
                                 "name": "import price",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00240036"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     }

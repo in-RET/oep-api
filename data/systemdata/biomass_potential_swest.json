@@ -1,14 +1,14 @@
 {
-    "name": "Potential_limit_biomass_HSN_inRET_swest",
+    "name": "potential_limit_biomass_hsn_inret_swest",
     "title": "Potential limit of biomass",
     "description": "Potential limit of biomass; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "resources": [
         {
-            "name": "Potential_limit_biomass_HSN_inRET_swest",
+            "name": "potential_limit_biomass_hsn_inret_swest",
             "topics": [
                 ""
             ],
-            "title": "Potential_limit_biomass_HSN_inRET_swest",
+            "title": "potential_limit_biomass_hsn_inret_swest",
             "path": "",
             "description": "Potential limit of biomass; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [

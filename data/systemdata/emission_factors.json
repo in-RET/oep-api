@@ -1,14 +1,14 @@
 {
-    "name": "emission_factors_HSN_inRET",
+    "name": "emission_factors_hsn_inret",
     "title": "emission factor",
     "description": "emission factor; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "resources": [
         {
-            "name": "emission_factors_HSN_inRET",
+            "name": "emission_factors_hsn_inret",
             "topics": [
                 ""
             ],
-            "title": "emission_factors_HSN_inRET_HSN_inRET",
+            "title": "emission_factors_hsn_inret",
             "path": "",
             "description": "emission factor; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [
@@ -64,27 +64,6 @@
                 "fundingAgency": "Thüringer Ministerium für Umwelt, Energie, Naturschutz und Forsten",
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
-            },
-            "spatial": {
-                "location": {
-                    "address": null,
-                    "@id": null,
-                    "latitude": null,
-                    "longitude": null
-                },
-                "extent": {
-                    "name": null,
-                    "@id": null,
-                    "resolutionValue": null,
-                    "resolutionUnit": null,
-                    "boundingBox": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "crs": null
-                }
             },
             "temporal": {
                 "referenceDate": "2025-01-01",
@@ -268,24 +247,18 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "id",
+                        "description": "identification number",
+                        "type": "integer",
+                        "nullable": false,
+                        "unit": "-"
+                    },
+                    {
                         "name": "model_id",
                         "description": "model identification number",
                         "type": "string",
                         "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "-"
                     },
                     {
                         "name": "Emission_Erdgas",
@@ -297,13 +270,6 @@
                             {
                                 "name": "emission factor",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -318,13 +284,6 @@
                                 "name": "emission factor",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -337,13 +296,6 @@
                             {
                                 "name": "emission factor",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -358,13 +310,6 @@
                                 "name": "emission factor",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -377,13 +322,6 @@
                             {
                                 "name": "emission factor",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -398,13 +336,6 @@
                                 "name": "emission factor",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -417,13 +348,6 @@
                             {
                                 "name": "emission factor",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -438,13 +362,6 @@
                                 "name": "emission factor",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -457,13 +374,6 @@
                             {
                                 "name": "emission factor",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -478,13 +388,6 @@
                                 "name": "emission factor",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -498,18 +401,11 @@
                                 "name": "emission factor",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00000148"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     }
                 ],
                 "primaryKey": [
-                    "model_id"
+                    "id"
                 ]
             },
             "dialect": {

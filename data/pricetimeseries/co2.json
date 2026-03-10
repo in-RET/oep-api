@@ -1,14 +1,14 @@
 {
-    "name": "carbon_tax_value_HSN_inRET",
+    "name": "carbon_tax_value_hsn_inret",
     "title": "carbon tax value",
     "description": "carbon tax value. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
     "resources": [
         {
-            "name": "carbon_tax_value_HSN_inRET",
+            "name": "carbon_tax_value_hsn_inret",
             "topics": [
                 "economy"
             ],
-            "title": "carbon_tax_value_HSN_inRET",
+            "title": "carbon_tax_value_hsn_inret",
             "path": "",
             "description": "carbon tax value. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Science.",
             "languages": [
@@ -28,11 +28,6 @@
                 "HSN in.RET"
             ],
             "publicationDate": "2025-12-02",
-            "embargoPeriod": {
-                "start": null,
-                "end": null,
-                "isActive": false
-            },
             "context": {
                 "title": "ZO.RRO II - Zero Carbon Cross Energy System",
                 "homepage": "https://zorro-thueringen.de/",
@@ -45,29 +40,6 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [
-                {
-                    "location": {
-                        "address": null,
-                        "@id": null,
-                        "latitude": null,
-                        "longitude": null
-                    },
-                    "extent": {
-                        "name": null,
-                        "@id": null,
-                        "resolutionValue": null,
-                        "resolutionUnit": null,
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": null
-                    }
-                }
-            ],
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -81,27 +53,6 @@
                     }
                 ]
             },
-            "sources": [
-                {
-                    "title": null,
-                    "authors": [
-                        null
-                    ],
-                    "description": null,
-                    "publicationYear": null,
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
-                }
-            ],
             "licenses": [
                 {
                     "name": "CC-BY-4.0",
@@ -226,13 +177,6 @@
                                 "name": "index",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -245,13 +189,6 @@
                             {
                                 "name": "carbon tax value",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00040003"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -266,13 +203,6 @@
                                 "name": "carbon tax value",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00040003"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -285,13 +215,6 @@
                             {
                                 "name": "carbon tax value",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00040003"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -306,13 +229,6 @@
                                 "name": "carbon tax value",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00040003"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -325,13 +241,6 @@
                             {
                                 "name": "carbon tax value",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00040003"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -346,13 +255,6 @@
                                 "name": "carbon tax value",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00040003"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     }
                 ],
@@ -363,10 +265,6 @@
             "dialect": {
                 "delimiter": ";",
                 "decimalSeparator": ","
-            },
-            "review": {
-                "path": "",
-                "badge": ""
             }
         }
     ],

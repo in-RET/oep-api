@@ -1,14 +1,14 @@
 {
-    "name": "Temp_district_heating_HSN_inRET",
+    "name": "temp_district_heating_hsn_inret",
     "title": "Temperature values describing the forward and return temperatures of the district heating network as a function of the outside temperature.",
     "description": "Temperature values describing the forward and return temperatures of the district heating network as a function of the outside temperature.; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "resources": [
         {
-            "name": "Temp_district_heating_HSN_inRET",
+            "name": "temp_district_heating_hsn_inret",
             "topics": [
                 "boundaries"
             ],
-            "title": "Temp_district_heating_HSN_inRET",
+            "title": "temp_district_heating_hsn_inret",
             "path": "",
             "description": "Temperature values describing the forward and return temperatures of the district heating network as a function of the outside temperature.; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [
@@ -45,27 +45,6 @@
                 "fundingAgencyLogo": null,
                 "grantNo": ""
             },
-            "spatial": {
-                "location": {
-                    "address": null,
-                    "@id": null,
-                    "latitude": null,
-                    "longitude": null
-                },
-                "extent": {
-                    "name": null,
-                    "@id": null,
-                    "resolutionValue": null,
-                    "resolutionUnit": null,
-                    "boundingBox": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "crs": null
-                }
-            },
             "temporal": {
                 "referenceDate": "2025-01-01",
                 "timeseries": [
@@ -79,27 +58,6 @@
                     }
                 ]
             },
-            "sources": [
-                {
-                    "titl]e": null,
-                    "authors": [
-                        null
-                    ],
-                    "description": null,
-                    "publicationYear": null,
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
-                }
-            ],
             "licenses": [
                 {
                     "name": "CC-BY-4.0",
@@ -215,24 +173,18 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "id",
+                        "description": "identification number",
+                        "type": "integer",
+                        "nullable": false,
+                        "unit": "-"
+                    },
+                    {
                         "name": "model_id",
                         "description": "model identification number",
                         "type": "string",
                         "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "-"
                     },
                     {
                         "name": "T_VL_U_2025",
@@ -244,13 +196,6 @@
                             {
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -265,13 +210,6 @@
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -284,13 +222,6 @@
                             {
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -305,13 +236,6 @@
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -324,13 +248,6 @@
                             {
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -345,13 +262,6 @@
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -364,13 +274,6 @@
                             {
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -385,13 +288,6 @@
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -404,13 +300,6 @@
                             {
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -425,13 +314,6 @@
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -444,13 +326,6 @@
                             {
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -465,13 +340,6 @@
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -484,13 +352,6 @@
                             {
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -505,13 +366,6 @@
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -524,13 +378,6 @@
                             {
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -545,13 +392,6 @@
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -564,13 +404,6 @@
                             {
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -585,13 +418,6 @@
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -604,13 +430,6 @@
                             {
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -625,31 +444,11 @@
                                 "name": "temperature",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00010453"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     }
                 ],
                 "primaryKey": [
-                    "model_id"
-                ],
-                "foreignKeys": [
-                    {
-                        "fields": [
-                            null
-                        ],
-                        "reference": {
-                            "resource": null,
-                            "fields": [
-                                null
-                            ]
-                        }
-                    }
+                    "id"
                 ]
             },
             "dialect": {

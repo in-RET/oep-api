@@ -1,14 +1,14 @@
 {
-    "name": "Potential_limit_waste_heat_and_ambient_heat_HSN_inRET",
+    "name": "potential_limit_waste_heat_and_ambient_heat",
     "title": "Potential limit of waste heat and ambient heat",
     "description": "Potential limit of waste heat and environmental heat; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "resources": [
         {
-            "name": "Potential_limit_waste_heat_and_ambient_heat_HSN_inRET",
+            "name": "potential_limit_waste_heat_and_ambient_heat",
             "topics": [
                 ""
             ],
-            "title": "Potential_limit_waste_heat_and_ambient_heat_HSN_inRET",
+            "title": "potential_limit_waste_heat_and_ambient_heat",
             "path": "",
             "description": "Potential limit of waste heat and ambient heat; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [
@@ -53,27 +53,6 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": {
-                "location": {
-                    "address": null,
-                    "@id": null,
-                    "latitude": null,
-                    "longitude": null
-                },
-                "extent": {
-                    "name": null,
-                    "@id": null,
-                    "resolutionValue": null,
-                    "resolutionUnit": null,
-                    "boundingBox": [
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "crs": null
-                }
-            },
             "temporal": {
                 "referenceDate": "2025-01-01",
                 "timeseries": [
@@ -87,27 +66,6 @@
                     }
                 ]
             },
-            "sources": [
-                {
-                    "title": null,
-                    "authors": [
-                        null
-                    ],
-                    "description": null,
-                    "publicationYear": null,
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
-                }
-            ],
             "licenses": [
                 {
                     "name": "CC-BY-4.0",
@@ -223,24 +181,18 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "id",
+                        "description": "identification number",
+                        "type": "integer",
+                        "nullable": false,
+                        "unit": "-"
+                    },
+                    {
                         "name": "model_id",
                         "description": "model identification number",
                         "type": "string",
                         "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "-"
                     },
                     {
                         "name": "Potential_Umweltwaerme",
@@ -252,13 +204,6 @@
                             {
                                 "name": "technological flow potential",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140058"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -273,18 +218,11 @@
                                 "name": "technological flow potential",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140058"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     }
                 ],
                 "primaryKey": [
-                    "model_id"
+                    "id"
                 ]
             },
             "dialect": {

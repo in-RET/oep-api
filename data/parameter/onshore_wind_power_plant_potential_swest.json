@@ -1,14 +1,14 @@
 {
-    "name": "potentials_for_onshore_wind_power_plant_HSN_inRET_swest",
+    "name": "potentials_for_onshore_wind_power_plant_swest",
     "title": "potentials for onshore wind power plant swest",
     "description": "potentials for onshore wind power plant; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "resources": [
         {
-            "name": "potentials_for_onshore_wind_power_plant_HSN_inRET_swest",
+            "name": "potentials_for_onshore_wind_power_plant_swest",
             "topics": [
                 "economy"
             ],
-            "title": "potentials_for_onshore_wind_power_plant_HSN_inRET_swest",
+            "title": "potentials_for_onshore_wind_power_plant_swest",
             "path": "",
             "description": "potentials for onshore wind power plant; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [

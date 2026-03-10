@@ -1,14 +1,14 @@
 {
-    "name": "techno_economic_parameters_for_methanation_HSN_inRET",
+    "name": "techno_economic_parameters_for_methanation",
     "title": "techno-economic parameters for methanation",
     "description": "techno-economic parameters for methanation; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "resources": [
         {
-            "name": "techno_economic_parameters_for_methanation_HSN_inRET",
+            "name": "techno_economic_parameters_for_methanation",
             "topics": [
                 "economy"
             ],
-            "title": "techno_economic_parameters_for_methanation_HSN_inRET",
+            "title": "techno_economic_parameters_for_methanation",
             "path": "",
             "description": "techno-economic parameters for methanation; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [
