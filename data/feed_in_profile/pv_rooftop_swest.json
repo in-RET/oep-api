@@ -87,7 +87,7 @@
                     ],
                     "description": "{1}",
                     "publicationYear": "2023",
-                    "path": "https://www.pvsyst.com/en/",
+                    "path": "https://www.pvsyst.com/en/"
                     }
             ],
             "licenses": [
@@ -214,7 +214,7 @@
                                 "name": "index",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
-                        ],
+                        ]
                     },
                     {
                         "name": "pv_rooftop",

@@ -40,13 +40,14 @@ for filename in upload_list:
         #print(f"Table: {table_name}")
         try:
             uploader = OepUploader(token=TOKEN, topic=TOPIC)
-            uploader.upload_complete(
-                data_file=filename.replace(".json", ".csv"),
-                table_name=table_name,
-                metadata_file=filename,
-                primary_key=primary_key,
-                delete_existing=delete_existing
-            )
+            uploader.delete_table(table_name)
+            # uploader.upload_complete(
+            #     data_file=filename.replace(".json", ".csv"),
+            #     table_name=table_name,
+            #     metadata_file=filename,
+            #     primary_key=primary_key,
+            #     delete_existing=delete_existing
+            # )
             print("=" * 60)
         except Exception as e:
             print(f"\n Error: {str(e)}", file=sys.stderr)

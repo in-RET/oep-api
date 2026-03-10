@@ -208,7 +208,7 @@
                 ],
                 "primaryKey": [
                     "id"
-                ],
+                ]
             },
             "dialect": {
                 "delimiter": ";",
