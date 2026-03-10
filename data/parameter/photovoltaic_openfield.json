@@ -1,15 +1,14 @@
 {
-    "@context": "ToDo",
-    "name": "techno_economic_parameters_for_pv_field_power plant_HSN_inRET",
+    "name": "techno_economic_parameters_for_pv_field_power_plant",
     "title": "techno-economic parameters for pv field power plant",
     "description": "techno-economic parameters for pv field power plant; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
     "resources": [
         {
-            "name": "techno_economic_parameters_for_pv_field_power plant_HSN_inRET",
+            "name": "techno_economic_parameters_for_pv_field_power_plant",
             "topics": [
                 "economy"
             ],
-            "title": "techno_economic_parameters_for_pv_field_power plant_HSN_inRET",
+            "title": "techno_economic_parameters_for_pv_field_power_plant",
             "path": "",
             "description": "techno-economic parameters for pv field power plant; data based on literature data. The data was collected in the ZO.RRO II project by Nordhausen University of Applied Sciences.",
             "languages": [
@@ -31,10 +30,6 @@
                 {
                     "name": "life time",
                     "id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175"
-                },
-                {
-                    "name": "potential",
-                    "id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
                 }
             ],
             "keywords": [
@@ -62,92 +57,6 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [
-                {
-                    "location": {
-                        "address": "Binderslebener Landstraße 100, 99092 Erfurt",
-                        "@id": null,
-                        "latitude": "50.98",
-                        "longitude": "10.97"
-                    },
-                    "extent": {
-                        "name": "Erfurt",
-                        "@id": null,
-                        "resolutionValue": "1",
-                        "resolutionUnit": "m",
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": "EPSG:4326"
-                    }
-                },
-                {
-                    "location": {
-                        "address": "Kranichstraße 12, 99734 Nordhausen",
-                        "@id": null,
-                        "latitude": "51.5036",
-                        "longitude": "10.7913"
-                    },
-                    "extent": {
-                        "name": "Nordhausen",
-                        "@id": null,
-                        "resolutionValue": "1",
-                        "resolutionUnit": "m",
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": "EPSG:4326"
-                    }
-                },
-                {
-                    "location": {
-                        "address": "Ronneburger Str. 74, 07546 Gera",
-                        "@id": null,
-                        "latitude": "50.8821",
-                        "longitude": "12.13"
-                    },
-                    "extent": {
-                        "name": "Gera",
-                        "@id": null,
-                        "resolutionValue": "1",
-                        "resolutionUnit": "m",
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": "EPSG:4326"
-                    }
-                },
-                {
-                    "location": {
-                        "address": "Untere Braugasse 16, 98646 Hildburghausen",
-                        "@id": null,
-                        "latitude": "50.4265",
-                        "longitude": "10.7316"
-                    },
-                    "extent": {
-                        "name": "Hildburghausen",
-                        "@id": null,
-                        "resolutionValue": "1",
-                        "resolutionUnit": "m",
-                        "boundingBox": [
-                            0,
-                            0,
-                            0,
-                            0
-                        ],
-                        "crs": "EPSG:4326"
-                    }
-                }
-            ],
             "temporal": {
                 "referenceDate": "2025-01-01",
                 "timeseries": [
@@ -200,17 +109,7 @@
                     ],
                     "description": "{2}",
                     "publicationYear": "2021",
-                    "path": "https://www.agora-verkehrswende.de/veroeffentlichungen/klimaneutrales-deutschland-2045-langfassung",
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "path": "https://www.agora-verkehrswende.de/veroeffentlichungen/klimaneutrales-deutschland-2045-langfassung"
                 },
                 {
                     "title": "Model-based analysis of cost-efficient CO_2 reduction strategies",
@@ -218,18 +117,7 @@
                         "Lopion, P. M."
                     ],
                     "description": "{3}",
-                    "publicationYear": "2020",
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "publicationYear": "2020"
                 },
                 {
                     "title": "Wege zu einem klimaneutralen Energiesystem: Die deutsche Energiewende im Kontext gesellschaftlicher Verhaltensweisen: Anhang zur Studie",
@@ -241,17 +129,7 @@
                     ],
                     "description": "{4}",
                     "publicationYear": "2020",
-                    "path": "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/wege-zu-einem-klimaneutralen-energiesystem-version-2020-21.html",
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "path": "https://www.ise.fraunhofer.de/de/veroeffentlichungen/studien/wege-zu-einem-klimaneutralen-energiesystem-version-2020-21.html"
                 },
                 {
                     "title": "Technikkatalog Kommunalen Wärmeplanung",
@@ -263,18 +141,7 @@
                         "Anders, F."
                     ],
                     "description": "{5}",
-                    "publicationYear": "2024",
-                    "path": null,
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "publicationYear": "2024"
                 },
                 {
                     "title": "Technology Data",
@@ -283,17 +150,7 @@
                     ],
                     "description": "{6}",
                     "publicationYear": "2024",
-                    "path": "https://ens.dk/",
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "path": "https://ens.dk/"
                 },
                 {
                     "title": "Optimierungsmodell REMod-D: Materialien zur Analyse »Sektorkopplung« – Untersuchungen und Überlegungen zur Entwicklung eines integrierten Energiesystems.",
@@ -306,17 +163,7 @@
                     ],
                     "description": "{7}",
                     "publicationYear": "2023",
-                    "path": "https://energiesysteme-zukunft.de/fileadmin/user_upload/Publikationen/PDFs/ESYS_Materialien_Optimierungsmodell_REMod-D.pdf",
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "path": "https://energiesysteme-zukunft.de/fileadmin/user_upload/Publikationen/PDFs/ESYS_Materialien_Optimierungsmodell_REMod-D.pdf"
                 },
                 {
                     "title": "Technologien für die Energiewende - Politikbericht an das Bundesministerium für Wirtschaft und Energie (BMWi)",
@@ -333,17 +180,7 @@
                     ],
                     "description": "{8}",
                     "publicationYear": "2018",
-                    "path": "https://d-nb.info/1164076981/34",
-                    "sourceLicenses": [
-                        {
-                            "name": null,
-                            "title": null,
-                            "path": null,
-                            "instruction": null,
-                            "attribution": null,
-                            "copyrightStatement": null
-                        }
-                    ]
+                    "path": "https://d-nb.info/1164076981/34"
                 }
             ],
             "licenses": [
@@ -461,24 +298,17 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "id",
+                        "description": "identification number",
+                        "type": "integer",
+                        "nullable": false
+                    },
+                    {
                         "name": "model_id",
                         "description": "model identification number",
                         "type": "string",
                         "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "-"
                     },
                     {
                         "name": "investment_costs_2020",
@@ -490,13 +320,6 @@
                             {
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -511,13 +334,6 @@
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -530,13 +346,6 @@
                             {
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -551,13 +360,6 @@
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -570,13 +372,6 @@
                             {
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -591,13 +386,6 @@
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -611,13 +399,6 @@
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -625,140 +406,49 @@
                         "description": "operating costs in 2020",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2025",
                         "description": "operating costs in 2025",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2030",
                         "description": "operating costs in 2030",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2035",
                         "description": "operating costs in 2035",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2040",
                         "description": "operating costs in 2040",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2045",
                         "description": "operating costs in 2045",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2050",
                         "description": "operating costs in 2050",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "lifetime_2020",
@@ -770,13 +460,6 @@
                             {
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -791,13 +474,6 @@
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -810,13 +486,6 @@
                             {
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -831,13 +500,6 @@
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -850,13 +512,6 @@
                             {
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -871,13 +526,6 @@
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -890,173 +538,6 @@
                             {
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": "potential_north_max",
-                        "description": "Maximum potential in the north region",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "MW",
-                        "isAbout": [
-                            {
-                                "name": "potential",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": "potential_east_max",
-                        "description": "Maximum potential in the east region",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "MW",
-                        "isAbout": [
-                            {
-                                "name": "potential",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": "potential_swest_max",
-                        "description": "Maximum potential in the swest region",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "MW",
-                        "isAbout": [
-                            {
-                                "name": "potential",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": "potential_middle_max",
-                        "description": "Maximum potential in the middle region",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "MW",
-                        "isAbout": [
-                            {
-                                "name": "potential",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": "potential_north_min",
-                        "description": "Manimum potential in the north region",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "MW",
-                        "isAbout": [
-                            {
-                                "name": "potential",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": "potential_middle_min",
-                        "description": "Manimum potential in the middle region",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "MW",
-                        "isAbout": [
-                            {
-                                "name": "potential",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": "potential_east_min",
-                        "description": "Manimum potential in the east region",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "MW",
-                        "isAbout": [
-                            {
-                                "name": "potential",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
-                    },
-                    {
-                        "name": "potential_swest_min",
-                        "description": "Manimum potential in the swest region",
-                        "type": "float",
-                        "nullable": true,
-                        "unit": "MW",
-                        "isAbout": [
-                            {
-                                "name": "potential",
-                                "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00290000"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     }
