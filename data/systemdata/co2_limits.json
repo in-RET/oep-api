@@ -173,6 +173,12 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "id",
+                        "description": "identification number",
+                        "type": "integer",
+                        "nullable": false
+                    },
+                    {
                         "name": "model_id",
                         "description": "model identification number",
                         "type": "string",
@@ -265,7 +271,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "model_id"
+                    "id"
                 ]
             },
             "dialect": {

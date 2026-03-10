@@ -45,7 +45,6 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [],
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -70,8 +69,7 @@
                     ],
                     "description": "{1}",
                     "publicationYear": "2017",
-                    "path": null,
-                    "sourceLicenses": []
+                    "path": null
                 }
             ],
             "licenses": [
@@ -198,23 +196,19 @@
                                 "name": "index",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
-                        ],
-                        "valueReference": []
+                        ]
                     },
                     {
                         "name": "solarthermal",
                         "description": "feed-in profile for solar thermal heat plant in Erfurt",
                         "type": "float",
                         "nullable": true,
-                        "unit": "MWh/MW",
-                        "isAbout": [],
-                        "valueReference": []
+                        "unit": "MWh/MW"
                     }
                 ],
                 "primaryKey": [
                     "id"
                 ],
-                "foreignKeys": []
             },
             "dialect": {
                 "delimiter": ";",

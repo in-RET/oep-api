@@ -87,8 +87,7 @@
                     ],
                     "description": "{1}",
                     "publicationYear": "2023",
-                    "path": "https://www.pvsyst.com/en/",
-                    "sourceLicenses": []
+                    "path": "https://www.pvsyst.com/en/"
                 }
             ],
             "licenses": [
@@ -215,23 +214,19 @@
                                 "name": "index",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
-                        ],
-                        "valueReference": []
+                        ]
                     },
                     {
                         "name": "pv_rooftop",
                         "description": "feed-in profile for rooftop photovoltaik power plant",
                         "type": "float",
                         "nullable": true,
-                        "unit": "MWh/MW",
-                        "isAbout": [],
-                        "valueReference": []
+                        "unit": "MWh/MW"
                     }
                 ],
                 "primaryKey": [
                     "id"
-                ],
-                "foreignKeys": []
+                ]
             },
             "dialect": {
                 "delimiter": ";",

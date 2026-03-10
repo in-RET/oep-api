@@ -243,7 +243,7 @@
                         "valueReference": []
                     },
                     {
-                        "name": "2020",
+                        "name": "year_2020",
                         "description": "Scaled household electricity load profiles for the region for the year 2020.",
                         "type": "float",
                         "nullable": true,
@@ -257,7 +257,7 @@
                         "valueReference": []
                     },
                     {
-                        "name": "2025",
+                        "name": "year_2025",
                         "description": "Scaled household electricity load profiles for the region for the year 2025.",
                         "type": "float",
                         "nullable": true,
@@ -271,7 +271,7 @@
                         "valueReference": []
                     },
                     {
-                        "name": "2030",
+                        "name": "year_2030",
                         "description": "Scaled household electricity load profiles for the region for the year 2030.",
                         "type": "float",
                         "nullable": true,
@@ -285,7 +285,7 @@
                         "valueReference": []
                     },
                     {
-                        "name": "2035",
+                        "name": "year_2035",
                         "description": "Scaled household electricity load profiles for the region for the year 2035.",
                         "type": "float",
                         "nullable": true,
@@ -299,7 +299,7 @@
                         "valueReference": []
                     },
                     {
-                        "name": "2040",
+                        "name": "year_2040",
                         "description": "Scaled household electricity load profiles for the region for the year 2040.",
                         "type": "float",
                         "nullable": true,
@@ -313,7 +313,7 @@
                         "valueReference": []
                     },
                     {
-                        "name": "2045",
+                        "name": "year_2045",
                         "description": "Scaled household electricity load profiles for the region for the year 2045.",
                         "type": "float",
                         "nullable": true,
@@ -327,7 +327,7 @@
                         "valueReference": []
                     },
                     {
-                        "name": "2050",
+                        "name": "year_2050",
                         "description": "Scaled household electricity load profiles for the region for the year 2050.",
                         "type": "float",
                         "nullable": true,
