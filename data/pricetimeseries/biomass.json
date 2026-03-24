@@ -177,7 +177,7 @@
             "schema": {
                 "fields": [
                     {
-                        "name": "index",
+                        "name": "id",
                         "description": "Index column.",
                         "type": "integer",
                         "nullable": false,
@@ -268,7 +268,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "index"
+                    "id"
                 ]
             },
             "dialect": {

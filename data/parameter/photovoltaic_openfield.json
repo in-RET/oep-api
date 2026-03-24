@@ -543,20 +543,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "model_id"
-                ],
-                "foreignKeys": [
-                    {
-                        "fields": [
-                            null
-                        ],
-                        "reference": {
-                            "resource": null,
-                            "fields": [
-                                null
-                            ]
-                        }
-                    }
+                    "id"
                 ]
             },
             "dialect": {

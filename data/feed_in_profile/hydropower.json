@@ -45,7 +45,6 @@
                 "fundingAgencyLogo": "https://github.com/in-RET/ZO.RRO2/blob/main/TH_UENF_4c.svg",
                 "grantNo": ""
             },
-            "spatial": [],
             "temporal": {
                 "referenceDate": null,
                 "timeseries": [
@@ -67,8 +66,7 @@
                     ],
                     "description": "{1}",
                     "publicationYear": "2019",
-                    "path": "https://swe-emmendingen.de/strom-netz/lastprofile",
-                    "sourceLicenses": []
+                    "path": "https://swe-emmendingen.de/strom-netz/lastprofile"
                 }
             ],
             "licenses": [
@@ -195,23 +193,19 @@
                                 "name": "index",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00030033"
                             }
-                        ],
-                        "valueReference": []
+                        ]
                     },
                     {
                         "name": "hydro_power",
                         "description": "feed-in profile for run of river power plant in Erfurt",
                         "type": "float",
                         "nullable": true,
-                        "unit": "MWh/MW",
-                        "isAbout": [],
-                        "valueReference": []
+                        "unit": "MWh/MW"
                     }
                 ],
                 "primaryKey": [
                     "id"
-                ],
-                "foreignKeys": []
+                ]
             },
             "dialect": {
                 "delimiter": ";",

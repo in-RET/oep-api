@@ -281,24 +281,18 @@
             "schema": {
                 "fields": [
                     {
+                        "name": "id",
+                        "description": "identification number",
+                        "type": "integer",
+                        "nullable": false,
+                        "unit": "-"
+                    },
+                    {
                         "name": "model_id",
                         "description": "model identification number",
                         "type": "string",
                         "nullable": true,
-                        "unit": "-",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "-"
                     },
                     {
                         "name": "investment_costs_2020",
@@ -310,13 +304,6 @@
                             {
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -331,13 +318,6 @@
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -350,13 +330,6 @@
                             {
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -371,13 +344,6 @@
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -390,13 +356,6 @@
                             {
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -411,13 +370,6 @@
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -431,13 +383,6 @@
                                 "name": "investment cost",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020168/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -445,140 +390,49 @@
                         "description": "operating costs in 2020",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2025",
                         "description": "operating costs in 2025",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2030",
                         "description": "operating costs in 2030",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2035",
                         "description": "operating costs in 2035",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2040",
                         "description": "operating costs in 2040",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2045",
                         "description": "operating costs in 2045",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "operating_costs_2050",
                         "description": "operating costs in 2050",
                         "type": "float",
                         "nullable": true,
-                        "unit": "% of Invest",
-                        "isAbout": [
-                            {
-                                "name": null,
-                                "@id": null
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
-                        ]
+                        "unit": "% of Invest"
                     },
                     {
                         "name": "lifetime_2020",
@@ -590,13 +444,6 @@
                             {
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -611,13 +458,6 @@
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -630,13 +470,6 @@
                             {
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -651,13 +484,6 @@
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -670,13 +496,6 @@
                             {
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -691,13 +510,6 @@
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -711,17 +523,10 @@
                                 "name": "life time",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00020175/"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
-                        "name": "efficiency_H2",
+                        "name": "efficiency_h2",
                         "description": "hydrogen efficiency",
                         "type": "float",
                         "nullable": false,
@@ -730,13 +535,6 @@
                             {
                                 "name": "efficiency value",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
-                            }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
                             }
                         ]
                     },
@@ -751,13 +549,6 @@
                                 "name": "efficiency value",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     },
                     {
@@ -771,31 +562,11 @@
                                 "name": "efficiency value",
                                 "@id": "https://openenergyplatform.org/ontology/oeo/OEO_00140050"
                             }
-                        ],
-                        "valueReference": [
-                            {
-                                "value": null,
-                                "name": null,
-                                "@id": null
-                            }
                         ]
                     }
                 ],
                 "primaryKey": [
-                    "model_id"
-                ],
-                "foreignKeys": [
-                    {
-                        "fields": [
-                            null
-                        ],
-                        "reference": {
-                            "resource": null,
-                            "fields": [
-                                null
-                            ]
-                        }
-                    }
+                    "id"
                 ]
             },
             "dialect": {
